@@ -3,31 +3,31 @@ layout: post
 title: Our Dream Home
 description: After living below our means for a while, Coy and I decided to go out of comfortable zone
 tags: [my-house]
-modified: 2017-10-28
+modified: 2017-10-27
 image:
-  feature: 2017-10-28/living_dining.jpg
+  feature: 2017-10-27/living_dining.jpg
 ---
 
 ## We've built our dream house.
 'view' fence backyard to see beautiful sunset over white tank mountain every day
 
 <figure class="full">
-	<img src="/images/2017-10-28/kitchen.jpg" alt="">
+	<img src="/images/2017-10-27/kitchen.jpg" alt="">
 	<figcaption>Dreamy Gourmet Kitchen</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/2017-10-28/dining.jpg" alt="">
+	<img src="/images/2017-10-27/dining.jpg" alt="">
 	<figcaption>Multi Sliding Glass Doors</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/2017-10-28/living.jpg" alt="">
+	<img src="/images/2017-10-27/living.jpg" alt="">
 	<figcaption>Built in wine cooler</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/2017-10-28/master_bath.jpg" alt="">
+	<img src="/images/2017-10-27/master_bath.jpg" alt="">
 	<figcaption>Finally Bath Tub</figcaption>
 </figure>
 
