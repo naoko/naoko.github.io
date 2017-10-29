@@ -17,18 +17,28 @@ image:
 </figure>
 
 <figure class="full">
-	<img src="/images/2017-10-27/dining.jpg" alt="">
+	<img src="/images/2017-10-27/dining-living.jpg" alt="">
 	<figcaption>Multi Sliding Glass Doors</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/2017-10-27/living.jpg" alt="">
-	<figcaption>Built in wine cooler</figcaption>
+	<img src="/images/2017-10-27/dining.jpg" alt="">
+	<figcaption>Dining Room</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/2017-10-27/master_bath.jpg" alt="">
+	<img src="/images/2017-10-27/living.jpg" alt="">
+	<figcaption>Living Room</figcaption>
+</figure>
+
+<figure class="full">
+	<img src="/images/2017-10-27/master-bath.jpg" alt="">
 	<figcaption>Finally Bath Tub</figcaption>
+</figure>
+
+<figure class="full">
+	<img src="/images/2017-10-27/office.jpg" alt="">
+	<figcaption>My Office</figcaption>
 </figure>
 
 
