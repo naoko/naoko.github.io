@@ -1,0 +1,60 @@
+---
+layout: page
+title: "Python Dict to JSON"
+description: "Convert Python Dictionary to JSON"
+comments: false
+share: false
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.12.0/codemirror.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/theme/dracula.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.12.0/codemirror.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/mode/javascript/javascript.min.js"></script>
+<h5>Convert Python Dictionary to JSON</h5>
+<div id="err" style="color: red"></div>
+<textarea id="codeEditor" placeholder="Enter JSON here"></textarea>
+<button type="button" onclick="formatJSON();">Python Dict to JSON</button>
+
+<script>
+    var editor = CodeMirror.fromTextArea(
+                    document.getElementById('codeEditor'),
+                    {lineNumbers: true, mode: "javascript", theme: "dracula"}
+        );
+    function formatJSON() {
+        document.getElementById("err").innerHTML = "";
+        var code = editor.getDoc().getValue();
+        code = code.replace(/\'/g, '"');
+        code = code.replace(/True/g, 'true');
+        code = code.replace(/False/g, 'false');
+        code = code.replace(/None/g, 'null');
+        try {
+            code = JSON.parse(code);
+            editor.getDoc().setValue(JSON.stringify(code, null, 4));
+        }
+        catch(err) {
+            var pos = parseInt(err.message.split(" ").slice(-1)[0]);
+            var text = editor.getDoc().getValue();
+            var lines = text.split("\n");
+            var lineNum = 0;
+            var lastLineLength = 0;
+            var charCount = 0;
+            while (pos > charCount) {
+                // +1 for newline char
+                lastLineLength = lines[lineNum].length + 1;
+                charCount += lastLineLength;
+                console.log("lastLineLength " + lastLineLength);
+                lineNum++;
+            }
+            var column = pos - charCount + lastLineLength;
+            var msg = err.message + "<br />Line: " + lineNum + "<br />column: " + column;
+            document.getElementById("err").innerHTML = err.message;
+            console.log("lineNum: " + lineNum-1);
+            console.log("charCount: " + charCount);
+            editor.markText(
+                {line:lineNum-1, ch:column},
+                {line:lineNum-1, ch:column + 3},
+                {css: "color: red"}
+            );
+        }
+    }
+</script>
+

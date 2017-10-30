@@ -5,46 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>About Naoko &#8211; the art of simplicity</title>
-<meta name="description" content="```
-$ python
->>> import this
->>> ''.join([chr(c) for c in [115, 105, 109, 112, 108, 101, 32, 105, 115, 32, 98, 101, 115, 116]])
-```
-">
+<title>Python Dict to JSON &#8211; the art of simplicity</title>
+<meta name="description" content="Convert Python Dictionary to JSON">
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:4000/images/avatar.jpg">
-
-<meta name="twitter:title" content="About Naoko">
-<meta name="twitter:description" content="```
-$ python
->>> import this
->>> ''.join([chr(c) for c in [115, 105, 109, 112, 108, 101, 32, 105, 115, 32, 98, 101, 115, 116]])
-```
-">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+<meta name="twitter:title" content="Python Dict to JSON">
+<meta name="twitter:description" content="Convert Python Dictionary to JSON">
 <meta name="twitter:creator" content="@naoko_reeves">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="About Naoko">
-<meta property="og:description" content="```
-$ python
->>> import this
->>> ''.join([chr(c) for c in [115, 105, 109, 112, 108, 101, 32, 105, 115, 32, 98, 101, 115, 116]])
-```
-">
-<meta property="og:url" content="http://localhost:4000/about/">
+<meta property="og:title" content="Python Dict to JSON">
+<meta property="og:description" content="Convert Python Dictionary to JSON">
+<meta property="og:url" content="http://localhost:4000/pydict_to_json/">
 <meta property="og:site_name" content="the art of simplicity">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/about/">
+<link rel="canonical" href="http://localhost:4000/pydict_to_json/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="the art of simplicity Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -80,7 +64,7 @@ $ python
 
 </head>
 
-<body id="page" class="feature">
+<body id="page" >
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
@@ -130,19 +114,12 @@ $ python
 
 
 
-<div class="entry-header">
-  
-  <div class="entry-image">
-    <img src="http://localhost:4000/images/avatar.jpg" alt="About Naoko">
-  </div><!-- /.entry-image -->
-</div><!-- /.entry-header -->
-
 
 <div id="main" role="main">
   <article class="hentry">
     <header class="header-title">
       <div class="header-title-wrap">
-        <h1 class="entry-title">About Naoko</h1>
+        <h1 class="entry-title">Python Dict to JSON</h1>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -153,18 +130,63 @@ Reading time ~1 minute
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <p>TO BE UPDATED</p>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.12.0/codemirror.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/theme/dracula.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.12.0/codemirror.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/mode/javascript/javascript.min.js"></script>
+<h5>Convert Python Dictionary to JSON</h5>
+<div id="err" style="color: red"></div>
+<textarea id="codeEditor" placeholder="Enter JSON here"></textarea>
+<button type="button" onclick="formatJSON();">Python Dict to JSON</button>
+
+<script>
+    var editor = CodeMirror.fromTextArea(
+                    document.getElementById('codeEditor'),
+                    {lineNumbers: true, mode: "javascript", theme: "dracula"}
+        );
+    function formatJSON() {
+        document.getElementById("err").innerHTML = "";
+        var code = editor.getDoc().getValue();
+        code = code.replace(/\'/g, '"');
+        code = code.replace(/True/g, 'true');
+        code = code.replace(/False/g, 'false');
+        code = code.replace(/None/g, 'null');
+        try {
+            code = JSON.parse(code);
+            editor.getDoc().setValue(JSON.stringify(code, null, 4));
+        }
+        catch(err) {
+            var pos = parseInt(err.message.split(" ").slice(-1)[0]);
+            var text = editor.getDoc().getValue();
+            var lines = text.split("\n");
+            var lineNum = 0;
+            var lastLineLength = 0;
+            var charCount = 0;
+            while (pos > charCount) {
+                // +1 for newline char
+                lastLineLength = lines[lineNum].length + 1;
+                charCount += lastLineLength;
+                console.log("lastLineLength " + lastLineLength);
+                lineNum++;
+            }
+            var column = pos - charCount + lastLineLength;
+            var msg = err.message + "<br />Line: " + lineNum + "<br />column: " + column;
+            document.getElementById("err").innerHTML = err.message;
+            console.log("lineNum: " + lineNum-1);
+            console.log("charCount: " + charCount);
+            editor.markText(
+                {line:lineNum-1, ch:column},
+                {line:lineNum-1, ch:column + 3},
+                {css: "color: red"}
+            );
+        }
+    }
+</script>
+
 
       <footer class="entry-meta">
-        <span>Updated on <span class="entry-date date published updated"><time datetime="2017-10-28">October 28, 2017</time></span></span>
-        <span class="author vcard"><span class="fn">Naoko Reeves</span></span>
-        <div class="social-share">
-  <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/about/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/about/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/about/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
-  </ul>
-</div><!-- /.social-share -->
+        
+        
       </footer>
     </div><!-- /.entry-content -->
     
