@@ -5,31 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Our Dream Home &#8211; the art of simplicity</title>
-<meta name="description" content="After living below our means for a while, Coy and I decided to go out of comfortable zone">
-<meta name="keywords" content="my-house">
+<title>No Space Left Error when pip install &#8211; the art of simplicity</title>
+<meta name="description" content="Solving the problem of tiny /tmp directory">
+<meta name="keywords" content="python, pip">
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:4000/images/2017-10-27/living_dining.jpg">
-
-<meta name="twitter:title" content="Our Dream Home">
-<meta name="twitter:description" content="After living below our means for a while, Coy and I decided to go out of comfortable zone">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+<meta name="twitter:title" content="No Space Left Error when pip install">
+<meta name="twitter:description" content="Solving the problem of tiny /tmp directory">
 <meta name="twitter:creator" content="@naoko_reeves">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Our Dream Home">
-<meta property="og:description" content="After living below our means for a while, Coy and I decided to go out of comfortable zone">
-<meta property="og:url" content="http://localhost:4000/my-dream-home/">
+<meta property="og:title" content="No Space Left Error when pip install">
+<meta property="og:description" content="Solving the problem of tiny /tmp directory">
+<meta property="og:url" content="http://localhost:4000/pip-install-no-space-left/">
 <meta property="og:site_name" content="the art of simplicity">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/my-dream-home/">
+<link rel="canonical" href="http://localhost:4000/pip-install-no-space-left/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="the art of simplicity Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -65,7 +64,7 @@
 
 </head>
 
-<body id="post" class="feature">
+<body id="post" >
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
@@ -115,22 +114,15 @@
 
 
 
-<div class="entry-header">
-  
-  <div class="entry-image">
-    <img src="http://localhost:4000/images/2017-10-27/living_dining.jpg" alt="Our Dream Home">
-  </div><!-- /.entry-image -->
-</div><!-- /.entry-header -->
-
 
 <div id="main" role="main">
   <article class="hentry">
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="http://localhost:4000/my-dream-home/" rel="bookmark" title="Our Dream Home">Our Dream Home</a></h1>
+          <h1 class="entry-title"><a href="http://localhost:4000/pip-install-no-space-left/" rel="bookmark" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h1>
         
-        <h2><span class="entry-date date published"><time datetime="2017-10-27T00:00:00-07:00">October 27, 2017</time></span></h2>
+        <h2><span class="entry-date date published"><time datetime="2017-12-26T00:00:00-07:00">December 26, 2017</time></span></h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -141,50 +133,33 @@ Reading time ~1 minute
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <h2 id="weve-built-our-dream-house">We’ve built our dream house.</h2>
-<p>‘view’ fence backyard to see beautiful sunset over white tank mountain every day</p>
+      <h3 id="the-problem">The Problem:</h3>
 
-<figure class="full">
-	<img src="/images/2017-10-27/kitchen.jpg" alt="" />
-	<figcaption>Dreamy Gourmet Kitchen</figcaption>
-</figure>
+<p>Got</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OSError: <span class="o">[</span>Errno 28] No space left on device
+</code></pre></div></div>
+<p>When your home directory where your virtual environment located
+has more than enough space…</p>
 
-<figure class="full">
-	<img src="/images/2017-10-27/dining-living.jpg" alt="" />
-	<figcaption>Multi Sliding Glass Doors</figcaption>
-</figure>
+<h3 id="why">Why?:</h3>
 
-<figure class="full">
-	<img src="/images/2017-10-27/dining.jpg" alt="" />
-	<figcaption>Dining Room</figcaption>
-</figure>
+<p>The culprit is likely that your <code class="highlighter-rouge">/tmp</code> directory do not have enough space for
+some reason.
+During the pip installation, pip will use temporarily directory
+to perform what is necessary to perform installation (e.g. download source etc).
+Thus if you do not have enough space in <code class="highlighter-rouge">/tmp</code> that package installation requires then
+you will get disk space error.</p>
 
-<figure class="full">
-	<img src="/images/2017-10-27/living.jpg" alt="" />
-	<figcaption>Living Room</figcaption>
-</figure>
+<h3 id="the-solution">The Solution:</h3>
 
-<figure class="full">
-	<img src="/images/2017-10-27/master-bath.jpg" alt="" />
-	<figcaption>Finally Bath Tub</figcaption>
-</figure>
-
-<figure class="full">
-	<img src="/images/2017-10-27/office.jpg" alt="" />
-	<figcaption>My Office</figcaption>
-</figure>
-
-<h3 id="milestone">Milestone</h3>
-<ul>
-  <li>Aug 2000: We bought our first home. It was new build but had no money to do any upgrade.
-  Selection of the house is also <code class="highlighter-rouge">cheap</code> was one of the most important criteria.</li>
-  <li>Oct 2008: When housing tanked, we bought the foreclosed home built in 2001. It is the model that we wanted to buy
-back in 2000 but could not afford. Walking distance to elementary school. It was perfect for us at the time.</li>
-  <li>Sep 2017: We did not need or desperately wanted new house. We were living below our means and saved up 
-good chunk of money. We were comfortable but we’ve decided to go outside of comfortable zone for various reasons and
-decided to build this amazing house.</li>
-</ul>
-
+<p>If you can clean up <code class="highlighter-rouge">/tmp</code> to create enough space, that’s good but..
+if you are like me and had limited <code class="highlighter-rouge">/tmp</code> space, pip allow user to
+define temp directory location. To do so just set environment variable
+<code class="highlighter-rouge">TMPDIR</code>.
+e.g.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">TMPDIR</span><span class="o">=</span>/bigass/space
+</code></pre></div></div>
+<p>Problem should be solved.</p>
 
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -195,14 +170,14 @@ decided to build this amazing house.</li>
 </script>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://localhost:4000/tags/#my-house" title="Pages tagged my-house" class="tag"><span class="term">my-house</span></a></span>
-        <span>Updated on <span class="entry-date date updated"><time datetime="2017-10-27">October 27, 2017</time></span></span>
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#python" title="Pages tagged python" class="tag"><span class="term">python</span></a><a href="http://localhost:4000/tags/#pip" title="Pages tagged pip" class="tag"><span class="term">pip</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2017-12-26">December 26, 2017</time></span></span>
         <span class="author vcard"><span class="fn">Naoko Reeves</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/my-dream-home/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/my-dream-home/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/my-dream-home/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/pip-install-no-space-left/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/pip-install-no-space-left/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/pip-install-no-space-left/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -211,18 +186,18 @@ decided to build this amazing house.</li>
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="http://localhost:4000" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/vault-secret-management/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/pip-install-no-space-left/" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h3>
-      <p>Solving the problem of tiny /tmp directory <a href="http://localhost:4000/pip-install-no-space-left/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/vault-secret-management/" title="Secret Management with Vault">Secret Management with Vault</a></h3>
+      <p>Simple Secret Management <a href="http://localhost:4000/vault-secret-management/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/vault-secret-management/" title="Secret Management with Vault">Secret Management with Vault</a></h4>
-        <span>Published on October 28, 2017</span>
+        <h4><a href="http://localhost:4000/my-dream-home/" title="Our Dream Home">Our Dream Home</a></h4>
+        <span>Published on October 27, 2017</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->

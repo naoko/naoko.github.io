@@ -171,7 +171,7 @@ Reading time ~1 minute
             }
             var column = pos - charCount + lastLineLength;
             var msg = err.message + "<br />Line: " + lineNum + "<br />column: " + column;
-            document.getElementById("err").innerHTML = err.message;
+            document.getElementById("err").innerHTML =msg;
             console.log("lineNum: " + lineNum-1);
             console.log("charCount: " + charCount);
             editor.markText(
