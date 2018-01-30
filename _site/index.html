@@ -135,6 +135,60 @@
   <header>
     
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-01-30T00:00:00-07:00"><a href="http://localhost:4000/pycharm-remote-edit/">January 30, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/pycharm-remote-edit/" rel="bookmark" title="Remote Edit with PyCharm" itemprop="url">Remote Edit with PyCharm</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h3 id="the-problem">The Problem:</h3>
+
+<p>I have powerful Linux machine and semi-powerful mac-book pro.
+I have need of editing code on Linux box from mac-book.</p>
+
+<p>PyCharm has <code class="highlighter-rouge">deploy</code> method for pushing code but that requires sftp to setup etc.
+I just want to use ssh to do it…
+I’ve done rsync method but sometimes manual sync was needed.
+I want more transparent method…</p>
+
+<h3 id="the-solution">The Solution:</h3>
+
+<p>The easiest and most effective way for me was to mount linux directory via <code class="highlighter-rouge">sshfs</code>.
+It was amazingly easy. Assuming that you have established ssh connection with ssh-key with the remote machine.
+All you have to do was to install <code class="highlighter-rouge">osxfuse</code> and <code class="highlighter-rouge">sshfs</code> with brew.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew cask install osxfuse
+brew install sshfs
+</code></pre></div></div>
+
+<p>then mount with <code class="highlighter-rouge">sshfs</code> command. without installing <code class="highlighter-rouge">osxfuse</code> you will get an error
+because <code class="highlighter-rouge">osxfuse</code> install library that <code class="highlighter-rouge">sshfs</code> depends on.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir <span class="o">[</span>path-you-want-to-mount]
+sshfs <span class="o">[</span>username]@[server-addr]:[remote-dir] <span class="o">[</span>path-you-want-to-mount]
+</code></pre></div></div>
+
+<p>Success? or you got <code class="highlighter-rouge">remote host has disconnected</code> error?
+Get more verbose error with following flags:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sshfs <span class="nt">-odebug</span>,sshfs_debug,loglevel<span class="o">=</span>debug <span class="o">[</span>username]@[server-addr]:[remote-dir] <span class="o">[</span>path-you-want-to-mount]
+</code></pre></div></div>
+
+<p>Now, all you have to do is to open the directory you desire with PyCharm &lt;3</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2017-12-26T00:00:00-07:00"><a href="http://localhost:4000/pip-install-no-space-left/">December 26, 2017</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
       
       <span class="entry-reading-time">
@@ -355,7 +409,7 @@ decided to build this amazing house.</li>
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <span>&copy; 2017 Naoko Reeves. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+    <span>&copy; 2018 Naoko Reeves. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
   </footer>
 </div><!-- /.footer-wrapper -->
 

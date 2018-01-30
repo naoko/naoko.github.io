@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>No Space Left Error when pip install &#8211; the art of simplicity</title>
-<meta name="description" content="Solving the problem of tiny /tmp directory">
-<meta name="keywords" content="python, pip">
+<title>Remote Edit with PyCharm &#8211; the art of simplicity</title>
+<meta name="description" content="Edit Remote Linux file with PyCharm on OS X">
+<meta name="keywords" content="pycharm, sshfs">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://localhost:4000/images/">
-<meta name="twitter:title" content="No Space Left Error when pip install">
-<meta name="twitter:description" content="Solving the problem of tiny /tmp directory">
+<meta name="twitter:title" content="Remote Edit with PyCharm">
+<meta name="twitter:description" content="Edit Remote Linux file with PyCharm on OS X">
 <meta name="twitter:creator" content="@naoko_reeves">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="No Space Left Error when pip install">
-<meta property="og:description" content="Solving the problem of tiny /tmp directory">
-<meta property="og:url" content="http://localhost:4000/pip-install-no-space-left/">
+<meta property="og:title" content="Remote Edit with PyCharm">
+<meta property="og:description" content="Edit Remote Linux file with PyCharm on OS X">
+<meta property="og:url" content="http://localhost:4000/pycharm-remote-edit/">
 <meta property="og:site_name" content="the art of simplicity">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/pip-install-no-space-left/">
+<link rel="canonical" href="http://localhost:4000/pycharm-remote-edit/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="the art of simplicity Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -120,9 +120,9 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="http://localhost:4000/pip-install-no-space-left/" rel="bookmark" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h1>
+          <h1 class="entry-title"><a href="http://localhost:4000/pycharm-remote-edit/" rel="bookmark" title="Remote Edit with PyCharm">Remote Edit with PyCharm</a></h1>
         
-        <h2><span class="entry-date date published"><time datetime="2017-12-26T00:00:00-07:00">December 26, 2017</time></span></h2>
+        <h2><span class="entry-date date published"><time datetime="2018-01-30T00:00:00-07:00">January 30, 2018</time></span></h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -135,31 +135,36 @@ Reading time ~1 minute
     <div class="entry-content">
       <h3 id="the-problem">The Problem:</h3>
 
-<p>Got</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OSError: <span class="o">[</span>Errno 28] No space left on device
-</code></pre></div></div>
-<p>When your home directory where your virtual environment located
-has more than enough space…</p>
+<p>I have powerful Linux machine and semi-powerful mac-book pro.
+I have need of editing code on Linux box from mac-book.</p>
 
-<h3 id="why">Why?:</h3>
-
-<p>The culprit is likely that your <code class="highlighter-rouge">/tmp</code> directory do not have enough space for
-some reason.
-During the pip installation, pip will use temporarily directory
-to perform what is necessary to perform installation (e.g. download source etc).
-Thus if you do not have enough space in <code class="highlighter-rouge">/tmp</code> that package installation requires then
-you will get disk space error.</p>
+<p>PyCharm has <code class="highlighter-rouge">deploy</code> method for pushing code but that requires sftp to setup etc.
+I just want to use ssh to do it…
+I’ve done rsync method but sometimes manual sync was needed.
+I want more transparent method…</p>
 
 <h3 id="the-solution">The Solution:</h3>
 
-<p>If you can clean up <code class="highlighter-rouge">/tmp</code> to create enough space, that’s good but..
-if you are like me and had limited <code class="highlighter-rouge">/tmp</code> space, pip allow user to
-define temp directory location. To do so just set environment variable
-<code class="highlighter-rouge">TMPDIR</code>.
-e.g.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">TMPDIR</span><span class="o">=</span>/bigass/space
+<p>The easiest and most effective way for me was to mount linux directory via <code class="highlighter-rouge">sshfs</code>.
+It was amazingly easy. Assuming that you have established ssh connection with ssh-key with the remote machine.
+All you have to do was to install <code class="highlighter-rouge">osxfuse</code> and <code class="highlighter-rouge">sshfs</code> with brew.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew cask install osxfuse
+brew install sshfs
 </code></pre></div></div>
-<p>Problem should be solved.</p>
+
+<p>then mount with <code class="highlighter-rouge">sshfs</code> command. without installing <code class="highlighter-rouge">osxfuse</code> you will get an error
+because <code class="highlighter-rouge">osxfuse</code> install library that <code class="highlighter-rouge">sshfs</code> depends on.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir <span class="o">[</span>path-you-want-to-mount]
+sshfs <span class="o">[</span>username]@[server-addr]:[remote-dir] <span class="o">[</span>path-you-want-to-mount]
+</code></pre></div></div>
+
+<p>Success? or you got <code class="highlighter-rouge">remote host has disconnected</code> error?
+Get more verbose error with following flags:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sshfs <span class="nt">-odebug</span>,sshfs_debug,loglevel<span class="o">=</span>debug <span class="o">[</span>username]@[server-addr]:[remote-dir] <span class="o">[</span>path-you-want-to-mount]
+</code></pre></div></div>
+
+<p>Now, all you have to do is to open the directory you desire with PyCharm &lt;3</p>
 
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -170,14 +175,14 @@ e.g.</p>
 </script>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://localhost:4000/tags/#python" title="Pages tagged python" class="tag"><span class="term">python</span></a><a href="http://localhost:4000/tags/#pip" title="Pages tagged pip" class="tag"><span class="term">pip</span></a></span>
-        <span>Updated on <span class="entry-date date updated"><time datetime="2017-12-26">December 26, 2017</time></span></span>
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#pycharm" title="Pages tagged pycharm" class="tag"><span class="term">pycharm</span></a><a href="http://localhost:4000/tags/#sshfs" title="Pages tagged sshfs" class="tag"><span class="term">sshfs</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2018-01-30">January 30, 2018</time></span></span>
         <span class="author vcard"><span class="fn">Naoko Reeves</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/pip-install-no-space-left/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/pip-install-no-space-left/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/pip-install-no-space-left/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/pycharm-remote-edit/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/pycharm-remote-edit/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/pycharm-remote-edit/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -186,11 +191,11 @@ e.g.</p>
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="http://localhost:4000/vault-secret-management/" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/pip-install-no-space-left/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/pycharm-remote-edit/" title="Remote Edit with PyCharm">Remote Edit with PyCharm</a></h3>
-      <p>Edit Remote Linux file with PyCharm on OS X <a href="http://localhost:4000/pycharm-remote-edit/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/pip-install-no-space-left/" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h3>
+      <p>Solving the problem of tiny /tmp directory <a href="http://localhost:4000/pip-install-no-space-left/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
