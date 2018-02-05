@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>No Space Left Error when pip install &#8211; the art of simplicity</title>
-<meta name="description" content="Solving the problem of tiny /tmp directory">
-<meta name="keywords" content="python, pip">
+<title>Upgrade from Debian Jessie to Stretch &#8211; the art of simplicity</title>
+<meta name="description" content="Upgrade from Debian Jessie to Stretch">
+<meta name="keywords" content="debian, stretch, jessie">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://localhost:4000/images/">
-<meta name="twitter:title" content="No Space Left Error when pip install">
-<meta name="twitter:description" content="Solving the problem of tiny /tmp directory">
+<meta name="twitter:title" content="Upgrade from Debian Jessie to Stretch">
+<meta name="twitter:description" content="Upgrade from Debian Jessie to Stretch">
 <meta name="twitter:creator" content="@naoko_reeves">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="No Space Left Error when pip install">
-<meta property="og:description" content="Solving the problem of tiny /tmp directory">
-<meta property="og:url" content="http://localhost:4000/pip-install-no-space-left/">
+<meta property="og:title" content="Upgrade from Debian Jessie to Stretch">
+<meta property="og:description" content="Upgrade from Debian Jessie to Stretch">
+<meta property="og:url" content="http://localhost:4000/debian-jessie-to-stretch/">
 <meta property="og:site_name" content="the art of simplicity">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/pip-install-no-space-left/">
+<link rel="canonical" href="http://localhost:4000/debian-jessie-to-stretch/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="the art of simplicity Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -120,9 +120,9 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="http://localhost:4000/pip-install-no-space-left/" rel="bookmark" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h1>
+          <h1 class="entry-title"><a href="http://localhost:4000/debian-jessie-to-stretch/" rel="bookmark" title="Upgrade from Debian Jessie to Stretch">Upgrade from Debian Jessie to Stretch</a></h1>
         
-        <h2><span class="entry-date date published"><time datetime="2017-12-26T00:00:00-07:00">December 26, 2017</time></span></h2>
+        <h2><span class="entry-date date published"><time datetime="2018-02-05T00:00:00-07:00">February 05, 2018</time></span></h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -135,31 +135,61 @@ Reading time ~1 minute
     <div class="entry-content">
       <h3 id="the-problem">The Problem:</h3>
 
-<p>Got</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OSError: <span class="o">[</span>Errno 28] No space left on device
-</code></pre></div></div>
-<p>When your home directory where your virtual environment located
-has more than enough space…</p>
-
-<h3 id="why">Why?:</h3>
-
-<p>The culprit is likely that your <code class="highlighter-rouge">/tmp</code> directory do not have enough space for
-some reason.
-During the pip installation, pip will use temporarily directory
-to perform what is necessary to perform installation (e.g. download source etc).
-Thus if you do not have enough space in <code class="highlighter-rouge">/tmp</code> that package installation requires then
-you will get disk space error.</p>
+<p>I have Debian Jessie (debian 8) and the package I need are in debian testing repo.
+I added testing repo and scold by my super sysadmin boss.
+“Naoko, don’t make a <a href="https://wiki.debian.org/DontBreakDebian">FrankenDebian</a>!”
+The package I needed was available in Stretch (debian 9).</p>
 
 <h3 id="the-solution">The Solution:</h3>
 
-<p>If you can clean up <code class="highlighter-rouge">/tmp</code> to create enough space, that’s good but..
-if you are like me and had limited <code class="highlighter-rouge">/tmp</code> space, pip allow user to
-define temp directory location. To do so just set environment variable
-<code class="highlighter-rouge">TMPDIR</code>.
-e.g.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">TMPDIR</span><span class="o">=</span>/bigass/space
+<p>First, I need to remove <code class="highlighter-rouge">testing</code> repo I’ve added</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/apt
+<span class="nb">grep</span> <span class="nt">-r</span> testing <span class="k">*</span>
 </code></pre></div></div>
-<p>Problem should be solved.</p>
+<p>This should find a file that lists testing repo.
+Get rid of it. In my case, the ansible script created the file here:
+<code class="highlighter-rouge">/etc/apt/sources.list.d/ftp_us_debian_org_debian.list</code>.
+So just ran <code class="highlighter-rouge">rm sources.list.d/ftp_us_debian_org_debian.list</code></p>
+
+<p>Then change jessie stable to stretch stable.</p>
+
+<p>Edit <code class="highlighter-rouge">sources.list</code> with your favorite editor and replace <code class="highlighter-rouge">jessie</code> with <code class="highlighter-rouge">stretch</code>.
+My file look like this now:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Line commented out by installer because it failed to verify:</span>
+<span class="c"># deb http://security.debian.org/ stretch/updates main</span>
+<span class="c"># Line commented out by installer because it failed to verify:</span>
+<span class="c"># deb-src http://security.debian.org/ stretch/updates main</span>
+
+deb http://ftp.us.debian.org/debian stretch main
+deb-src http://ftp.us.debian.org/debian/ stretch main
+
+deb http://security.debian.org/ stretch/updates main
+deb-src http://security.debian.org/ stretch/updates main
+
+deb http://ftp.us.debian.org/debian/ stretch-updates main
+deb-src http://ftp.us.debian.org/debian/ stretch-updates main
+</code></pre></div></div>
+
+<p>Then you want to update all packages with stretch stable</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt upgrade
+</code></pre></div></div>
+<p><code class="highlighter-rouge">apt upgrade</code> will NOT generally install new releases, 
+where major changes (including removal of packages or GRUB update is required). 
+For example, when a new Linux kernel is available, the package will not get installed.
+In order to install the new kernel, you will need to run <code class="highlighter-rouge">apt dist-upgrade</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt dist-upgrade
+</code></pre></div></div>
+<p>Then reboot machine</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>reboot
+</code></pre></div></div>
+<p>When it comes back, verify version:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /etc/debian_version
+9.3
+</code></pre></div></div>
+
+<p>Yay</p>
 
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -170,14 +200,14 @@ e.g.</p>
 </script>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://localhost:4000/tags/#python" title="Pages tagged python" class="tag"><span class="term">python</span></a><a href="http://localhost:4000/tags/#pip" title="Pages tagged pip" class="tag"><span class="term">pip</span></a></span>
-        <span>Updated on <span class="entry-date date updated"><time datetime="2017-12-26">December 26, 2017</time></span></span>
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#debian" title="Pages tagged debian" class="tag"><span class="term">debian</span></a><a href="http://localhost:4000/tags/#stretch" title="Pages tagged stretch" class="tag"><span class="term">stretch</span></a><a href="http://localhost:4000/tags/#jessie" title="Pages tagged jessie" class="tag"><span class="term">jessie</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2018-01-30">January 30, 2018</time></span></span>
         <span class="author vcard"><span class="fn">Naoko Reeves</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/pip-install-no-space-left/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/pip-install-no-space-left/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/pip-install-no-space-left/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/debian-jessie-to-stretch/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/debian-jessie-to-stretch/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/debian-jessie-to-stretch/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -186,18 +216,18 @@ e.g.</p>
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="http://localhost:4000/vault-secret-management/" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/pycharm-remote-edit/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/debian-jessie-to-stretch/" title="Upgrade from Debian Jessie to Stretch">Upgrade from Debian Jessie to Stretch</a></h3>
-      <p>Upgrade from Debian Jessie to Stretch <a href="http://localhost:4000/debian-jessie-to-stretch/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/pycharm-remote-edit/" title="Remote Edit with PyCharm">Remote Edit with PyCharm</a></h3>
+      <p>Edit Remote Linux file with PyCharm on OS X <a href="http://localhost:4000/pycharm-remote-edit/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/pycharm-remote-edit/" title="Remote Edit with PyCharm">Remote Edit with PyCharm</a></h4>
-        <span>Published on January 30, 2018</span>
+        <h4><a href="http://localhost:4000/pip-install-no-space-left/" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h4>
+        <span>Published on December 26, 2017</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">

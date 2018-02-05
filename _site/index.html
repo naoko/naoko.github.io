@@ -135,6 +135,85 @@
   <header>
     
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-02-05T00:00:00-07:00"><a href="http://localhost:4000/debian-jessie-to-stretch/">February 05, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/debian-jessie-to-stretch/" rel="bookmark" title="Upgrade from Debian Jessie to Stretch" itemprop="url">Upgrade from Debian Jessie to Stretch</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h3 id="the-problem">The Problem:</h3>
+
+<p>I have Debian Jessie (debian 8) and the package I need are in debian testing repo.
+I added testing repo and scold by my super sysadmin boss.
+“Naoko, don’t make a <a href="https://wiki.debian.org/DontBreakDebian">FrankenDebian</a>!”
+The package I needed was available in Stretch (debian 9).</p>
+
+<h3 id="the-solution">The Solution:</h3>
+
+<p>First, I need to remove <code class="highlighter-rouge">testing</code> repo I’ve added</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/apt
+<span class="nb">grep</span> <span class="nt">-r</span> testing <span class="k">*</span>
+</code></pre></div></div>
+<p>This should find a file that lists testing repo.
+Get rid of it. In my case, the ansible script created the file here:
+<code class="highlighter-rouge">/etc/apt/sources.list.d/ftp_us_debian_org_debian.list</code>.
+So just ran <code class="highlighter-rouge">rm sources.list.d/ftp_us_debian_org_debian.list</code></p>
+
+<p>Then change jessie stable to stretch stable.</p>
+
+<p>Edit <code class="highlighter-rouge">sources.list</code> with your favorite editor and replace <code class="highlighter-rouge">jessie</code> with <code class="highlighter-rouge">stretch</code>.
+My file look like this now:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Line commented out by installer because it failed to verify:</span>
+<span class="c"># deb http://security.debian.org/ stretch/updates main</span>
+<span class="c"># Line commented out by installer because it failed to verify:</span>
+<span class="c"># deb-src http://security.debian.org/ stretch/updates main</span>
+
+deb http://ftp.us.debian.org/debian stretch main
+deb-src http://ftp.us.debian.org/debian/ stretch main
+
+deb http://security.debian.org/ stretch/updates main
+deb-src http://security.debian.org/ stretch/updates main
+
+deb http://ftp.us.debian.org/debian/ stretch-updates main
+deb-src http://ftp.us.debian.org/debian/ stretch-updates main
+</code></pre></div></div>
+
+<p>Then you want to update all packages with stretch stable</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt upgrade
+</code></pre></div></div>
+<p><code class="highlighter-rouge">apt upgrade</code> will NOT generally install new releases, 
+where major changes (including removal of packages or GRUB update is required). 
+For example, when a new Linux kernel is available, the package will not get installed.
+In order to install the new kernel, you will need to run <code class="highlighter-rouge">apt dist-upgrade</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt dist-upgrade
+</code></pre></div></div>
+<p>Then reboot machine</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>reboot
+</code></pre></div></div>
+<p>When it comes back, verify version:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /etc/debian_version
+9.3
+</code></pre></div></div>
+
+<p>Yay</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2018-01-30T00:00:00-07:00"><a href="http://localhost:4000/pycharm-remote-edit/">January 30, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
       
       <span class="entry-reading-time">
