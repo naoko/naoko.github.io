@@ -8,13 +8,13 @@ modified: 2018-01-30
 
 ### The Problem:
 
-I have Debian Jessie (debian 8) and the package I need are in debian testing repo.
-I added testing repo and scold by my super sysadmin boss.
+I was running Debian Jessie (debian 8) and the package I needed to install was in debian testing repo.
+So I added testing repo and installed the package (`libsnappy1v5`) and I got scold by my super sysadmin boss:
 "Naoko, don't make a [FrankenDebian](https://wiki.debian.org/DontBreakDebian)!"
-The package I needed was available in Stretch (debian 9). 
 
 
 ### The Solution:
+The package I needed is now available in Stretch (debian 9) stable so I need to upgrade to it.
 
 First, I need to remove `testing` repo I've added
 ```bash
