@@ -50,8 +50,7 @@ mount: unknown filesystem type 'vboxsf'
 
 You can install guest additions as follows. (tested on ubuntu 16.4 and 17.10)
 ```bash
-sudo apt-get update
-sudo apt-get install virtualbox-guest-dkms
+vagrant plugin install vagrant-vbguest
 ```
 
 Cheers!
