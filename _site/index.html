@@ -135,6 +135,73 @@
   <header>
     
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-02-06T00:00:00-07:00"><a href="http://localhost:4000/vagrant-on-ubuntu/">February 06, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/vagrant-on-ubuntu/" rel="bookmark" title="Upgrade vagrant to latest" itemprop="url">Upgrade vagrant to latest</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h3 id="the-problem">The Problem:</h3>
+
+<p>I love vagrant. I am so dependent on testing my ansible before I run against <code class="highlighter-rouge">mutable</code> boxes.
+Yes, I’m still living in place where Ops provision VM and the box stays <code class="highlighter-rouge">mutable</code>. 
+It is okay though… change should be coming.
+Anyhow, I installed vagnrat on my new Ubuntu machine (ubuntu-17.10) but the version was 1.9.
+It was working fine until I upgraded the box to <code class="highlighter-rouge">debian/stretch64</code>. It says that 
+<code class="highlighter-rouge">The box 'debian/stretch64' could not be found</code>. 
+And noticed that it was trying to look in the old repo 
+<code class="highlighter-rouge">https://atlas.hashicorp.com</code> instead of this <code class="highlighter-rouge">https://app.vagrantup.com</code>.</p>
+
+<h3 id="the-solution">The Solution:</h3>
+
+<p>I’m sure specifying <code class="highlighter-rouge">config.vm.box_url</code> would have fixed it but why not upgrade to latest?</p>
+
+<p>You can download from official site but I chose to use ppa provided by Wolfgang.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>bash <span class="nt">-c</span> <span class="s1">'echo deb https://vagrant-deb.linestarve.com/ any main &gt; /etc/apt/sources.list.d/wolfgang42-vagrant.list'</span>
+<span class="nv">$ </span><span class="nb">sudo </span>apt-key adv <span class="nt">--keyserver</span> pgp.mit.edu <span class="nt">--recv-key</span> AD319E0F7CFFA38B4D9F6E55CE3F3DE92099F7A4
+<span class="nv">$ </span><span class="nb">sudo </span>apt update
+<span class="nv">$ </span><span class="nb">sudo </span>apt install vagrant 
+<span class="nv">$ </span>vagrant <span class="nt">--version</span>
+Vagrant 2.0.1
+</code></pre></div></div>
+
+<p>If you have <code class="highlighter-rouge">synced_folder</code> configured then you might get the error says</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Vagrant was unable to mount VirtualBox shared folders. This is usually
+because the filesystem <span class="s2">"vboxsf"</span> is not available. This filesystem is
+made available via the VirtualBox Guest Additions and kernel module.
+Please verify that these guest additions are properly installed <span class="k">in </span>the
+guest. This is not a bug <span class="k">in </span>Vagrant and is usually caused by a faulty
+Vagrant box. For context, the <span class="nb">command </span>attempted was:
+
+mount <span class="nt">-t</span> vboxsf <span class="nt">-o</span> <span class="nv">uid</span><span class="o">=</span>1000,gid<span class="o">=</span>1000 srv_digicon /srv/digicon
+
+The error output from the <span class="nb">command </span>was:
+
+mount: unknown filesystem <span class="nb">type</span> <span class="s1">'vboxsf'</span>
+</code></pre></div></div>
+
+<p>You can install guest additions as follows. (tested on ubuntu 16.4 and 17.10)</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get install virtualbox-guest-dkms
+</code></pre></div></div>
+
+<p>Cheers!</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2018-02-05T00:00:00-07:00"><a href="http://localhost:4000/debian-jessie-to-stretch/">February 05, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
       
       <span class="entry-reading-time">
@@ -151,12 +218,12 @@ Reading time ~1 minute
   <div class="entry-content">
     <h3 id="the-problem">The Problem:</h3>
 
-<p>I have Debian Jessie (debian 8) and the package I need are in debian testing repo.
-I added testing repo and scold by my super sysadmin boss.
-“Naoko, don’t make a <a href="https://wiki.debian.org/DontBreakDebian">FrankenDebian</a>!”
-The package I needed was available in Stretch (debian 9).</p>
+<p>I was running Debian Jessie (debian 8) and the package I needed to install was in debian testing repo.
+So I added testing repo and installed the package (<code class="highlighter-rouge">libsnappy1v5</code>) and I got scold by my super sysadmin boss:
+“Naoko, don’t make a <a href="https://wiki.debian.org/DontBreakDebian">FrankenDebian</a>!”</p>
 
 <h3 id="the-solution">The Solution:</h3>
+<p>The package I needed is now available in Stretch (debian 9) stable so I need to upgrade to it.</p>
 
 <p>First, I need to remove <code class="highlighter-rouge">testing</code> repo I’ve added</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/apt
@@ -412,77 +479,40 @@ Let’s set it some variable</p>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
-<article class="hentry">
-  <header>
+
+
+<div class="pagination">
+  <ul class="inline-list">
     
-      <div class="entry-image-index">
-        <a href="http://localhost:4000/my-dream-home/" title="Our Dream Home"><img src="http://localhost:4000/images/2017-10-27/living_dining.jpg" alt="Our Dream Home"></a>
-      </div><!-- /.entry-image -->
     
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2017-10-27T00:00:00-07:00"><a href="http://localhost:4000/my-dream-home/">October 27, 2017</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Naoko Reeves">Naoko Reeves</a></span></span>
-      
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        
-Reading time ~1 minute
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
+
     
-      <h1 class="entry-title"><a href="http://localhost:4000/my-dream-home/" rel="bookmark" title="Our Dream Home" itemprop="url">Our Dream Home</a></h1>
     
-  </header>
-  <div class="entry-content">
-    <h2 id="weve-built-our-dream-house">We’ve built our dream house.</h2>
-<p>‘view’ fence backyard to see beautiful sunset over white tank mountain every day</p>
+      <li><strong class="current-page">1</strong></li>
+    
 
-<figure class="full">
-	<img src="/images/2017-10-27/kitchen.jpg" alt="" />
-	<figcaption>Dreamy Gourmet Kitchen</figcaption>
-</figure>
+    
+    
 
-<figure class="full">
-	<img src="/images/2017-10-27/dining-living.jpg" alt="" />
-	<figcaption>Multi Sliding Glass Doors</figcaption>
-</figure>
+    
+    
+    
 
-<figure class="full">
-	<img src="/images/2017-10-27/dining.jpg" alt="" />
-	<figcaption>Dining Room</figcaption>
-</figure>
+    
 
-<figure class="full">
-	<img src="/images/2017-10-27/living.jpg" alt="" />
-	<figcaption>Living Room</figcaption>
-</figure>
+    
+    
 
-<figure class="full">
-	<img src="/images/2017-10-27/master-bath.jpg" alt="" />
-	<figcaption>Finally Bath Tub</figcaption>
-</figure>
+    
+      <li><a href="http://localhost:4000/page2/">2</a></li>
+    
 
-<figure class="full">
-	<img src="/images/2017-10-27/office.jpg" alt="" />
-	<figcaption>My Office</figcaption>
-</figure>
-
-<h3 id="milestone">Milestone</h3>
-<ul>
-  <li>Aug 2000: We bought our first home. It was new build but had no money to do any upgrade.
-  Selection of the house is also <code class="highlighter-rouge">cheap</code> was one of the most important criteria.</li>
-  <li>Oct 2008: When housing tanked, we bought the foreclosed home built in 2001. It is the model that we wanted to buy
-back in 2000 but could not afford. Walking distance to elementary school. It was perfect for us at the time.</li>
-  <li>Sep 2017: We did not need or desperately wanted new house. We were living below our means and saved up 
-good chunk of money. We were comfortable but we’ve decided to go outside of comfortable zone for various reasons and
-decided to build this amazing house.</li>
-</ul>
-
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-
+    
+    
+      <li><a href="http://localhost:4000/page2/" class="btn">Next</a></li>
+    
+  </ul>
+</div>
 
 </div><!-- /#main -->
 

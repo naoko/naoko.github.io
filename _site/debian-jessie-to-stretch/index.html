@@ -135,12 +135,12 @@ Reading time ~1 minute
     <div class="entry-content">
       <h3 id="the-problem">The Problem:</h3>
 
-<p>I have Debian Jessie (debian 8) and the package I need are in debian testing repo.
-I added testing repo and scold by my super sysadmin boss.
-“Naoko, don’t make a <a href="https://wiki.debian.org/DontBreakDebian">FrankenDebian</a>!”
-The package I needed was available in Stretch (debian 9).</p>
+<p>I was running Debian Jessie (debian 8) and the package I needed to install was in debian testing repo.
+So I added testing repo and installed the package (<code class="highlighter-rouge">libsnappy1v5</code>) and I got scold by my super sysadmin boss:
+“Naoko, don’t make a <a href="https://wiki.debian.org/DontBreakDebian">FrankenDebian</a>!”</p>
 
 <h3 id="the-solution">The Solution:</h3>
+<p>The package I needed is now available in Stretch (debian 9) stable so I need to upgrade to it.</p>
 
 <p>First, I need to remove <code class="highlighter-rouge">testing</code> repo I’ve added</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/apt
@@ -219,20 +219,20 @@ In order to install the new kernel, you will need to run <code class="highlighte
       <a href="http://localhost:4000/pycharm-remote-edit/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/pycharm-remote-edit/" title="Remote Edit with PyCharm">Remote Edit with PyCharm</a></h3>
-      <p>Edit Remote Linux file with PyCharm on OS X <a href="http://localhost:4000/pycharm-remote-edit/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/vagrant-on-ubuntu/" title="Upgrade vagrant to latest">Upgrade vagrant to latest</a></h3>
+      <p>Upgrade vagrant to latest <a href="http://localhost:4000/vagrant-on-ubuntu/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/pip-install-no-space-left/" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h4>
-        <span>Published on December 26, 2017</span>
+        <h4><a href="http://localhost:4000/pycharm-remote-edit/" title="Remote Edit with PyCharm">Remote Edit with PyCharm</a></h4>
+        <span>Published on January 30, 2018</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/vault-secret-management/" title="Secret Management with Vault">Secret Management with Vault</a></h4>
-        <span>Published on October 28, 2017</span>
+        <h4><a href="http://localhost:4000/pip-install-no-space-left/" title="No Space Left Error when pip install">No Space Left Error when pip install</a></h4>
+        <span>Published on December 26, 2017</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
