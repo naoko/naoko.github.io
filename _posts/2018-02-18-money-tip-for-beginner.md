@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ケチな人は損を最低限に抑えて少しリッチになる
+title: 損を最低限に抑えて少しリッチになる
 description: Super brief version of small actions you can take and become richer
 tags: [money, robo-advisor, betterment, acorn, ebates, investment]
 modified: 2018-02-18
