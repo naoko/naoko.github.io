@@ -94,7 +94,7 @@ and when you see path to source code, the path to the file is inside of `site-pa
 ```
 
 ### So that reason you might not see your new code could be:
-* At one point you might have ran `python setup.py` so make sure to remove them
+* At one point you might have ran `python setup.py install` so make sure to remove them.
 * You made change and forgot to restarted program. 
 Python will load files when program started, compile it to bytecode and keep it internally.
 
