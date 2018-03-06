@@ -54,7 +54,7 @@ myproject                                0.1    [project-dir]/src
 and when you see path to source code, it is the file under my project folder and not inside `site-package`
 ```python
 >>> import myproject
->>> nlp.__file__
+>>> myproject.__file__
 '[project-dir]/src/myproject/__init__.py'
 ```
 
@@ -83,7 +83,7 @@ copying build... -> [project-dir]/env/lib/python3.6/site-packages/myproject/...
 When you `list` package, you only see package name unlike the one with `develop`
 ```bash
 pip list --format=columns | grep myproject
-nextiva.nlp                                0.1
+myproject                               0.1
 ```
 
 and when you see path to source code, the path to the file is inside of `site-packages`
