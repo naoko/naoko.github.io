@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Python Project Install
+title: Python Project Install - develop vs install & setuptools vs pip
 description: Wha't the difference between setup.py develop vs install vs pip install -e 
-tags: [python]
+tags: [python,pip,setuptools]
 modified: 2018-03-05
 ---
 
@@ -16,46 +16,46 @@ modified: 2018-03-05
 ### The difference between `setup.py develop` and `setup.py install`
 
 In short, you want to run `setup.py develop` when you are editing code because when you run 
-`setup.py install`, it will copy your code into `site-packages` thus if you want to test use your
-latest code you will need to `install` again. On the other hand, with `develop`, it creates
-a link to your source code so that when you import your code, it always linking to your latest code.
+`setup.py install`, it will copy your code into `site-packages` thus if you want to test your
+latest code you will need to `install` (copy) again. On the other hand, with `develop`, it creates
+a link to your source code so that when you import your code, it is your latest code.
 
 Let's take a look.
 
 note: to keep it simple, I'm going to assume that you have created virtual environment and using python3.
 ```bash
-cd [project-dir]
+cd ${project-dir}
 python3 -m venv env
 source env/bin/activate
 pip install -U setuptools
 easy_install --version
-setuptools 38.5.1 from [project-dir]/env/lib/python3.6/site-packages (Python 3.6)
+setuptools 38.5.1 from ${project-dir}/env/lib/python3.6/site-packages (Python 3.6)
 ```
 
 `setup.py develop` simply creates a special `.egg-link` file in site-packages directory which 
 links to your project's source code.
 
 ```bash
-$ cd [project-dir]
+$ cd ${project-dir}
 $ python setup.py develop
 $ ls -l env/lib/python3.6/site-packages | grep myproject
 -rw-r--r--    1 nreeves  staff      44 Mar  5 14:11 myproject.egg-link
 $ cat env/lib/python3.6/site-packages/myproject.egg-link
-[project-dir]/src
+${project-dir}/src
 ../
 ```
 
 When you `list` package, you can see it shows source directory instead of package name
 ```bash
 $ pip list --format=columns | grep myproject
-myproject                                0.1    [project-dir]/src
+myproject                                0.1    ${project-dir}/src
 ```
 
 and when you see path to source code, it is the file under my project folder and not inside `site-package`
 ```python
 >>> import myproject
 >>> myproject.__file__
-'[project-dir]/src/myproject/__init__.py'
+'${project-dir}/src/myproject/__init__.py'
 ```
 
 Let's uninstall that for now so that we can see what `install` will do.
@@ -63,7 +63,7 @@ You can see it is simply removing `.egg-link` file
 ```bash
 $ python setup.py develop --uninstall
 running develop
-Removing [project-dir]/env/lib/python3.6/site-packages/myproject.egg-link (link to src)
+Removing ${project-dir}/env/lib/python3.6/site-packages/myproject.egg-link (link to src)
 ```
 Spoiler alert!
 if you run `find . -name 'myproject.*'`, you will see residual but this is good enough for now.
@@ -76,7 +76,7 @@ running install
 running build
 running build_py
 ...
-copying build... -> [project-dir]/env/lib/python3.6/site-packages/myproject/...
+copying build... -> ${project-dir}/env/lib/python3.6/site-packages/myproject/...
 ...
 ```
 
@@ -90,12 +90,12 @@ and when you see path to source code, the path to the file is inside of `site-pa
 ```python
 >>> import myproject
 >>> myproject.__file__
-'[project-dir]/env/lib/python3.6/site-packages/myproject/__init__.py'
+'${project-dir}/env/lib/python3.6/site-packages/myproject/__init__.py'
 ```
 
-### So that reason you might not see your new code could be:
-* At one point you might have ran `python setup.py install` so make sure to remove them.
-* You made change and forgot to restarted program. 
+### So the reason you might not see your new code could be:
+* At one point you ran `python setup.py install` so make sure to remove them.
+* You made changes and forgot to restart the program. 
 Python will load files when program started, compile it to bytecode and keep it internally.
 
 ### But wait... instead of `setup.py`, use `pip`
