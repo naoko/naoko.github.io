@@ -20,6 +20,10 @@ Currently these processes are manual and not centralized nor has unified common 
 
 ### How to solve it
 
+Typical ML workflow look like this: 
+![typical ml workflow](https://docs.aws.amazon.com/sagemaker/latest/dg/images/ml-concepts-10.png)
+
+
 **Facebook** built [FBLearner Flow](https://code.fb.com/applied-machine-learning/introducing-fblearner-flow-facebook-s-ai-backbone/)
 but it is internal software toolset and not available for public to use.
 The platform manages:
