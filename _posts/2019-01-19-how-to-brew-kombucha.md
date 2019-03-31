@@ -44,6 +44,12 @@ modified: 2019-01-19
 - 水: 3 1/4 cups
 - スターター紅茶: 1/4 cup
 
+瓶のサイズ: Half gallon
+- 紅茶: 4 tea bags or 1 tbsp loos tea
+- 砂糖: 1/2 cup
+- 水: ~7 cups
+- スターター紅茶: 1 cups
+
 瓶のサイズ: 3.7 little or 1 gallon
 - 紅茶: 8 tea bags or 2 tbsp loos tea
 - 砂糖: 1 cup
