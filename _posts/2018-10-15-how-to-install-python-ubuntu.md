@@ -3,7 +3,7 @@ layout: post
 title: Install Python on Ubuntu
 description: Install latest python on ubuntu
 tags: [python install 3.7 3.6 ubuntu]
-modified: 2018-10-15
+modified: 2019-06-14
 ---
 
 Check the latest version [here](https://www.python.org/)
@@ -11,7 +11,7 @@ At the time of writing, 3.7.0 is the latest and 3.7.1 has release candidate.
 
 Also make sure you have sqlite3 installed
 ```bash
-sudo apt-get install sqlite3
+sudo apt-get install libsqlite3-dev
 ```
 
 ```bash
