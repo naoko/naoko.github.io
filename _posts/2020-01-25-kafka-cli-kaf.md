@@ -61,7 +61,7 @@ This will create config file here:
 ```
 Then you can SELECT to use this config
 ```bash
-kafka kaf config select-cluster 
+kaf config select-cluster 
 Use the arrow keys to navigate: ↓ ↑ → ← 
 ? Select cluster: 
   ▸ local
@@ -79,19 +79,31 @@ kaf node ls
 kaf topics
 ```
 
-**LIST Kafka node**
+**Describe a topic**
 ```bash
-kaf node ls
+kaf topic describe ${topic}
+```
+
+**List groups**
+```bash
+kaf groups
+```
+
+**Describe a group**
+
+You can see offset etc.
+```bash
+kaf group describe ${group}
 ```
 
 **LIST Kafka send message**
 ```bash
-kafka echo '{"a": 123}' | kaf produce test_topic
+echo '{"a": 123}' | kaf produce test_topic
 ```
 
 **LIST Kafka consume message**
 ```bash
-kafka echo '{"a": 123}' | kaf produce test_topic
+kaf consume test_topic --offset oldest|newest
 ```
 
 Easy to install, easy to use, less typing and cluster def in yaml config. So why not use this!
