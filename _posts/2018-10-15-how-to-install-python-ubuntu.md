@@ -26,6 +26,8 @@ cd Python-${version}
 ./configure --prefix /usr/local --enable-optimizations
 make
 sudo make install
+# OR if you want to skip creating the python link then:
+sudo make altinstall
 ```
 
 in case you want to remove and re-install it again cause some software
