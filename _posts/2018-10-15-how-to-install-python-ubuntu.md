@@ -9,9 +9,9 @@ modified: 2019-06-14
 Check the latest version [here](https://www.python.org/)
 At the time of writing, 3.7.0 is the latest and 3.7.1 has release candidate.
 
-Also make sure you have sqlite3 installed
+Also make sure you have sqlite3 and libbz2-dev are installed
 ```bash
-sudo apt-get install libsqlite3-dev
+sudo apt-get install libsqlite3-dev libbz2-dev
 ```
 
 ```bash
