@@ -73,7 +73,7 @@ Here are some platforms and its features:
 - 10 portfolios
 - **Rebalancing (do not offer tax efficient porffolio)
 
-#### [Betterment](betterment.com/?referral_key=naokoreeves)
+#### [Betterment](https://www.betterment.com/?referral_key=naokoreeves)
 
 - 0.25% management fee for robo-advisor investing
 - no self-directed investment
@@ -91,7 +91,7 @@ Robinhood, Acorns and Betterment are the ones we use (addition to TD Ameritrade 
 - We maxmize 401K - if you can and haven't done so, you should
 - We use Robinhood for just have fun - buy individual stock for small amount of money. Moving $50 a month and buy favorite stock here and there. Especially when market is tanked
 - We use Acorns for money that we don't even pay attention to. This is the platform that automatically invest your spare change
-- We use [Betterment](betterment.com/?referral_key=naokoreeves) for everything else. I like this platform because I can trust that when we withdraw money for some big puchases, its tax loss harvesting will minimize our tax responsiblity.
+- We use [Betterment](https://www.betterment.com/?referral_key=naokoreeves) for everything else. I like this platform because I can trust that when we withdraw money for some big puchases, its tax loss harvesting will minimize our tax responsiblity.
 - We are keeping TD-Ameritrade cause we don't want to sell anything to cause tax responsibility and it did the best this year because we bet on Tesla while ago ;)
 - Lastly, we use [Personal Capital](https://pcap.rocks/naoko271) to keep track of all the accounts. It is super powerful and easy to use. I said good-bye to mint many years ago
     - You can view your net worth, cash flow, portfolio balance, debt-paydown up to one year
