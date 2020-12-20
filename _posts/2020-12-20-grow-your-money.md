@@ -58,28 +58,31 @@ We do robo-advisor but still do self-directed because:
 
 Here are some platforms and its features:
 
-**Robinhood**
-    - no comission for self-directed investment
-    - no robo-advisor investing
+#### [Robinhood](https://join.robinhood.com/naokor1)
 
-**SoFi**
-    - no comission for self-directed investment
-    - no management fee for robo-advisor investing
-    - offsers Individual and IRA
-    - No *tax-loss harviesting
-    - Handle crypto investing
-    - 10 portfolios
-    - **Rebalancing (do not offer tax efficient porffolio)
+- no comission for self-directed investment
+- no robo-advisor investing
 
-**Betterment**
-    - 0.25% management fee for robo-advisor investing
-    - no self-directed investment
-    - Tax loss harvesting (annual benefit of 0.48%)
-    - Socially responsible investing
-    - Goal based investment strategy (we have sub-account like travel, big-purchase etc)
-    - 101 portfolios
-    - offsers Individual and IRA
-    - Smart rebalancing (tax efficient)
+#### [SoFi](https://www.sofi.com/share/invest/3511023?src=copy)
+
+- no comission for self-directed investment
+- no management fee for robo-advisor investing
+- offsers Individual and IRA
+- No *tax-loss harviesting
+- Handle crypto investing
+- 10 portfolios
+- **Rebalancing (do not offer tax efficient porffolio)
+
+#### [Betterment](betterment.com/?referral_key=naokoreeves)
+
+- 0.25% management fee for robo-advisor investing
+- no self-directed investment
+- Tax loss harvesting (annual benefit of 0.48%)
+- Socially responsible investing
+- Goal based investment strategy (we have sub-account like travel, big-purchase etc)
+- 101 portfolios
+- offsers Individual and IRA
+- Smart rebalancing (tax efficient)
 
 ### What do we use
 
