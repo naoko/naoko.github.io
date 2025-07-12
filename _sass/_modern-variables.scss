@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Modern CSS Variables using Custom Properties
+   ========================================================================== */
+
+:root {
+  /* Color Scheme */
+  --color-primary: #222;
+  --color-primary-light: #555;
+  --color-primary-dark: #000;
+  
+  --color-secondary: #e8e8e8;
+  --color-secondary-light: #f5f5f5;
+  --color-secondary-dark: #ddd;
+  
+  --color-accent: #308cbc;
+  --color-accent-light: #4da6d7;
+  --color-accent-dark: #2678a1;
+  
+  --color-success: #5cb85c;
+  --color-warning: #dd8338;
+  --color-danger: #c64537;
+  --color-info: #308cbc;
+  
+  --color-text: rgba(34, 34, 34, 0.8);
+  --color-text-light: rgba(34, 34, 34, 0.6);
+  --color-text-muted: rgba(34, 34, 34, 0.4);
+  
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --color-border: rgba(34, 34, 34, 0.1);
+  --color-border-light: rgba(34, 34, 34, 0.05);
+  
+  /* Dark theme colors */
+  --color-bg-dark: #1a1a1a;
+  --color-bg-alt-dark: #2d2d2d;
+  --color-text-dark: rgba(255, 255, 255, 0.87);
+  --color-text-light-dark: rgba(255, 255, 255, 0.6);
+  --color-text-muted-dark: rgba(255, 255, 255, 0.38);
+  --color-border-dark: rgba(255, 255, 255, 0.12);
+  --color-border-light-dark: rgba(255, 255, 255, 0.06);
+  
+  /* Typography */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-heading: var(--font-family-primary);
+  --font-family-mono: 'Fira Code', 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', Consolas, monospace;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  
+  /* Border radius */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --content-max-width: 800px;
+  --sidebar-width: 300px;
+  
+  /* Breakpoints (for use in CSS clamp functions) */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+  
+  /* Feature image heights */
+  --feature-image-height: clamp(250px, 30vh, 400px);
+  --front-page-feature-height: clamp(300px, 40vh, 500px);
+}
+
+/* Dark theme application */
+[data-theme="dark"] {
+  --color-bg: var(--color-bg-dark);
+  --color-bg-alt: var(--color-bg-alt-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-light: var(--color-text-light-dark);
+  --color-text-muted: var(--color-text-muted-dark);
+  --color-border: var(--color-border-dark);
+  --color-border-light: var(--color-border-light-dark);
+}
+
+/* Responsive typography using clamp() */
+:root {
+  --font-size-responsive-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-size-responsive-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --font-size-responsive-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --font-size-responsive-xl: clamp(1.25rem, 1.125rem + 0.625vw, 1.5rem);
+  --font-size-responsive-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --font-size-responsive-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
+}
+
+/* Print styles */
+@media print {
+  :root {
+    --color-text: #000;
+    --color-bg: #fff;
+    --color-border: #000;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+  }
+}

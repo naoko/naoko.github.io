@@ -1,0 +1,172 @@
+---
+layout: page
+title: "You're Offline"
+permalink: /offline.html
+---
+
+<div class="offline-container">
+  <div class="offline-content">
+    <svg class="offline-icon" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M1 9l11-7 11 7v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2z"/>
+      <polyline points="9,22 9,12 15,12 15,22"/>
+    </svg>
+    
+    <h1>You're Currently Offline</h1>
+    
+    <p>Don't worry! You can still browse cached pages and content you've already visited.</p>
+    
+    <div class="offline-actions">
+      <button onclick="window.history.back()" class="btn btn--primary">
+        Go Back
+      </button>
+      
+      <button onclick="window.location.reload()" class="btn btn--secondary">
+        Try Again
+      </button>
+    </div>
+    
+    <div class="cached-pages">
+      <h3>Recently Visited Pages</h3>
+      <ul id="cached-pages-list">
+        <!-- Will be populated by JavaScript -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+.offline-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: var(--space-lg);
+}
+
+.offline-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.offline-icon {
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+
+.offline-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin: var(--space-xl) 0;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: var(--space-md) var(--space-lg);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all var(--transition-fast);
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent-dark);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.cached-pages {
+  margin-top: var(--space-2xl);
+  text-align: left;
+}
+
+.cached-pages h3 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+#cached-pages-list {
+  list-style: none;
+  padding: 0;
+}
+
+#cached-pages-list li {
+  margin-bottom: var(--space-sm);
+}
+
+#cached-pages-list a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background-color var(--transition-fast);
+}
+
+#cached-pages-list a:hover {
+  background-color: var(--color-border);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  // Check if we have cached pages to show
+  if ('caches' in window) {
+    try {
+      const cacheNames = await caches.keys();
+      const cachedPages = [];
+      
+      for (const cacheName of cacheNames) {
+        const cache = await caches.open(cacheName);
+        const requests = await cache.keys();
+        
+        requests.forEach(request => {
+          const url = new URL(request.url);
+          if (url.pathname !== '/offline.html' && 
+              url.pathname !== '/' && 
+              request.headers.get('accept')?.includes('text/html')) {
+            cachedPages.push({
+              url: url.pathname,
+              title: url.pathname.split('/').filter(Boolean).pop() || 'Home'
+            });
+          }
+        });
+      }
+      
+      const uniquePages = cachedPages.filter((page, index, self) => 
+        index === self.findIndex(p => p.url === page.url)
+      ).slice(0, 10);
+      
+      const list = document.getElementById('cached-pages-list');
+      if (uniquePages.length > 0) {
+        list.innerHTML = uniquePages.map(page => 
+          `<li><a href="${page.url}">${page.title}</a></li>`
+        ).join('');
+      } else {
+        list.innerHTML = '<li>No cached pages available</li>';
+      }
+    } catch (error) {
+      console.error('Error loading cached pages:', error);
+    }
+  }
+});
+</script>

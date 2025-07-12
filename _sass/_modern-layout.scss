@@ -1,0 +1,427 @@
+/* ==========================================================================
+   Modern Layout System using CSS Grid and Flexbox
+   ========================================================================== */
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+  
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &--auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  &--auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* Flex utilities */
+.flex {
+  display: flex;
+  
+  &--column {
+    flex-direction: column;
+  }
+  
+  &--wrap {
+    flex-wrap: wrap;
+  }
+  
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &--between {
+    justify-content: space-between;
+  }
+  
+  &--around {
+    justify-content: space-around;
+  }
+  
+  &--evenly {
+    justify-content: space-evenly;
+  }
+  
+  &--start {
+    justify-content: flex-start;
+  }
+  
+  &--end {
+    justify-content: flex-end;
+  }
+  
+  &--items-center {
+    align-items: center;
+  }
+  
+  &--items-start {
+    align-items: flex-start;
+  }
+  
+  &--items-end {
+    align-items: flex-end;
+  }
+  
+  &--items-baseline {
+    align-items: baseline;
+  }
+  
+  &--items-stretch {
+    align-items: stretch;
+  }
+}
+
+/* Main layout structure */
+.site-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.site-header {
+  grid-area: header;
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  
+  [data-theme="dark"] & {
+    background-color: rgba(26, 26, 26, 0.9);
+  }
+}
+
+.site-main {
+  grid-area: main;
+  padding: var(--space-lg) 0;
+}
+
+.site-footer {
+  grid-area: footer;
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-3xl);
+}
+
+/* Navigation layout */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.nav-brand {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--space-lg);
+  padding: 0;
+  margin: 0;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  
+  &:hover,
+  &.active {
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* Article/Post layout */
+.post-grid {
+  display: grid;
+  gap: var(--space-2xl);
+  grid-template-columns: 1fr;
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
+.post-list {
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+.post-card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all var(--transition-normal);
+  
+  &:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+}
+
+/* Sidebar layout */
+.sidebar {
+  display: grid;
+  gap: var(--space-xl);
+  align-content: start;
+}
+
+.sidebar-widget {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  color: white;
+  padding: var(--space-4xl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    background-size: 50px 50px;
+    animation: float 10s infinite linear;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: var(--space-md);
+  }
+  
+  p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xl);
+    opacity: 0.9;
+  }
+}
+
+/* Feature image layout */
+.feature-image {
+  width: 100%;
+  height: var(--feature-image-height);
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: var(--space-2xl) 0;
+  flex-wrap: wrap;
+}
+
+.pagination-item {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all var(--transition-fast);
+  
+  &:hover,
+  &.current {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+  
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+    &:hover {
+      background-color: transparent;
+      color: var(--color-text);
+      border-color: var(--color-border);
+    }
+  }
+}
+
+/* Search layout */
+.search-container {
+  position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-md);
+  font-size: var(--font-size-lg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  
+  &:focus {
+    border-color: var(--color-accent);
+  }
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.search-result {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-border-light);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:hover {
+    background-color: var(--color-bg-alt);
+  }
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  
+  &:hover {
+    background-color: var(--color-bg-alt);
+  }
+}
+
+/* Animations */
+@keyframes float {
+  from { transform: translateX(-100px); }
+  to { transform: translateX(calc(100vw + 100px)); }
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+/* Aspect ratio utilities */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-3-4 {
+  aspect-ratio: 3 / 4;
+}
+
+.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}

@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Modern SVG Icon System
+   ========================================================================== */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+  
+  &--sm {
+    width: 0.875em;
+    height: 0.875em;
+  }
+  
+  &--lg {
+    width: 1.25em;
+    height: 1.25em;
+  }
+  
+  &--xl {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  &--2xl {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    
+    &:hover {
+      color: var(--color-accent);
+      background-color: var(--color-bg-alt);
+      transform: translateY(-2px);
+    }
+    
+    &--twitter:hover { color: #1da1f2; }
+    &--github:hover { color: #333; }
+    &--linkedin:hover { color: #0077b5; }
+    &--email:hover { color: #ea4335; }
+  }
+}

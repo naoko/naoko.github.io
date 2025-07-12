@@ -48,7 +48,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
-#  - jekyll-feed
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed
@@ -69,6 +69,11 @@ kramdown:
 
 include: 
   - .htaccess
+  - _headers
+  - manifest.json
+  - sw.js
+  - offline.html
+  
 exclude: 
   - "*.less"
   - "*.sublime-project"
@@ -80,6 +85,7 @@ exclude:
   - CHANGELOG
   - Capfile
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - LICENSE
   - README
@@ -90,5 +96,21 @@ exclude:
   - log
   - node_modules
   - package.json
+  - package-lock.json
   - spec
   - tmp
+  - vite.config.js
+  - .git
+  - .gitignore
+  - .eslintrc.js
+  - .prettierrc
+  - vendor
+
+# Modern Jekyll configuration
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false

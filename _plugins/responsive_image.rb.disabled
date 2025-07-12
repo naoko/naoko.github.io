@@ -1,0 +1,133 @@
+require 'mini_magick'
+
+module Jekyll
+  class ResponsiveImageTag < Liquid::Tag
+    def initialize(tag_name, markup, tokens)
+      super
+      @markup = markup.strip
+    end
+
+    def render(context)
+      site = context.registers[:site]
+      
+      # Parse the markup
+      if @markup =~ /src="([^"]*)"(?:\s+alt="([^"]*)")?(?:\s+class="([^"]*)")?/
+        src = $1
+        alt = $2 || ""
+        css_class = $3 || ""
+        
+        # Generate responsive image markup
+        generate_responsive_image(site, src, alt, css_class)
+      else
+        "<p>Error: Invalid responsive_image syntax</p>"
+      end
+    end
+
+    private
+
+    def generate_responsive_image(site, src, alt, css_class)
+      base_path = File.join(site.source, src.sub(/^\//, ''))
+      
+      unless File.exist?(base_path)
+        return "<p>Error: Image not found - #{src}</p>"
+      end
+
+      # Generate different sizes
+      sizes = [400, 600, 800, 1200]
+      srcset = []
+      
+      sizes.each do |width|
+        resized_path = generate_resized_image(site, base_path, width)
+        if resized_path
+          srcset << "#{resized_path} #{width}w"
+        end
+      end
+      
+      # Generate WebP versions
+      webp_srcset = []
+      sizes.each do |width|
+        webp_path = generate_webp_image(site, base_path, width)
+        if webp_path
+          webp_srcset << "#{webp_path} #{width}w"
+        end
+      end
+
+      # Create picture element with WebP support
+      picture_html = "<picture class=\"responsive-image #{css_class}\">"
+      
+      if webp_srcset.any?
+        picture_html += "<source srcset=\"#{webp_srcset.join(', ')}\" type=\"image/webp\" sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw\">"
+      end
+      
+      picture_html += "<source srcset=\"#{srcset.join(', ')}\" sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw\">"
+      picture_html += "<img src=\"#{src}\" alt=\"#{alt}\" loading=\"lazy\" decoding=\"async\" class=\"#{css_class}\">"
+      picture_html += "</picture>"
+      
+      picture_html
+    end
+
+    def generate_resized_image(site, base_path, width)
+      return nil unless File.exist?(base_path)
+      
+      filename = File.basename(base_path, File.extname(base_path))
+      extension = File.extname(base_path)
+      dir = File.dirname(base_path).sub(site.source, '')
+      
+      output_filename = "#{filename}-#{width}w#{extension}"
+      output_path = File.join(site.dest, dir, output_filename)
+      output_url = File.join(dir, output_filename)
+      
+      # Create directory if it doesn't exist
+      FileUtils.mkdir_p(File.dirname(output_path))
+      
+      # Generate resized image if it doesn't exist
+      unless File.exist?(output_path)
+        begin
+          image = MiniMagick::Image.open(base_path)
+          image.resize "#{width}>"
+          image.strip # Remove metadata
+          image.quality 85
+          image.write output_path
+        rescue => e
+          puts "Error resizing image: #{e.message}"
+          return nil
+        end
+      end
+      
+      output_url
+    end
+
+    def generate_webp_image(site, base_path, width)
+      return nil unless File.exist?(base_path)
+      
+      filename = File.basename(base_path, File.extname(base_path))
+      dir = File.dirname(base_path).sub(site.source, '')
+      
+      output_filename = "#{filename}-#{width}w.webp"
+      output_path = File.join(site.dest, dir, output_filename)
+      output_url = File.join(dir, output_filename)
+      
+      # Create directory if it doesn't exist
+      FileUtils.mkdir_p(File.dirname(output_path))
+      
+      # Generate WebP image if it doesn't exist
+      unless File.exist?(output_path)
+        begin
+          image = MiniMagick::Image.open(base_path)
+          image.resize "#{width}>"
+          image.format 'webp'
+          image.quality 85
+          image.strip
+          image.write output_path
+        rescue => e
+          puts "Error creating WebP image: #{e.message}"
+          return nil
+        end
+      end
+      
+      output_url
+    end
+  end
+end
+
+Liquid::Template.register_tag('responsive_image', Jekyll::ResponsiveImageTag)
