@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My-House on the art of simplicity</title>
+    <link>http://localhost:1313/tags/my-house/</link>
+    <description>Recent content in My-House on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/my-house/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Our Dream Home</title>
+      <link>http://localhost:1313/posts/2017-10-27-my-dream-home/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2017-10-27-my-dream-home/</guid>
+      <description>After living below our means for a while, Coy and I decided to go out of comfortable zone</description>
+    </item>
+  </channel>
+</rss>

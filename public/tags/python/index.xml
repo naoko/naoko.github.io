@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on the art of simplicity</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stanza - A Python NLP Library for Many Human Languages</title>
+      <link>http://localhost:1313/posts/2020-04-12-stanza-/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020-04-12-stanza-/</guid>
+      <description>Tested out Stanza with Japanese Language</description>
+    </item>
+    <item>
+      <title>Install GraalVM and run ptyhon with debugger</title>
+      <link>http://localhost:1313/posts/2019-04-14-graalvm-started/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019-04-14-graalvm-started/</guid>
+      <description>Install GraalVM community edition on Ubuntu and run python with debugger</description>
+    </item>
+    <item>
+      <title>Install Python on Ubuntu</title>
+      <link>http://localhost:1313/posts/2018-10-15-how-to-install-python-ubuntu/</link>
+      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-10-15-how-to-install-python-ubuntu/</guid>
+      <description>Install latest python on ubuntu</description>
+    </item>
+    <item>
+      <title>Intercept Python Logging</title>
+      <link>http://localhost:1313/posts/2018-07-26-intercept-python-logging/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-07-26-intercept-python-logging/</guid>
+      <description>Filter Handle python logging with Custom Logic</description>
+    </item>
+    <item>
+      <title>Python Project Install - develop vs install &amp; setuptools vs pip</title>
+      <link>http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/</guid>
+      <description>Wha&amp;#39;t the difference between setup.py develop vs install vs pip install -e</description>
+    </item>
+    <item>
+      <title>No Space Left Error when pip install</title>
+      <link>http://localhost:1313/posts/2017-12-26-pip-install-no-space-left/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2017-12-26-pip-install-no-space-left/</guid>
+      <description>Solving the problem of tiny /tmp directory</description>
+    </item>
+  </channel>
+</rss>

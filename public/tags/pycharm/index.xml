@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pycharm on the art of simplicity</title>
+    <link>http://localhost:1313/tags/pycharm/</link>
+    <description>Recent content in Pycharm on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remote Edit with PyCharm</title>
+      <link>http://localhost:1313/posts/2018-01-30-pycharm-remote-edit/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-01-30-pycharm-remote-edit/</guid>
+      <description>Edit Remote Linux file with PyCharm on OS X</description>
+    </item>
+  </channel>
+</rss>

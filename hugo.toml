@@ -1,0 +1,65 @@
+baseURL = "https://naoko.github.io/"
+languageCode = "en-us"
+title = "the art of simplicity"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+
+[pagination]
+  pagerSize = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  author = "Naoko Reeves"
+  description = "I enjoy building software. Care about being green. Started home gardening..."
+  defaultTheme = "auto"
+  showReadingTime = true
+  showToc = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "the art of simplicity"
+    Content = "Writing about software, food, life."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/naoko"
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/naoko_reeves"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/naokoreeves"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Python Dict to JSON"
+    url = "/pydict_to_json/"
+    weight = 4
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

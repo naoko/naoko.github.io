@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fork on the art of simplicity</title>
+    <link>http://localhost:1313/tags/fork/</link>
+    <description>Recent content in Fork on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fork/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to fork and keeping your github repo in sync</title>
+      <link>http://localhost:1313/posts/2019-02-19-fork-in-sync/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019-02-19-fork-in-sync/</guid>
+      <description>How to fork and keeping your github repo in sync</description>
+    </item>
+  </channel>
+</rss>

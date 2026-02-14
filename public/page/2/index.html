@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>the art of simplicity</title>
+
+<meta name="description" content="I enjoy building software. Care about being green. Started home gardening...">
+<meta name="author" content="Naoko Reeves">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                    <span>Python Dict to JSON</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">nvm to manage node version
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>NVM is Node Version Manager is a tool to manage multiple node.js version.
+list installed version ❯ nvm ls v8.17.0 -&gt; v12.9.0 system default -&gt; 12.9 (-&gt; v12.9.0) node -&gt; stable (-&gt; v12.9.0) (default) stable -&gt; 12.9 (-&gt; v12.9.0) (default) list available version on remote (is version 14 available? If so it will list) ❯ nvm ls-remote 14 v14.0.0 v14.1.0 ... v14.13.1 v14.14.0 Install the version that you would like ❯ nvm install 14 Set version 14 (or another version) as default nvm alias default 14 Switch to version 8 (or another version) ❯ nvm use v8 Now using node v8.17.0 (npm v6.14.8) Cheers!
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-10-25 00:00:00 +0000 UTC'>October 25, 2020</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to nvm to manage node version" href="http://localhost:1313/posts/2020-10-25-nvm/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Install and use fzf
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>fzf is a general-purpose command-line fuzzy finder. Let’s install and make you 10 times more productive!
+install fzf # clone into ~/.fzf git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf # run install command ~/.fzf/install output: answer “y” to enable auto-completion and key bindings
+Cloning into &#39;/home/naoko/.fzf&#39;... remote: Enumerating objects: 101, done. remote: Counting objects: 100% (101/101), done. remote: Compressing objects: 100% (94/94), done. remote: Total 101 (delta 4), reused 28 (delta 2), pack-reused 0 Receiving objects: 100% (101/101), 180.78 KiB | 1.83 MiB/s, done. Resolving deltas: 100% (4/4), done. Downloading bin/fzf ... - Found in $PATH - Creating symlink: bin/fzf -&gt; /usr/bin/fzf - Checking fzf executable ... 0.20.0 != 0.21.1 % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 100 637 100 637 0 0 1750 0 --:--:-- --:--:-- --:--:-- 1750 100 1127k 100 1127k 0 0 991k 0 0:00:01 0:00:01 --:--:-- 2597k - Checking fzf executable ... 0.21.1 Do you want to enable fuzzy auto-completion? ([y]/n) y Do you want to enable key bindings? ([y]/n) y Generate /home/naoko/.fzf.bash ... OK Generate /home/naoko/.fzf.zsh ... OK Do you want to update your shell configuration files? ([y]/n) y Update /home/naoko/.bashrc: - [ -f ~/.fzf.bash ] &amp;&amp; source ~/.fzf.bash &#43; Added Update /home/naoko/.zshrc: - [ -f ~/.fzf.zsh ] &amp;&amp; source ~/.fzf.zsh &#43; Added Finished. Restart your shell or reload config file. source ~/.bashrc # bash source ~/.zshrc # zsh Use uninstall script to remove fzf. For more information, see: https://github.com/junegunn/fzf Let’s play Key Binidngs ctl &#43; r: fuzzy find thorugh your command history ctl &#43; t: fuzzy find through the current directory ** trigger command &#43; tab It understand context and list only relative stuff. eg:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-07-13 00:00:00 +0000 UTC'>July 13, 2020</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Install and use fzf" href="http://localhost:1313/posts/2020-07-13-fzf/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Pretty JSON in Sublime on Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been using JSONLint for every JSON prettifier needs. This site is super because it even format invalid JSON. For example, standard JSON prettifier won’t prettify JSON with key or value enclosed in single quote but this site does but having your local editor do quick prettifier if you have valid JSON or willing to quickly fix with find and replace.
+Sublime is my go to text editor - taking note, prettify JSON etc. So let’s do that real quick.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-05-14 00:00:00 +0000 UTC'>May 14, 2020</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Pretty JSON in Sublime on Linux" href="http://localhost:1313/posts/2020-05-14-sublime-pretty-json/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Stanza - A Python NLP Library for Many Human Languages
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I tested out Stanza. English tokenizer and definately works. I ran quick test with Japanese lang and output was somewhat unexpected.
+import stanza # japanese &#34;ja&#34;, for english model &#34;en&#34; stanza.download(&#34;ja&#34;) nlp = stanza.Pipeline(&#34;ja&#34;) doc = nlp(&#34;皆さんおはようございます！　ご機嫌いかがですか？&#34;) for i, sentence in enumerate(doc.sentences): print(f&#34;===== Sentence {i&#43;1} tokens =====&#34;) print(*[f&#34;word: {word.text}\t upos: {word.upos} xpos: {word.xpos}&#34; for word in sentence.words], sep=&#34;\n&#34;) The output is:
+===== Sentence 1 tokens ===== word: 皆さん	upos: PRON xpos: NP word: おは	upos: VERB xpos: VV word: よう	upos: AUX xpos: AV word: ござい	upos: VERB xpos: VV word: ます	upos: AUX xpos: AV word: ！	upos: PUNCT xpos: SYM ===== Sentence 2 tokens ===== word: ご	upos: NOUN xpos: XP word: 機	upos: NOUN xpos: XS word: 嫌い	upos: NOUN xpos: NN word: か	upos: PART xpos: PF word: が	upos: ADP xpos: PS word: です	upos: AUX xpos: AV word: か	upos: PART xpos: PE word: ？	upos: PUNCT xpos: SYM I’m not qualified to evaluate accuracy of POS etc but at least as far as tokenization goes, I would expect
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-12 00:00:00 +0000 UTC'>April 12, 2020</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Stanza - A Python NLP Library for Many Human Languages" href="http://localhost:1313/posts/2020-04-12-stanza-/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Useful Ubuntu Keyboard Shortcuts
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>See Useful keyboard shortcuts
+Addition to the above:
+Super &#43; Space: Change input keyboard
+Ctl &#43; Q: Close an application window
+Super &#43; ↑ : Maxmize the application window.
+Super → or ← : Move the application window to left | right
+Cheers! </p>
+  </div>
+  <footer class="entry-footer"><span title='2020-03-08 00:00:00 +0000 UTC'>March 8, 2020</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Useful Ubuntu Keyboard Shortcuts" href="http://localhost:1313/posts/2020-03-08-ubunut-shortcuts/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Secret Management with Vault | the art of simplicity</title>
+<meta name="keywords" content="devops">
+<meta name="description" content="Simple Secret Management">
+<meta name="author" content="Naoko Reeves">
+<link rel="canonical" href="http://localhost:1313/posts/2017-10-28-vault-secret-management/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2017-10-28-vault-secret-management/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                    <span>Python Dict to JSON</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Secret Management with Vault
+    </h1>
+    <div class="post-description">
+      Simple Secret Management
+    </div>
+    <div class="post-meta"><span title='2017-10-28 00:00:00 +0000 UTC'>October 28, 2017</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/2017-10-28-vault.png" alt="">
+        
+</figure>
+  <div class="post-content"><h3 id="the-problem">The problem:<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
+<p>Where do you store your config/deployment management script?
+I&rsquo;ve done 2 ways:</p>
+<ul>
+<li>Put along with application/repo.</li>
+<li>Put all the config/deployment script in one repo separately from apps.</li>
+</ul>
+<p>Each approach has its own Pros and Cons and I prefer the first approach
+which IMO is simpler but creates some duplication which is okay&hellip;</p>
+<p>I have some shared secrets that I encrypt with <code>Ansible Vault</code>
+but when I had to copy and pasted this secret on a few repos
+I started to look for better way to do this.</p>
+<h3 id="key-management-service-with-vault-by-hashicorp">Key Management Service with Vault by HashiCorp<a hidden class="anchor" aria-hidden="true" href="#key-management-service-with-vault-by-hashicorp">#</a></h3>
+<h4 id="vault">VAULT:<a hidden class="anchor" aria-hidden="true" href="#vault">#</a></h4>
+<ul>
+<li>handles any type of secret data,
+including database credentials, API Keys, PKI keys and encryption keys.</li>
+<li>is an option source tool that can be deployed to any environment and does not require any special hardware.</li>
+<li>is not tied to any specific configuration management system. You can read secrets from configuration management,
+but you can also use the API directly to read secrets from applications.
+This means that configuration management requires fewer secrets, and in many cases doesn&rsquo;t ever have to persist them to disk.</li>
+</ul>
+<p>You can see more details <a href="https://www.vaultproject.io/intro/index.html">here on official doc</a></p>
+<h3 id="get-vault-up-and-running">Get Vault up and running<a hidden class="anchor" aria-hidden="true" href="#get-vault-up-and-running">#</a></h3>
+<p>You can download precompiled binary from <a href="https://www.vaultproject.io/downloads.html">here</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># unarchive</span>
+</span></span><span style="display:flex;"><span>$ unzip vault_&lt;version&gt;_darwin_&lt;arch&gt;.zip
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># move binary to desired path</span>
+</span></span><span style="display:flex;"><span>$ mv vault &lt;desired-dir&gt;/
+</span></span><span style="display:flex;"><span>$ cd &lt;desired-dir&gt;
+</span></span><span style="display:flex;"><span>$ ./vault -v
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># start server with Dev mode</span>
+</span></span><span style="display:flex;"><span>$ ./vault server -dev
+</span></span></code></pre></div><p>The official doc of Getting Started is very good so you can just follow from <a href="https://www.vaultproject.io/intro/getting-started/dev-server.html_">here</a></p>
+<p>During the startup of vault server, it print VAULT_ADDR, Unseal Key and Root Token.
+Let&rsquo;s set it some variable</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ VAULT_ADDR<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;http://127.0.0.1:8200&#39;</span>
+</span></span><span style="display:flex;"><span>$ ROOT_TOKEN<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;93132495-abc0-8eac-4e9e-92cba9f7d0b1&#34;</span>
+</span></span></code></pre></div><p>Normally you don&rsquo;t want to use Root Token but just for quick and dirty demo purpose&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Create secret</span>
+</span></span><span style="display:flex;"><span>$ curl -X POST -H <span style="color:#e6db74">&#34;X-Vault-Token:</span><span style="color:#e6db74">${</span>ROOT_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -d <span style="color:#e6db74">&#39;{&#34;bar&#34;:&#34;baz&#34;}&#39;</span> <span style="color:#e6db74">${</span>VAULT_ADDR<span style="color:#e6db74">}</span>/v1/secret/foo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Read secret</span>
+</span></span><span style="display:flex;"><span>$ curl -X GET -H <span style="color:#e6db74">&#34;X-Vault-Token:</span><span style="color:#e6db74">${</span>ROOT_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">${</span>VAULT_ADDR<span style="color:#e6db74">}</span>/v1/secret/foo
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;request_id&#34;</span>: <span style="color:#e6db74">&#34;e1bedb5e-a288-d066-e336-ee4850ac76a2&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;lease_id&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;renewable&#34;</span>: false,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;lease_duration&#34;</span>: 2764800,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;data&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#34;bar&#34;</span>: <span style="color:#e6db74">&#34;baz&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;wrap_info&#34;</span>: null,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;warnings&#34;</span>: null,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;auth&#34;</span>: null
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/devops/">Devops</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/2017-12-26-pip-install-no-space-left/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>No Space Left Error when pip install</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/2017-10-27-my-dream-home/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Our Dream Home</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

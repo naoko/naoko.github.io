@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ubuntu on the art of simplicity</title>
+    <link>http://localhost:1313/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smile every time you sudo</title>
+      <link>http://localhost:1313/posts/2021-02-18-sudoers-lecture/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021-02-18-sudoers-lecture/</guid>
+      <description>Customized groot sudoers lecture give you smile every time.</description>
+    </item>
+    <item>
+      <title>Useful Ubuntu Keyboard Shortcuts</title>
+      <link>http://localhost:1313/posts/2020-03-08-ubunut-shortcuts/</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020-03-08-ubunut-shortcuts/</guid>
+      <description>Useful Ubuntu Keyboard Shortcuts</description>
+    </item>
+    <item>
+      <title>Create and Extract tar.gz on Ubuntu</title>
+      <link>http://localhost:1313/posts/2019-08-07-compress-targz/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019-08-07-compress-targz/</guid>
+      <description>Just a quick reference to create and extract tar.gz on Ubuntu</description>
+    </item>
+    <item>
+      <title>Install GraalVM and run ptyhon with debugger</title>
+      <link>http://localhost:1313/posts/2019-04-14-graalvm-started/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019-04-14-graalvm-started/</guid>
+      <description>Install GraalVM community edition on Ubuntu and run python with debugger</description>
+    </item>
+    <item>
+      <title>Install Python on Ubuntu</title>
+      <link>http://localhost:1313/posts/2018-10-15-how-to-install-python-ubuntu/</link>
+      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-10-15-how-to-install-python-ubuntu/</guid>
+      <description>Install latest python on ubuntu</description>
+    </item>
+    <item>
+      <title>Fix screen resolution after 18.04 LTS upgrade on System 76</title>
+      <link>http://localhost:1313/posts/2018-06-05-fix-resolution-ubuntu/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-06-05-fix-resolution-ubuntu/</guid>
+      <description>After the upgrade to 10.04 LST, I saw ugly lowest resolution</description>
+    </item>
+    <item>
+      <title>Upgrade vagrant to latest</title>
+      <link>http://localhost:1313/posts/2018-02-06-vagrant-on-ubuntu/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-02-06-vagrant-on-ubuntu/</guid>
+      <description>Upgrade vagrant to latest</description>
+    </item>
+  </channel>
+</rss>

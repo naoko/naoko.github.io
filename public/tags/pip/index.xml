@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pip on the art of simplicity</title>
+    <link>http://localhost:1313/tags/pip/</link>
+    <description>Recent content in Pip on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Project Install - develop vs install &amp; setuptools vs pip</title>
+      <link>http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/</guid>
+      <description>Wha&amp;#39;t the difference between setup.py develop vs install vs pip install -e</description>
+    </item>
+    <item>
+      <title>No Space Left Error when pip install</title>
+      <link>http://localhost:1313/posts/2017-12-26-pip-install-no-space-left/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2017-12-26-pip-install-no-space-left/</guid>
+      <description>Solving the problem of tiny /tmp directory</description>
+    </item>
+  </channel>
+</rss>

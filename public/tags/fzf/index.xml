@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fzf on the art of simplicity</title>
+    <link>http://localhost:1313/tags/fzf/</link>
+    <description>Recent content in Fzf on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fzf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install and use fzf</title>
+      <link>http://localhost:1313/posts/2020-07-13-fzf/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020-07-13-fzf/</guid>
+      <description>Install and use fzf</description>
+    </item>
+  </channel>
+</rss>
