@@ -5,7 +5,7 @@ description: "Returning to Catalina Island to take on the 50-mile distance at th
 tags: ["avalon", "catalina", "ultra", "trail", "race", "50-miler"]
 categories: ["running", "race"]
 cover:
-  image: "/images/2026-01-10/ocean_view_group.jpg"
+  image: "/images/2026-01-10/ocean_view_solo.jpg"
   alt: "Running along the Catalina Island coastline"
   relative: false
 ---
