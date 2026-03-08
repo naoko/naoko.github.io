@@ -44,6 +44,8 @@ And what views they are. Endless Pacific blue stretching to the horizon, rugged 
 
 The island was incredibly green — January is a beautiful time out there. Between the ocean on one side and the lush hills on the other, I kept catching myself smiling even when my legs were complaining.
 
+![Running with fellow runners along the coast](/images/2026-01-10/ocean_view_group.jpg)
+
 ![Selfie with the ocean behind me — still smiling at this point](/images/2026-01-10/selfie_ocean.jpg)
 
 ## The Low Point: Mile 35
