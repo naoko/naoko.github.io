@@ -2,26 +2,26 @@
 <html lang="en" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.155.3"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>the art of simplicity</title>
 
 <meta name="description" content="I enjoy building software. Care about being green. Started home gardening...">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/">
+<link rel="canonical" href="https://naoko.github.io/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<link rel="alternate" type="application/rss+xml" href="https://naoko.github.io/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="https://naoko.github.io/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/">
 <noscript>
     <style>
         #theme-toggle,
@@ -73,13 +73,35 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="the art of simplicity">
+  <meta property="og:description" content="I enjoy building software. Care about being green. Started home gardening...">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="the art of simplicity">
+<meta name="twitter:description" content="I enjoy building software. Care about being green. Started home gardening...">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "the art of simplicity",
+  "url": "https://naoko.github.io/",
+  "description": "I enjoy building software. Care about being green. Started home gardening...",
+  "logo": "https://naoko.github.io/favicon.ico",
+  "sameAs": [
+      "https://github.com/naoko", "https://twitter.com/naoko_reeves", "https://linkedin.com/in/naokoreeves", "/index.xml"
+  ]
+}
 </script>
 </head>
 <body class="list" id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -105,22 +127,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -128,6 +150,36 @@
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Elasticsearch Access
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem: You installed Elasticsearch on server. You can run curl localhost:9200 and all looks good but the access is denied from outside when curl &lt;server-ip&gt;:9200.
+How to solve it So first thing first. Elasticsearch do need to listen to ip you are accessing. To make it listen to all, you can simply change / add network.host: 0.0.0.0 to /etc/elasticsearch/elasticsearch.yml and restart elasticsearch server. Try curl &lt;server-ip&gt;:9200 and works? That’s great. Your server is configured / ready for port 9200.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-08-22 00:00:00 +0000 UTC'>August 22, 2018</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Elasticsearch Access" href="https://naoko.github.io/posts/2018-08-22-es-access-from-outside/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Intercept Python Logging
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem: I need to ship specific log record and had formatter written in python. It is pretty complex transformation.
+I thought of using Logstash but I then need to either convert this python logic or write a plugin to use already written python parser. Plus I need to install logstash… I wanted a simpler solution
+How to solve it Use custom python logging Handler and Filter!
+import logging messages = [] logger = logging.getLogger(__name__) logger.setLevel(logging.DEBUG) class ListenFilter(logging.Filter): def filter(self, record): &#34;&#34;&#34;Determine which log records to output. Returns 0 for no, nonzero for yes. &#34;&#34;&#34; if record.getMessage().startswith(&#39;dont: &#39;): return False return True class RequestsHandler(logging.Handler): def emit(self, record): &#34;&#34;&#34;Send the log records (created by loggers) to the appropriate destination. &#34;&#34;&#34; messages.append(record.getMessage()) handler = RequestsHandler() logger.addHandler(handler) filter_ = ListenFilter() logger.addFilter(filter_) # log I want logger.info(&#34;logme: Howdy!&#34;) # log i want to skip logger.info(&#34;dont: I&#39;m doing great!&#34;) # prints [&#39;logme: Howdy!&#39;] print(messages) Cheers!
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-07-26 00:00:00 +0000 UTC'>July 26, 2018</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Intercept Python Logging" href="https://naoko.github.io/posts/2018-07-26-intercept-python-logging/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -140,7 +192,7 @@ We also need to make sure models does not train on corrupted / skewed data and o
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2018-07-08 00:00:00 +0000 UTC'>July 8, 2018</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to ML Platforms" href="http://localhost:1313/posts/2018-07-08-ml-platform/"></a>
+  <a class="entry-link" aria-label="post link to ML Platforms" href="https://naoko.github.io/posts/2018-07-08-ml-platform/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -156,7 +208,7 @@ $ lsb_release -a No LSB modules are available. Distributor ID:	Ubuntu Descriptio
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2018-06-05 00:00:00 +0000 UTC'>June 5, 2018</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Fix screen resolution after 18.04 LTS upgrade on System 76" href="http://localhost:1313/posts/2018-06-05-fix-resolution-ubuntu/"></a>
+  <a class="entry-link" aria-label="post link to Fix screen resolution after 18.04 LTS upgrade on System 76" href="https://naoko.github.io/posts/2018-06-05-fix-resolution-ubuntu/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -169,53 +221,21 @@ $ lsb_release -a No LSB modules are available. Distributor ID:	Ubuntu Descriptio
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2018-03-05 00:00:00 +0000 UTC'>March 5, 2018</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Python Project Install - develop vs install & setuptools vs pip" href="http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">損を最低限に抑えて少しリッチになる
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>鉄則１：出費しながらお金を貰う 全ての買い物、ガソリンやビルの支払いはキャッシュバックもしくはポイント制のクレジットカードで支払いする。 ちなみに私はChaseの1.5%CashBack Bonusを使ってます。 毎月の出費が$1,000だとしたら$15、１年で$180の現金。
-例外：クレジットカードの支払いをするとサーチャージをする販売会社があります。 このような時は現金やチェックの支払いの方が特です。
-鉄則 2：クレジットカードの利子は絶対払わない クレジットカードの使用限界を毎月完全に支払い出来る金額の抑える。これはちょっとしdiscipline が必要ですがこれは絶対に頑張らなければ大損（クレジットカードの利子は高過ぎ）するだけでなくお金持ち（金融） をもっとお金持ちにしてしまいます。
-鉄則 3：クーポン、Rebateをフル活用 私はEbatesをフル活用してます。なぜならと〜っても簡単に使えるし10%リーベイトも稀ではないから。 ブラウザープラグインをインストールすると下のようなボタンをクリックするだけでなんとWalmartで10%引き。 だから今月はほとんどとWalmartで買い物でした。クレジットカードとの併用で11.5%引き。 年間の買い物をこんな感じでやったら$1,380 (assuming that your expense is $1,000 a month) もお得になっちゃう！ このリンクをクリックしてアカウントオープンすると$10もらえます。
-鉄則 4：お金は銀行講座で眠らせるない 現在銀行の利子はインフレーションレイト（毎年物価などが上がるレート。だいたい3%とされてます）より遥かに低いのは一目瞭然。 と言うことはお金をチェッキンぐにおいといたりすると毎年3%の価値を失っていくという事です。 そこで投資。色々な投資の仕方があるけど長い歴史をもついわゆるTraditional Investment (債権投資, 不動産,株式などに投資をし資本利得, 配当金や利子などという形で利益を得る)はリスクを最小に抑えることが出来ると信じてます。 アメリカでもっとも成功してる投資家 Warren Buffett 曰くTraditional Investmentのリターンレイトはだいたい６−７％と考えて良いとのこと。
-例えば銀行に＄１０００あるとし、毎月＄１００貯蓄を１０年間続けたとします。 現在チェイスのSaving Account Rateは0.1%以下です。が、0.1%vs１０％のリターンの違いは以下のように凄い差です （レートは年率、コンパウンドで計算されてます）。
-Place Money Sit Final Balance Bank Saving Account $13,055.74 Traditional Investment $22,580.13 どこから始めればよい？ まず自分がどんな投資かになりたいか考えてください。 もし自分でストックのマーケットなどを勉強して投資対象を自分でハンドピックしたいなら Ameritrade や Robhinhood などのBrokerageを選択する必要があります。 Ameritrade の売買コミッション手数料は$6.95ですが Robhinhoodはコミッション手数料は無料です。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2018-02-18 00:00:00 +0000 UTC'>February 18, 2018</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to 損を最低限に抑えて少しリッチになる" href="http://localhost:1313/posts/2018-02-18-money-tip-for-beginner/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Upgrade vagrant to latest
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem: I love vagrant. I am so dependent on testing my ansible before I run against mutable boxes. Yes, I’m still living in place where Ops provision VM and the box stays mutable. It is okay though… change should be coming. Anyhow, I installed vagnrat on my new Ubuntu machine (ubuntu-17.10) but the version was 1.9. It was working fine until I upgraded the box to debian/stretch64. It says that The box &#39;debian/stretch64&#39; could not be found. And noticed that it was trying to look in the old repo https://atlas.hashicorp.com instead of this https://app.vagrantup.com.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2018-02-06 00:00:00 +0000 UTC'>February 6, 2018</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Upgrade vagrant to latest" href="http://localhost:1313/posts/2018-02-06-vagrant-on-ubuntu/"></a>
+  <a class="entry-link" aria-label="post link to Python Project Install - develop vs install & setuptools vs pip" href="https://naoko.github.io/posts/2018-03-05-your-project-install-pip-setup/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/page/5/">
+    <a class="prev" href="https://naoko.github.io/page/5/">
       «&nbsp;Prev&nbsp;
     </a>
-    <a class="next" href="http://localhost:1313/page/7/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://naoko.github.io/page/7/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

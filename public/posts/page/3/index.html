@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Posts | the art of simplicity</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - the art of simplicity">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="https://naoko.github.io/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="https://naoko.github.io/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,13 +71,37 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="Posts">
+  <meta property="og:description" content="I enjoy building software. Care about being green. Started home gardening...">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="I enjoy building software. Care about being green. Started home gardening...">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }
+  ]
+}
 </script>
 </head>
 <body class="list" id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -103,22 +127,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span class="active">Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -131,6 +155,39 @@
     Posts
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Stanza - A Python NLP Library for Many Human Languages
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I tested out Stanza. English tokenizer and definately works. I ran quick test with Japanese lang and output was somewhat unexpected.
+import stanza # japanese &#34;ja&#34;, for english model &#34;en&#34; stanza.download(&#34;ja&#34;) nlp = stanza.Pipeline(&#34;ja&#34;) doc = nlp(&#34;皆さんおはようございます！　ご機嫌いかがですか？&#34;) for i, sentence in enumerate(doc.sentences): print(f&#34;===== Sentence {i&#43;1} tokens =====&#34;) print(*[f&#34;word: {word.text}\t upos: {word.upos} xpos: {word.xpos}&#34; for word in sentence.words], sep=&#34;\n&#34;) The output is:
+===== Sentence 1 tokens ===== word: 皆さん	upos: PRON xpos: NP word: おは	upos: VERB xpos: VV word: よう	upos: AUX xpos: AV word: ござい	upos: VERB xpos: VV word: ます	upos: AUX xpos: AV word: ！	upos: PUNCT xpos: SYM ===== Sentence 2 tokens ===== word: ご	upos: NOUN xpos: XP word: 機	upos: NOUN xpos: XS word: 嫌い	upos: NOUN xpos: NN word: か	upos: PART xpos: PF word: が	upos: ADP xpos: PS word: です	upos: AUX xpos: AV word: か	upos: PART xpos: PE word: ？	upos: PUNCT xpos: SYM I’m not qualified to evaluate accuracy of POS etc but at least as far as tokenization goes, I would expect
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-12 00:00:00 +0000 UTC'>April 12, 2020</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Stanza - A Python NLP Library for Many Human Languages" href="https://naoko.github.io/posts/2020-04-12-stanza-/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Useful Ubuntu Keyboard Shortcuts
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>See Useful keyboard shortcuts
+Addition to the above:
+Super &#43; Space: Change input keyboard
+Ctl &#43; Q: Close an application window
+Super &#43; ↑ : Maxmize the application window.
+Super → or ← : Move the application window to left | right
+Cheers! </p>
+  </div>
+  <footer class="entry-footer"><span title='2020-03-08 00:00:00 +0000 UTC'>March 8, 2020</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
+  <a class="entry-link" aria-label="post link to Useful Ubuntu Keyboard Shortcuts" href="https://naoko.github.io/posts/2020-03-08-ubunut-shortcuts/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -147,7 +204,7 @@ sudo bin/kafka-topics.sh --list --bootstrap-server localhost:9092 whereas with k
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2020-01-25 00:00:00 +0000 UTC'>January 25, 2020</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Kafka CLI kaf" href="http://localhost:1313/posts/2020-01-25-kafka-cli-kaf/"></a>
+  <a class="entry-link" aria-label="post link to Kafka CLI kaf" href="https://naoko.github.io/posts/2020-01-25-kafka-cli-kaf/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -163,7 +220,7 @@ all stopped containers all networks not used by at least one container all dangl
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2019-08-25 00:00:00 +0000 UTC'>August 25, 2019</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Docker Image / Container Cleaning" href="http://localhost:1313/posts/2019-08-25-docker-cleaning/"></a>
+  <a class="entry-link" aria-label="post link to Docker Image / Container Cleaning" href="https://naoko.github.io/posts/2019-08-25-docker-cleaning/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -179,51 +236,21 @@ $ tree file_dir/ file_dir/ ├── file1.txt ├── file2.txt └── fil
 </p>
   </div>
   <footer class="entry-footer"><span title='2019-08-07 00:00:00 +0000 UTC'>August 7, 2019</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Create and Extract tar.gz on Ubuntu" href="http://localhost:1313/posts/2019-08-07-compress-targz/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Install GraalVM and run ptyhon with debugger
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is GraalVM? GraalVM is a high-performance, embeddable, polyglot virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Kotlin, and LLVM-based languages such as C and C&#43;&#43;.
-Here is the Official doc link
-Hmm… Okay, I have to see it.
-Let’s install Below is the way I installed GraalVM Community Edition on Ubuntu 18.04. For other platform, the official doc installation guide is here.
-# update this number to latest version from here: https://github.com/oracle/graal/releases version=1.0.0-rc15 wget https://github.com/oracle/graal/releases/download/vm-${version}/graalvm-ce-${version}-linux-amd64.tar.gz tar -xvzf graalvm-ce-${version}-linux-amd64.tar.gz # clean up rm graalvm-ce-${version}-linux-amd64.tar.gz # to wherever you want. mv graalvm-ce-1.0.0-rc15/ ~/bin/graalvm # if you want to make it permanent, put this in your bashrc export PATH=$HOME/graalvm/bin:$PATH Now that your graalvm/bin in your path, you’ll get the GraalVM versions of those runtimes.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-04-14 00:00:00 +0000 UTC'>April 14, 2019</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Install GraalVM and run ptyhon with debugger" href="http://localhost:1313/posts/2019-04-14-graalvm-started/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Get my public IP address via CLI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>How to determine my public IP address assigned by the ISP via CLI Use dig command dig &#43;short myip.opendns.com @resolver1.opendns.com Use 3rd party curl ifconfig.me Cheers!
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-04-04 00:00:00 +0000 UTC'>April 4, 2019</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Naoko Reeves</span></footer>
-  <a class="entry-link" aria-label="post link to Get my public IP address via CLI" href="http://localhost:1313/posts/2019-04-04-cli-my-ip/"></a>
+  <a class="entry-link" aria-label="post link to Create and Extract tar.gz on Ubuntu" href="https://naoko.github.io/posts/2019-08-07-compress-targz/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/2/">
+    <a class="prev" href="https://naoko.github.io/posts/page/2/">
       «&nbsp;Prev&nbsp;
     </a>
-    <a class="next" href="http://localhost:1313/posts/page/4/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://naoko.github.io/posts/page/4/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

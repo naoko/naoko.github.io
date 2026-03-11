@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Python Project Install - develop vs install &amp; setuptools vs pip | the art of simplicity</title>
 <meta name="keywords" content="python, pip, setuptools">
 <meta name="description" content="Wha&#39;t the difference between setup.py develop vs install vs pip install -e">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/">
+<link rel="canonical" href="https://naoko.github.io/posts/2018-03-05-your-project-install-pip-setup/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2018-03-05-your-project-install-pip-setup/">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/2018-03-05-your-project-install-pip-setup/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,82 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/2018-03-05-your-project-install-pip-setup/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="Python Project Install - develop vs install & setuptools vs pip">
+  <meta property="og:description" content="Wha&#39;t the difference between setup.py develop vs install vs pip install -e">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-03-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-03-05T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Pip">
+    <meta property="article:tag" content="Setuptools">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Project Install - develop vs install &amp; setuptools vs pip">
+<meta name="twitter:description" content="Wha&#39;t the difference between setup.py develop vs install vs pip install -e">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Python Project Install - develop vs install \u0026 setuptools vs pip",
+      "item": "https://naoko.github.io/posts/2018-03-05-your-project-install-pip-setup/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Python Project Install - develop vs install \u0026 setuptools vs pip",
+  "name": "Python Project Install - develop vs install \u0026 setuptools vs pip",
+  "description": "Wha't the difference between setup.py develop vs install vs pip install -e",
+  "keywords": [
+    "python", "pip", "setuptools"
+  ],
+  "articleBody": "The problem: I don’t understand the difference between setup.py develop and setup.py install I don’t understand the difference between setup.py develop and pip install -e [dir] I don’t see the changes to my code when I import my code The difference between setup.py develop and setup.py install In short, you want to run setup.py develop when you are editing code because when you run setup.py install, it will copy your code into site-packages thus if you want to test your latest code you will need to install (copy) again. On the other hand, with develop, it creates a link to your source code so that when you import your code, it is your latest code.\nLet’s take a look.\nnote: to keep it simple, I’m going to assume that you have created virtual environment and using python3.\ncd ${project-dir} python3 -m venv env source env/bin/activate pip install -U setuptools easy_install --version setuptools 38.5.1 from ${project-dir}/env/lib/python3.6/site-packages (Python 3.6) setup.py develop simply creates a special .egg-link file in site-packages directory which links to your project’s source code.\n$ cd ${project-dir} $ python setup.py develop $ ls -l env/lib/python3.6/site-packages | grep myproject -rw-r--r-- 1 nreeves staff 44 Mar 5 14:11 myproject.egg-link $ cat env/lib/python3.6/site-packages/myproject.egg-link ${project-dir}/src ../ When you list package, you can see it shows source directory instead of package name\n$ pip list --format=columns | grep myproject myproject 0.1 ${project-dir}/src and when you see path to source code, it is the file under my project folder and not inside site-package\n\u003e\u003e\u003e import myproject \u003e\u003e\u003e myproject.__file__ '${project-dir}/src/myproject/__init__.py' Let’s uninstall that for now so that we can see what install will do. You can see it is simply removing .egg-link file\n$ python setup.py develop --uninstall running develop Removing ${project-dir}/env/lib/python3.6/site-packages/myproject.egg-link (link to src) Spoiler alert! if you run find . -name 'myproject.*', you will see residual but this is good enough for now.\nNow to install with install. You will see build process then copying bunch of files to site-packages\n$ python setup.py install running install running build running build_py ... copying build... -\u003e ${project-dir}/env/lib/python3.6/site-packages/myproject/... ... When you list package, you only see package name unlike the one with develop\npip list --format=columns | grep myproject myproject 0.1 and when you see path to source code, the path to the file is inside of site-packages\n\u003e\u003e\u003e import myproject \u003e\u003e\u003e myproject.__file__ '${project-dir}/env/lib/python3.6/site-packages/myproject/__init__.py' So the reason you might not see your new code could be: At one point you ran python setup.py install so make sure to remove them. You made changes and forgot to restart the program. Python will load files when program started, compile it to bytecode and keep it internally. But wait… instead of setup.py, use pip It is highly recommended to use pip instead of setup.py. pip install . instead of setup.py install and pip install -e . instead of setup.py develop.\nBecause setup.py will do the wrong things for dependencies such as:\nSetuptools uses easy_install to fulfill these dependencies and it skip pip’s hash-checking easy_install does not exclude pre and post release versions as pip does. easy_install make the package hard to uninstall things or may not do clean job. Remember the spoiler alert? if you install with pip install -e . and run pip uninstall mypackage then find . -name 'myproject.*' won’t find anything. Cheers!\n",
+  "wordCount" : "545",
+  "inLanguage": "en",
+  "datePublished": "2018-03-05T00:00:00Z",
+  "dateModified": "2018-03-05T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Naoko Reeves"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naoko.github.io/posts/2018-03-05-your-project-install-pip-setup/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "the art of simplicity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://naoko.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,22 +171,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -221,17 +290,17 @@ Python will load files when program started, compile it to bytecode and keep it 
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
-      <li><a href="http://localhost:1313/tags/pip/">Pip</a></li>
-      <li><a href="http://localhost:1313/tags/setuptools/">Setuptools</a></li>
+      <li><a href="https://naoko.github.io/tags/python/">Python</a></li>
+      <li><a href="https://naoko.github.io/tags/pip/">Pip</a></li>
+      <li><a href="https://naoko.github.io/tags/setuptools/">Setuptools</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2018-06-05-fix-resolution-ubuntu/">
+  <a class="prev" href="https://naoko.github.io/posts/2018-06-05-fix-resolution-ubuntu/">
     <span class="title">« Prev</span>
     <br>
     <span>Fix screen resolution after 18.04 LTS upgrade on System 76</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/2018-02-18-money-tip-for-beginner/">
+  <a class="next" href="https://naoko.github.io/posts/2018-02-18-money-tip-for-beginner/">
     <span class="title">Next »</span>
     <br>
     <span>損を最低限に抑えて少しリッチになる</span>
@@ -243,7 +312,7 @@ Python will load files when program started, compile it to bytecode and keep it 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

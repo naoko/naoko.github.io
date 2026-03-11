@@ -2,647 +2,717 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on the art of simplicity</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://naoko.github.io/tags/</link>
     <description>Recent content in Tags on the art of simplicity</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://naoko.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Imogene</title>
-      <link>http://localhost:1313/tags/imogene/</link>
-      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/imogene/</guid>
+      <title>Ai</title>
+      <link>https://naoko.github.io/tags/ai/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://naoko.github.io/tags/automation/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude</title>
+      <link>https://naoko.github.io/tags/claude/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github-Actions</title>
+      <link>https://naoko.github.io/tags/github-actions/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Playwright</title>
+      <link>https://naoko.github.io/tags/playwright/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/playwright/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://naoko.github.io/tags/testing/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>50-Miler</title>
+      <link>https://naoko.github.io/tags/50-miler/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/50-miler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Avalon</title>
+      <link>https://naoko.github.io/tags/avalon/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/avalon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Catalina</title>
+      <link>https://naoko.github.io/tags/catalina/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/catalina/</guid>
       <description></description>
     </item>
     <item>
       <title>Race</title>
-      <link>http://localhost:1313/tags/race/</link>
-      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/race/</guid>
+      <link>https://naoko.github.io/tags/race/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/race/</guid>
       <description></description>
     </item>
     <item>
       <title>Trail</title>
-      <link>http://localhost:1313/tags/trail/</link>
+      <link>https://naoko.github.io/tags/trail/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/trail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ultra</title>
+      <link>https://naoko.github.io/tags/ultra/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/tags/ultra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Imogene</title>
+      <link>https://naoko.github.io/tags/imogene/</link>
       <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trail/</guid>
+      <guid>https://naoko.github.io/tags/imogene/</guid>
       <description></description>
     </item>
     <item>
       <title>Hysterectomy</title>
-      <link>http://localhost:1313/tags/hysterectomy/</link>
+      <link>https://naoko.github.io/tags/hysterectomy/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hysterectomy/</guid>
+      <guid>https://naoko.github.io/tags/hysterectomy/</guid>
       <description></description>
     </item>
     <item>
       <title>Runner</title>
-      <link>http://localhost:1313/tags/runner/</link>
+      <link>https://naoko.github.io/tags/runner/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/runner/</guid>
+      <guid>https://naoko.github.io/tags/runner/</guid>
       <description></description>
     </item>
     <item>
       <title>Running</title>
-      <link>http://localhost:1313/tags/running/</link>
+      <link>https://naoko.github.io/tags/running/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/running/</guid>
+      <guid>https://naoko.github.io/tags/running/</guid>
       <description></description>
     </item>
     <item>
       <title>Women</title>
-      <link>http://localhost:1313/tags/women/</link>
+      <link>https://naoko.github.io/tags/women/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/women/</guid>
+      <guid>https://naoko.github.io/tags/women/</guid>
       <description></description>
     </item>
     <item>
       <title>Finance</title>
-      <link>http://localhost:1313/tags/finance/</link>
+      <link>https://naoko.github.io/tags/finance/</link>
       <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/finance/</guid>
+      <guid>https://naoko.github.io/tags/finance/</guid>
       <description></description>
     </item>
     <item>
       <title>Money</title>
-      <link>http://localhost:1313/tags/money/</link>
+      <link>https://naoko.github.io/tags/money/</link>
       <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/money/</guid>
+      <guid>https://naoko.github.io/tags/money/</guid>
       <description></description>
     </item>
     <item>
       <title>Refinance</title>
-      <link>http://localhost:1313/tags/refinance/</link>
+      <link>https://naoko.github.io/tags/refinance/</link>
       <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/refinance/</guid>
+      <guid>https://naoko.github.io/tags/refinance/</guid>
       <description></description>
     </item>
     <item>
       <title>Lecture</title>
-      <link>http://localhost:1313/tags/lecture/</link>
+      <link>https://naoko.github.io/tags/lecture/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lecture/</guid>
+      <guid>https://naoko.github.io/tags/lecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://naoko.github.io/tags/linux/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://naoko.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Sudo</title>
-      <link>http://localhost:1313/tags/sudo/</link>
+      <link>https://naoko.github.io/tags/sudo/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sudo/</guid>
+      <guid>https://naoko.github.io/tags/sudo/</guid>
       <description></description>
     </item>
     <item>
       <title>Sudoers</title>
-      <link>http://localhost:1313/tags/sudoers/</link>
+      <link>https://naoko.github.io/tags/sudoers/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sudoers/</guid>
+      <guid>https://naoko.github.io/tags/sudoers/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:1313/tags/ubuntu/</link>
+      <link>https://naoko.github.io/tags/ubuntu/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <guid>https://naoko.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Acorn</title>
-      <link>http://localhost:1313/tags/acorn/</link>
+      <link>https://naoko.github.io/tags/acorn/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/acorn/</guid>
+      <guid>https://naoko.github.io/tags/acorn/</guid>
       <description></description>
     </item>
     <item>
       <title>Betterment</title>
-      <link>http://localhost:1313/tags/betterment/</link>
+      <link>https://naoko.github.io/tags/betterment/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/betterment/</guid>
+      <guid>https://naoko.github.io/tags/betterment/</guid>
       <description></description>
     </item>
     <item>
       <title>Investment</title>
-      <link>http://localhost:1313/tags/investment/</link>
+      <link>https://naoko.github.io/tags/investment/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/investment/</guid>
+      <guid>https://naoko.github.io/tags/investment/</guid>
       <description></description>
     </item>
     <item>
       <title>Robo-Advisor</title>
-      <link>http://localhost:1313/tags/robo-advisor/</link>
+      <link>https://naoko.github.io/tags/robo-advisor/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/robo-advisor/</guid>
+      <guid>https://naoko.github.io/tags/robo-advisor/</guid>
       <description></description>
     </item>
     <item>
       <title>Node</title>
-      <link>http://localhost:1313/tags/node/</link>
+      <link>https://naoko.github.io/tags/node/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/node/</guid>
+      <guid>https://naoko.github.io/tags/node/</guid>
       <description></description>
     </item>
     <item>
       <title>Nvm</title>
-      <link>http://localhost:1313/tags/nvm/</link>
+      <link>https://naoko.github.io/tags/nvm/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nvm/</guid>
+      <guid>https://naoko.github.io/tags/nvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Fzf</title>
-      <link>http://localhost:1313/tags/fzf/</link>
+      <link>https://naoko.github.io/tags/fzf/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fzf/</guid>
+      <guid>https://naoko.github.io/tags/fzf/</guid>
       <description></description>
     </item>
     <item>
       <title>Install</title>
-      <link>http://localhost:1313/tags/install/</link>
+      <link>https://naoko.github.io/tags/install/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/install/</guid>
+      <guid>https://naoko.github.io/tags/install/</guid>
       <description></description>
     </item>
     <item>
       <title>Json</title>
-      <link>http://localhost:1313/tags/json/</link>
+      <link>https://naoko.github.io/tags/json/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/json/</guid>
+      <guid>https://naoko.github.io/tags/json/</guid>
       <description></description>
     </item>
     <item>
       <title>Pretty</title>
-      <link>http://localhost:1313/tags/pretty/</link>
+      <link>https://naoko.github.io/tags/pretty/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pretty/</guid>
+      <guid>https://naoko.github.io/tags/pretty/</guid>
       <description></description>
     </item>
     <item>
       <title>Sublime</title>
-      <link>http://localhost:1313/tags/sublime/</link>
+      <link>https://naoko.github.io/tags/sublime/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sublime/</guid>
+      <guid>https://naoko.github.io/tags/sublime/</guid>
       <description></description>
     </item>
     <item>
       <title>Japanese</title>
-      <link>http://localhost:1313/tags/japanese/</link>
+      <link>https://naoko.github.io/tags/japanese/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/japanese/</guid>
+      <guid>https://naoko.github.io/tags/japanese/</guid>
       <description></description>
     </item>
     <item>
       <title>Nlp</title>
-      <link>http://localhost:1313/tags/nlp/</link>
+      <link>https://naoko.github.io/tags/nlp/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nlp/</guid>
+      <guid>https://naoko.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://naoko.github.io/tags/python/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://naoko.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Stanza</title>
-      <link>http://localhost:1313/tags/stanza/</link>
+      <link>https://naoko.github.io/tags/stanza/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/stanza/</guid>
+      <guid>https://naoko.github.io/tags/stanza/</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcuts</title>
-      <link>http://localhost:1313/tags/shortcuts/</link>
+      <link>https://naoko.github.io/tags/shortcuts/</link>
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/shortcuts/</guid>
+      <guid>https://naoko.github.io/tags/shortcuts/</guid>
       <description></description>
     </item>
     <item>
       <title>Kaf</title>
-      <link>http://localhost:1313/tags/kaf/</link>
+      <link>https://naoko.github.io/tags/kaf/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kaf/</guid>
+      <guid>https://naoko.github.io/tags/kaf/</guid>
       <description></description>
     </item>
     <item>
       <title>Kafka</title>
-      <link>http://localhost:1313/tags/kafka/</link>
+      <link>https://naoko.github.io/tags/kafka/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kafka/</guid>
+      <guid>https://naoko.github.io/tags/kafka/</guid>
       <description></description>
     </item>
     <item>
       <title>Df</title>
-      <link>http://localhost:1313/tags/df/</link>
+      <link>https://naoko.github.io/tags/df/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/df/</guid>
+      <guid>https://naoko.github.io/tags/df/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>https://naoko.github.io/tags/docker/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://naoko.github.io/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Purge</title>
-      <link>http://localhost:1313/tags/purge/</link>
+      <link>https://naoko.github.io/tags/purge/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/purge/</guid>
+      <guid>https://naoko.github.io/tags/purge/</guid>
       <description></description>
     </item>
     <item>
       <title>Archive</title>
-      <link>http://localhost:1313/tags/archive/</link>
+      <link>https://naoko.github.io/tags/archive/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/archive/</guid>
+      <guid>https://naoko.github.io/tags/archive/</guid>
       <description></description>
     </item>
     <item>
       <title>Tar.gz</title>
-      <link>http://localhost:1313/tags/tar.gz/</link>
+      <link>https://naoko.github.io/tags/tar.gz/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tar.gz/</guid>
+      <guid>https://naoko.github.io/tags/tar.gz/</guid>
       <description></description>
     </item>
     <item>
       <title>Graalvm</title>
-      <link>http://localhost:1313/tags/graalvm/</link>
+      <link>https://naoko.github.io/tags/graalvm/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/graalvm/</guid>
+      <guid>https://naoko.github.io/tags/graalvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Ip</title>
-      <link>http://localhost:1313/tags/ip/</link>
+      <link>https://naoko.github.io/tags/ip/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ip/</guid>
+      <guid>https://naoko.github.io/tags/ip/</guid>
       <description></description>
     </item>
     <item>
       <title>My-Ip</title>
-      <link>http://localhost:1313/tags/my-ip/</link>
+      <link>https://naoko.github.io/tags/my-ip/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/my-ip/</guid>
+      <guid>https://naoko.github.io/tags/my-ip/</guid>
       <description></description>
     </item>
     <item>
       <title>Public-Ip</title>
-      <link>http://localhost:1313/tags/public-ip/</link>
+      <link>https://naoko.github.io/tags/public-ip/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/public-ip/</guid>
+      <guid>https://naoko.github.io/tags/public-ip/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>http://localhost:1313/tags/aws/</link>
+      <link>https://naoko.github.io/tags/aws/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
+      <guid>https://naoko.github.io/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Fingerprint</title>
-      <link>http://localhost:1313/tags/fingerprint/</link>
+      <link>https://naoko.github.io/tags/fingerprint/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fingerprint/</guid>
+      <guid>https://naoko.github.io/tags/fingerprint/</guid>
       <description></description>
     </item>
     <item>
       <title>PEM</title>
-      <link>http://localhost:1313/tags/pem/</link>
+      <link>https://naoko.github.io/tags/pem/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pem/</guid>
+      <guid>https://naoko.github.io/tags/pem/</guid>
       <description></description>
     </item>
     <item>
       <title>Cython</title>
-      <link>http://localhost:1313/tags/cython/</link>
+      <link>https://naoko.github.io/tags/cython/</link>
       <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cython/</guid>
+      <guid>https://naoko.github.io/tags/cython/</guid>
       <description></description>
     </item>
     <item>
       <title>Blame</title>
-      <link>http://localhost:1313/tags/blame/</link>
+      <link>https://naoko.github.io/tags/blame/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blame/</guid>
+      <guid>https://naoko.github.io/tags/blame/</guid>
       <description></description>
     </item>
     <item>
       <title>Changes</title>
-      <link>http://localhost:1313/tags/changes/</link>
+      <link>https://naoko.github.io/tags/changes/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/changes/</guid>
+      <guid>https://naoko.github.io/tags/changes/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>https://naoko.github.io/tags/git/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://naoko.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Log</title>
-      <link>http://localhost:1313/tags/log/</link>
+      <link>https://naoko.github.io/tags/log/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/log/</guid>
+      <guid>https://naoko.github.io/tags/log/</guid>
       <description></description>
     </item>
     <item>
       <title>Fork</title>
-      <link>http://localhost:1313/tags/fork/</link>
+      <link>https://naoko.github.io/tags/fork/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fork/</guid>
+      <guid>https://naoko.github.io/tags/fork/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>https://naoko.github.io/tags/github/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>https://naoko.github.io/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Health</title>
-      <link>http://localhost:1313/tags/health/</link>
+      <link>https://naoko.github.io/tags/health/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/health/</guid>
+      <guid>https://naoko.github.io/tags/health/</guid>
       <description></description>
     </item>
     <item>
       <title>Kombucha</title>
-      <link>http://localhost:1313/tags/kombucha/</link>
+      <link>https://naoko.github.io/tags/kombucha/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kombucha/</guid>
+      <guid>https://naoko.github.io/tags/kombucha/</guid>
       <description></description>
     </item>
     <item>
       <title>コンブチャ</title>
-      <link>http://localhost:1313/tags/%E3%82%B3%E3%83%B3%E3%83%96%E3%83%81%E3%83%A3/</link>
+      <link>https://naoko.github.io/tags/%E3%82%B3%E3%83%B3%E3%83%96%E3%83%81%E3%83%A3/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E3%82%B3%E3%83%B3%E3%83%96%E3%83%81%E3%83%A3/</guid>
+      <guid>https://naoko.github.io/tags/%E3%82%B3%E3%83%B3%E3%83%96%E3%83%81%E3%83%A3/</guid>
       <description></description>
     </item>
     <item>
       <title>3.7</title>
-      <link>http://localhost:1313/tags/3.7/</link>
+      <link>https://naoko.github.io/tags/3.7/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/3.7/</guid>
+      <guid>https://naoko.github.io/tags/3.7/</guid>
       <description></description>
     </item>
     <item>
       <title>3.8</title>
-      <link>http://localhost:1313/tags/3.8/</link>
+      <link>https://naoko.github.io/tags/3.8/</link>
       <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/3.8/</guid>
+      <guid>https://naoko.github.io/tags/3.8/</guid>
       <description></description>
     </item>
     <item>
       <title>Bike</title>
-      <link>http://localhost:1313/tags/bike/</link>
+      <link>https://naoko.github.io/tags/bike/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bike/</guid>
+      <guid>https://naoko.github.io/tags/bike/</guid>
       <description></description>
     </item>
     <item>
       <title>Cycling</title>
-      <link>http://localhost:1313/tags/cycling/</link>
+      <link>https://naoko.github.io/tags/cycling/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cycling/</guid>
+      <guid>https://naoko.github.io/tags/cycling/</guid>
       <description></description>
     </item>
     <item>
       <title>Exercise</title>
-      <link>http://localhost:1313/tags/exercise/</link>
+      <link>https://naoko.github.io/tags/exercise/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/exercise/</guid>
+      <guid>https://naoko.github.io/tags/exercise/</guid>
       <description></description>
     </item>
     <item>
       <title>Indoor</title>
-      <link>http://localhost:1313/tags/indoor/</link>
+      <link>https://naoko.github.io/tags/indoor/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/indoor/</guid>
+      <guid>https://naoko.github.io/tags/indoor/</guid>
       <description></description>
     </item>
     <item>
       <title>Spinner</title>
-      <link>http://localhost:1313/tags/spinner/</link>
+      <link>https://naoko.github.io/tags/spinner/</link>
       <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/spinner/</guid>
+      <guid>https://naoko.github.io/tags/spinner/</guid>
       <description></description>
     </item>
     <item>
       <title>Blogger</title>
-      <link>http://localhost:1313/tags/blogger/</link>
+      <link>https://naoko.github.io/tags/blogger/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blogger/</guid>
+      <guid>https://naoko.github.io/tags/blogger/</guid>
       <description></description>
     </item>
     <item>
       <title>Domain</title>
-      <link>http://localhost:1313/tags/domain/</link>
+      <link>https://naoko.github.io/tags/domain/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/domain/</guid>
+      <guid>https://naoko.github.io/tags/domain/</guid>
       <description></description>
     </item>
     <item>
       <title>Namecheap</title>
-      <link>http://localhost:1313/tags/namecheap/</link>
+      <link>https://naoko.github.io/tags/namecheap/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/namecheap/</guid>
+      <guid>https://naoko.github.io/tags/namecheap/</guid>
       <description></description>
     </item>
     <item>
       <title>Subdomain</title>
-      <link>http://localhost:1313/tags/subdomain/</link>
+      <link>https://naoko.github.io/tags/subdomain/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/subdomain/</guid>
+      <guid>https://naoko.github.io/tags/subdomain/</guid>
       <description></description>
     </item>
     <item>
       <title>Elasticsesarch</title>
-      <link>http://localhost:1313/tags/elasticsesarch/</link>
+      <link>https://naoko.github.io/tags/elasticsesarch/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/elasticsesarch/</guid>
+      <guid>https://naoko.github.io/tags/elasticsesarch/</guid>
       <description></description>
     </item>
     <item>
       <title>Es</title>
-      <link>http://localhost:1313/tags/es/</link>
+      <link>https://naoko.github.io/tags/es/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/es/</guid>
+      <guid>https://naoko.github.io/tags/es/</guid>
       <description></description>
     </item>
     <item>
       <title>Firewall</title>
-      <link>http://localhost:1313/tags/firewall/</link>
+      <link>https://naoko.github.io/tags/firewall/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/firewall/</guid>
+      <guid>https://naoko.github.io/tags/firewall/</guid>
       <description></description>
     </item>
     <item>
       <title>Netstat</title>
-      <link>http://localhost:1313/tags/netstat/</link>
+      <link>https://naoko.github.io/tags/netstat/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/netstat/</guid>
+      <guid>https://naoko.github.io/tags/netstat/</guid>
       <description></description>
     </item>
     <item>
       <title>Nmap</title>
-      <link>http://localhost:1313/tags/nmap/</link>
+      <link>https://naoko.github.io/tags/nmap/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nmap/</guid>
+      <guid>https://naoko.github.io/tags/nmap/</guid>
       <description></description>
     </item>
     <item>
       <title>Ufw</title>
-      <link>http://localhost:1313/tags/ufw/</link>
+      <link>https://naoko.github.io/tags/ufw/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ufw/</guid>
+      <guid>https://naoko.github.io/tags/ufw/</guid>
       <description></description>
     </item>
     <item>
       <title>Logging</title>
-      <link>http://localhost:1313/tags/logging/</link>
+      <link>https://naoko.github.io/tags/logging/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/logging/</guid>
+      <guid>https://naoko.github.io/tags/logging/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>http://localhost:1313/tags/learning/</link>
+      <link>https://naoko.github.io/tags/learning/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/learning/</guid>
+      <guid>https://naoko.github.io/tags/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine</title>
-      <link>http://localhost:1313/tags/machine/</link>
+      <link>https://naoko.github.io/tags/machine/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machine/</guid>
+      <guid>https://naoko.github.io/tags/machine/</guid>
       <description></description>
     </item>
     <item>
       <title>Ml</title>
-      <link>http://localhost:1313/tags/ml/</link>
+      <link>https://naoko.github.io/tags/ml/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ml/</guid>
+      <guid>https://naoko.github.io/tags/ml/</guid>
       <description></description>
     </item>
     <item>
       <title>Ml-Flow</title>
-      <link>http://localhost:1313/tags/ml-flow/</link>
+      <link>https://naoko.github.io/tags/ml-flow/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ml-flow/</guid>
+      <guid>https://naoko.github.io/tags/ml-flow/</guid>
       <description></description>
     </item>
     <item>
       <title>Platform</title>
-      <link>http://localhost:1313/tags/platform/</link>
+      <link>https://naoko.github.io/tags/platform/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/platform/</guid>
+      <guid>https://naoko.github.io/tags/platform/</guid>
       <description></description>
     </item>
     <item>
       <title>18.04-Lst</title>
-      <link>http://localhost:1313/tags/18.04-lst/</link>
+      <link>https://naoko.github.io/tags/18.04-lst/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/18.04-lst/</guid>
+      <guid>https://naoko.github.io/tags/18.04-lst/</guid>
       <description></description>
     </item>
     <item>
       <title>Upgrade</title>
-      <link>http://localhost:1313/tags/upgrade/</link>
+      <link>https://naoko.github.io/tags/upgrade/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/upgrade/</guid>
+      <guid>https://naoko.github.io/tags/upgrade/</guid>
       <description></description>
     </item>
     <item>
       <title>Pip</title>
-      <link>http://localhost:1313/tags/pip/</link>
+      <link>https://naoko.github.io/tags/pip/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pip/</guid>
+      <guid>https://naoko.github.io/tags/pip/</guid>
       <description></description>
     </item>
     <item>
       <title>Setuptools</title>
-      <link>http://localhost:1313/tags/setuptools/</link>
+      <link>https://naoko.github.io/tags/setuptools/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/setuptools/</guid>
+      <guid>https://naoko.github.io/tags/setuptools/</guid>
       <description></description>
     </item>
     <item>
       <title>Ebates</title>
-      <link>http://localhost:1313/tags/ebates/</link>
+      <link>https://naoko.github.io/tags/ebates/</link>
       <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ebates/</guid>
+      <guid>https://naoko.github.io/tags/ebates/</guid>
       <description></description>
     </item>
     <item>
       <title>Vagrant</title>
-      <link>http://localhost:1313/tags/vagrant/</link>
+      <link>https://naoko.github.io/tags/vagrant/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vagrant/</guid>
+      <guid>https://naoko.github.io/tags/vagrant/</guid>
       <description></description>
     </item>
     <item>
       <title>Debian</title>
-      <link>http://localhost:1313/tags/debian/</link>
+      <link>https://naoko.github.io/tags/debian/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/debian/</guid>
+      <guid>https://naoko.github.io/tags/debian/</guid>
       <description></description>
     </item>
     <item>
       <title>Jessie</title>
-      <link>http://localhost:1313/tags/jessie/</link>
+      <link>https://naoko.github.io/tags/jessie/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jessie/</guid>
+      <guid>https://naoko.github.io/tags/jessie/</guid>
       <description></description>
     </item>
     <item>
       <title>Stretch</title>
-      <link>http://localhost:1313/tags/stretch/</link>
+      <link>https://naoko.github.io/tags/stretch/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/stretch/</guid>
+      <guid>https://naoko.github.io/tags/stretch/</guid>
       <description></description>
     </item>
     <item>
       <title>Pycharm</title>
-      <link>http://localhost:1313/tags/pycharm/</link>
+      <link>https://naoko.github.io/tags/pycharm/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pycharm/</guid>
+      <guid>https://naoko.github.io/tags/pycharm/</guid>
       <description></description>
     </item>
     <item>
       <title>Sshfs</title>
-      <link>http://localhost:1313/tags/sshfs/</link>
+      <link>https://naoko.github.io/tags/sshfs/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sshfs/</guid>
+      <guid>https://naoko.github.io/tags/sshfs/</guid>
       <description></description>
     </item>
     <item>
       <title>Devops</title>
-      <link>http://localhost:1313/tags/devops/</link>
+      <link>https://naoko.github.io/tags/devops/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
+      <guid>https://naoko.github.io/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>My-House</title>
-      <link>http://localhost:1313/tags/my-house/</link>
+      <link>https://naoko.github.io/tags/my-house/</link>
       <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/my-house/</guid>
+      <guid>https://naoko.github.io/tags/my-house/</guid>
       <description></description>
     </item>
   </channel>

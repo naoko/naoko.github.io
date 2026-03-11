@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Upgrade vagrant to latest | the art of simplicity</title>
 <meta name="keywords" content="vagrant, ubuntu">
 <meta name="description" content="Upgrade vagrant to latest">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/2018-02-06-vagrant-on-ubuntu/">
+<link rel="canonical" href="https://naoko.github.io/posts/2018-02-06-vagrant-on-ubuntu/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2018-02-06-vagrant-on-ubuntu/">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/2018-02-06-vagrant-on-ubuntu/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,81 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/2018-02-06-vagrant-on-ubuntu/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="Upgrade vagrant to latest">
+  <meta property="og:description" content="Upgrade vagrant to latest">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-02-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-01-30T00:00:00+00:00">
+    <meta property="article:tag" content="Vagrant">
+    <meta property="article:tag" content="Ubuntu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Upgrade vagrant to latest">
+<meta name="twitter:description" content="Upgrade vagrant to latest">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Upgrade vagrant to latest",
+      "item": "https://naoko.github.io/posts/2018-02-06-vagrant-on-ubuntu/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Upgrade vagrant to latest",
+  "name": "Upgrade vagrant to latest",
+  "description": "Upgrade vagrant to latest",
+  "keywords": [
+    "vagrant", "ubuntu"
+  ],
+  "articleBody": "The Problem: I love vagrant. I am so dependent on testing my ansible before I run against mutable boxes. Yes, I’m still living in place where Ops provision VM and the box stays mutable. It is okay though… change should be coming. Anyhow, I installed vagnrat on my new Ubuntu machine (ubuntu-17.10) but the version was 1.9. It was working fine until I upgraded the box to debian/stretch64. It says that The box 'debian/stretch64' could not be found. And noticed that it was trying to look in the old repo https://atlas.hashicorp.com instead of this https://app.vagrantup.com.\nThe Solution: I’m sure specifying config.vm.box_url would have fixed it but why not upgrade to latest?\nYou can download from official site but I chose to use ppa provided by Wolfgang.\n$ sudo bash -c 'echo deb https://vagrant-deb.linestarve.com/ any main \u003e /etc/apt/sources.list.d/wolfgang42-vagrant.list' $ sudo apt-key adv --keyserver pgp.mit.edu --recv-key AD319E0F7CFFA38B4D9F6E55CE3F3DE92099F7A4 $ sudo apt update $ sudo apt install vagrant $ vagrant --version Vagrant 2.0.1 If you have synced_folder configured then you might get the error says\nVagrant was unable to mount VirtualBox shared folders. This is usually because the filesystem \"vboxsf\" is not available. This filesystem is made available via the VirtualBox Guest Additions and kernel module. Please verify that these guest additions are properly installed in the guest. This is not a bug in Vagrant and is usually caused by a faulty Vagrant box. For context, the command attempted was: mount -t vboxsf -o uid=1000,gid=1000 srv_digicon /srv/digicon The error output from the command was: mount: unknown filesystem type 'vboxsf' You can install guest additions as follows. (tested on ubuntu 16.4 and 17.10)\nvagrant plugin install vagrant-vbguest Cheers!\n",
+  "wordCount" : "273",
+  "inLanguage": "en",
+  "datePublished": "2018-02-06T00:00:00Z",
+  "dateModified": "2018-01-30T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Naoko Reeves"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naoko.github.io/posts/2018-02-06-vagrant-on-ubuntu/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "the art of simplicity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://naoko.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,22 +170,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -179,16 +247,16 @@ And noticed that it was trying to look in the old repo
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/vagrant/">Vagrant</a></li>
-      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="https://naoko.github.io/tags/vagrant/">Vagrant</a></li>
+      <li><a href="https://naoko.github.io/tags/ubuntu/">Ubuntu</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2018-02-18-money-tip-for-beginner/">
+  <a class="prev" href="https://naoko.github.io/posts/2018-02-18-money-tip-for-beginner/">
     <span class="title">« Prev</span>
     <br>
     <span>損を最低限に抑えて少しリッチになる</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/2018-02-05-debian-jessie-to-stretch/">
+  <a class="next" href="https://naoko.github.io/posts/2018-02-05-debian-jessie-to-stretch/">
     <span class="title">Next »</span>
     <br>
     <span>Upgrade from Debian Jessie to Stretch</span>
@@ -200,7 +268,7 @@ And noticed that it was trying to look in the old repo
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

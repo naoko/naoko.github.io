@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Create and Extract tar.gz on Ubuntu | the art of simplicity</title>
 <meta name="keywords" content="ubuntu, tar.gz, archive">
 <meta name="description" content="Just a quick reference to create and extract tar.gz on Ubuntu">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/2019-08-07-compress-targz/">
+<link rel="canonical" href="https://naoko.github.io/posts/2019-08-07-compress-targz/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2019-08-07-compress-targz/">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/2019-08-07-compress-targz/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,82 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/2019-08-07-compress-targz/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="Create and Extract tar.gz on Ubuntu">
+  <meta property="og:description" content="Just a quick reference to create and extract tar.gz on Ubuntu">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-08-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-08-07T00:00:00+00:00">
+    <meta property="article:tag" content="Ubuntu">
+    <meta property="article:tag" content="Tar.gz">
+    <meta property="article:tag" content="Archive">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Create and Extract tar.gz on Ubuntu">
+<meta name="twitter:description" content="Just a quick reference to create and extract tar.gz on Ubuntu">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Create and Extract tar.gz on Ubuntu",
+      "item": "https://naoko.github.io/posts/2019-08-07-compress-targz/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Create and Extract tar.gz on Ubuntu",
+  "name": "Create and Extract tar.gz on Ubuntu",
+  "description": "Just a quick reference to create and extract tar.gz on Ubuntu",
+  "keywords": [
+    "ubuntu", "tar.gz", "archive"
+  ],
+  "articleBody": "Create tar.gz archives tar czf new-tar-file-name.tar.gz file-or-folder-to-archive c - create new archive z - compress the archive using gzip f - use archive file\nExtract archives tar -xzf tar-file-name.tar.gz x - extract the archive. z - uncompress the archive using gzip. f - use archive file.\nLet’s do it. I only want to compress 3 files. When I extract archive what I want to see is files in the directory.\n$ tree file_dir/ file_dir/ ├── file1.txt ├── file2.txt └── file3.txt $ cd file_dir $ tar czf files.tar.gz . tar: .: file changed as we read it # moved files.tar.gz to different directory $ tar -xzf files.tar.gz $ ls file1.txt file2.txt file3.txt file_dir files.tar.gz Cheers!\n",
+  "wordCount" : "114",
+  "inLanguage": "en",
+  "datePublished": "2019-08-07T00:00:00Z",
+  "dateModified": "2019-08-07T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Naoko Reeves"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naoko.github.io/posts/2019-08-07-compress-targz/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "the art of simplicity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://naoko.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,22 +171,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -173,17 +242,17 @@ file1.txt  file2.txt  file3.txt  file_dir  files.tar.gz
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
-      <li><a href="http://localhost:1313/tags/tar.gz/">Tar.gz</a></li>
-      <li><a href="http://localhost:1313/tags/archive/">Archive</a></li>
+      <li><a href="https://naoko.github.io/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="https://naoko.github.io/tags/tar.gz/">Tar.gz</a></li>
+      <li><a href="https://naoko.github.io/tags/archive/">Archive</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2019-08-25-docker-cleaning/">
+  <a class="prev" href="https://naoko.github.io/posts/2019-08-25-docker-cleaning/">
     <span class="title">« Prev</span>
     <br>
     <span>Docker Image / Container Cleaning</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/2019-04-14-graalvm-started/">
+  <a class="next" href="https://naoko.github.io/posts/2019-04-14-graalvm-started/">
     <span class="title">Next »</span>
     <br>
     <span>Install GraalVM and run ptyhon with debugger</span>
@@ -195,7 +264,7 @@ file1.txt  file2.txt  file3.txt  file_dir  files.tar.gz
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

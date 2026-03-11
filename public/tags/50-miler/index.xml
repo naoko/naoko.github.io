@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>50-Miler on the art of simplicity</title>
+    <link>https://naoko.github.io/tags/50-miler/</link>
+    <description>Recent content in 50-Miler on the art of simplicity</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://naoko.github.io/tags/50-miler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avalon 50 Miles</title>
+      <link>https://naoko.github.io/posts/2026-01-10-avalon-50-miles/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://naoko.github.io/posts/2026-01-10-avalon-50-miles/</guid>
+      <description>Returning to Catalina Island to take on the 50-mile distance at the Avalon 50/50 Benefit Run</description>
+    </item>
+  </channel>
+</rss>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Remote Edit with PyCharm | the art of simplicity</title>
 <meta name="keywords" content="pycharm, sshfs">
 <meta name="description" content="Edit Remote Linux file with PyCharm on OS X">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/2018-01-30-pycharm-remote-edit/">
+<link rel="canonical" href="https://naoko.github.io/posts/2018-01-30-pycharm-remote-edit/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2018-01-30-pycharm-remote-edit/">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/2018-01-30-pycharm-remote-edit/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,81 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/2018-01-30-pycharm-remote-edit/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="Remote Edit with PyCharm">
+  <meta property="og:description" content="Edit Remote Linux file with PyCharm on OS X">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-01-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-01-30T00:00:00+00:00">
+    <meta property="article:tag" content="Pycharm">
+    <meta property="article:tag" content="Sshfs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Remote Edit with PyCharm">
+<meta name="twitter:description" content="Edit Remote Linux file with PyCharm on OS X">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Remote Edit with PyCharm",
+      "item": "https://naoko.github.io/posts/2018-01-30-pycharm-remote-edit/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Remote Edit with PyCharm",
+  "name": "Remote Edit with PyCharm",
+  "description": "Edit Remote Linux file with PyCharm on OS X",
+  "keywords": [
+    "pycharm", "sshfs"
+  ],
+  "articleBody": "The Problem: I have powerful Linux machine and semi-powerful mac-book pro. I have need of editing code on Linux box from mac-book.\nPyCharm has deploy method for pushing code but that requires sftp to setup etc. I just want to use ssh to do it… I’ve done rsync method but sometimes manual sync was needed. I want more transparent method…\nThe Solution: The easiest and most effective way for me was to mount linux directory via sshfs. It was amazingly easy. Assuming that you have established ssh connection with ssh-key with the remote machine. All you have to do was to install osxfuse and sshfs with brew.\nbrew cask install osxfuse brew install sshfs then mount with sshfs command. without installing osxfuse you will get an error because osxfuse install library that sshfs depends on.\nmkdir [path-you-want-to-mount] sshfs [username]@[server-addr]:[remote-dir] [path-you-want-to-mount] Success? or you got remote host has disconnected error? Get more verbose error with following flags:\nsshfs -odebug,sshfs_debug,loglevel=debug [username]@[server-addr]:[remote-dir] [path-you-want-to-mount] Now, all you have to do is to open the directory you desire with PyCharm \u003c3\n",
+  "wordCount" : "176",
+  "inLanguage": "en",
+  "datePublished": "2018-01-30T00:00:00Z",
+  "dateModified": "2018-01-30T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Naoko Reeves"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naoko.github.io/posts/2018-01-30-pycharm-remote-edit/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "the art of simplicity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://naoko.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,22 +170,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -166,16 +234,16 @@ Get more verbose error with following flags:</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/pycharm/">Pycharm</a></li>
-      <li><a href="http://localhost:1313/tags/sshfs/">Sshfs</a></li>
+      <li><a href="https://naoko.github.io/tags/pycharm/">Pycharm</a></li>
+      <li><a href="https://naoko.github.io/tags/sshfs/">Sshfs</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2018-02-05-debian-jessie-to-stretch/">
+  <a class="prev" href="https://naoko.github.io/posts/2018-02-05-debian-jessie-to-stretch/">
     <span class="title">« Prev</span>
     <br>
     <span>Upgrade from Debian Jessie to Stretch</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/2017-12-26-pip-install-no-space-left/">
+  <a class="next" href="https://naoko.github.io/posts/2017-12-26-pip-install-no-space-left/">
     <span class="title">Next »</span>
     <br>
     <span>No Space Left Error when pip install</span>
@@ -187,7 +255,7 @@ Get more verbose error with following flags:</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

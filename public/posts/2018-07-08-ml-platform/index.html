@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>ML Platforms | the art of simplicity</title>
 <meta name="keywords" content="ml, ml-flow, machine, learning, platform">
 <meta name="description" content="Platform to manage the ML experiments and development">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/2018-07-08-ml-platform/">
+<link rel="canonical" href="https://naoko.github.io/posts/2018-07-08-ml-platform/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2018-07-08-ml-platform/">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/2018-07-08-ml-platform/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,84 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/2018-07-08-ml-platform/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="ML Platforms">
+  <meta property="og:description" content="Platform to manage the ML experiments and development">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-07-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-07-08T00:00:00+00:00">
+    <meta property="article:tag" content="Ml">
+    <meta property="article:tag" content="Ml-Flow">
+    <meta property="article:tag" content="Machine">
+    <meta property="article:tag" content="Learning">
+    <meta property="article:tag" content="Platform">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ML Platforms">
+<meta name="twitter:description" content="Platform to manage the ML experiments and development">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "ML Platforms",
+      "item": "https://naoko.github.io/posts/2018-07-08-ml-platform/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ML Platforms",
+  "name": "ML Platforms",
+  "description": "Platform to manage the ML experiments and development",
+  "keywords": [
+    "ml", "ml-flow", "machine", "learning", "platform"
+  ],
+  "articleBody": "The problem: When you start small Machine Learning team with a few projects, your experiment is done via Jupyter Notebook and maybe the notebook is in github. The notebook might contain a method to download data so it can be reproducible but it is getting harder and harder to track various experiments.\nWe also need to make sure models does not train on corrupted / skewed data and only high quality model are pushed to production. Currently these processes are manual and not centralized nor has unified common tool.\nHow to solve it Typical ML workflow look like this: Facebook built FBLearner Flow but it is internal software toolset and not available for public to use. The platform manages:\nManage data Train models Evaluate models Deploy models Make predictions Monitor predictions Google’s TFX is available as 3 components: TensorFlow Transform (data transformation), TensorFlow Model Analysis and TensorFlow Serving. As name indicates, the toolset is narrowed down to TensorFlow. The platform manages:\nData ingestion Data Analysis Data Transformation Data validation Trainer Model Evaluation and validation Serving Logging –\u003e Data ingestion Uber built michelangelo but just like FBLearner this is is an internal ML-as-a-service platform and not available for public.\nAt Databricks, a creator of Spark, announced MLflow: an open source machine learning platform!\nDocumentation is located here.\nOn 06/05/2018 they announced this on their blog and 3 days later today, there are already 1,596 stars on github\nQuick starts\n# ensure I have pipenv to create virtualenv $ pip3 install pipenv --user # install mlflow $ pipenv install mlflow # activate mlflow environment $ pipenv shell # run test experiment $ git clone https://github.com/databricks/mlflow.git $ python mlflow/example/quickstart/test.py # start UI $ mlflow ui -h 0.0.0.0 # then you should see the test experiment It consists of 3 components: Tracking: For querying and recording data on experiments. Using the web UI, you can view and compare the output of multiple runs. Projects: Provides a simple format for reproducing code Models: For managing and deploying models into production Would be nice to have data components to do (a) Analysis (b) Transformation (c) Validation but I want to watch / evaluate and see how this grows!\nAlso I should compare other available tools such as Amazon SageMaker and IDSIA sacred\nMore reporting to come.\nCheers!\n",
+  "wordCount" : "381",
+  "inLanguage": "en",
+  "datePublished": "2018-07-08T00:00:00Z",
+  "dateModified": "2018-07-08T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Naoko Reeves"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naoko.github.io/posts/2018-07-08-ml-platform/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "the art of simplicity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://naoko.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,22 +173,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -221,19 +292,19 @@ but I want to watch / evaluate and see how this grows!</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/ml/">Ml</a></li>
-      <li><a href="http://localhost:1313/tags/ml-flow/">Ml-Flow</a></li>
-      <li><a href="http://localhost:1313/tags/machine/">Machine</a></li>
-      <li><a href="http://localhost:1313/tags/learning/">Learning</a></li>
-      <li><a href="http://localhost:1313/tags/platform/">Platform</a></li>
+      <li><a href="https://naoko.github.io/tags/ml/">Ml</a></li>
+      <li><a href="https://naoko.github.io/tags/ml-flow/">Ml-Flow</a></li>
+      <li><a href="https://naoko.github.io/tags/machine/">Machine</a></li>
+      <li><a href="https://naoko.github.io/tags/learning/">Learning</a></li>
+      <li><a href="https://naoko.github.io/tags/platform/">Platform</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2018-07-26-intercept-python-logging/">
+  <a class="prev" href="https://naoko.github.io/posts/2018-07-26-intercept-python-logging/">
     <span class="title">« Prev</span>
     <br>
     <span>Intercept Python Logging</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/2018-06-05-fix-resolution-ubuntu/">
+  <a class="next" href="https://naoko.github.io/posts/2018-06-05-fix-resolution-ubuntu/">
     <span class="title">Next »</span>
     <br>
     <span>Fix screen resolution after 18.04 LTS upgrade on System 76</span>
@@ -245,7 +316,7 @@ but I want to watch / evaluate and see how this grows!</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by

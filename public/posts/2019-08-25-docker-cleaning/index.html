@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Docker Image / Container Cleaning | the art of simplicity</title>
 <meta name="keywords" content="docker, purge, df">
 <meta name="description" content="Docker image and container clean up on your computer">
 <meta name="author" content="Naoko Reeves">
-<link rel="canonical" href="http://localhost:1313/posts/2019-08-25-docker-cleaning/">
+<link rel="canonical" href="https://naoko.github.io/posts/2019-08-25-docker-cleaning/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://naoko.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://naoko.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://naoko.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://naoko.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://naoko.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2019-08-25-docker-cleaning/">
+<link rel="alternate" hreflang="en" href="https://naoko.github.io/posts/2019-08-25-docker-cleaning/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,82 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://naoko.github.io/posts/2019-08-25-docker-cleaning/">
+  <meta property="og:site_name" content="the art of simplicity">
+  <meta property="og:title" content="Docker Image / Container Cleaning">
+  <meta property="og:description" content="Docker image and container clean up on your computer">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-08-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-08-25T00:00:00+00:00">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Purge">
+    <meta property="article:tag" content="Df">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Docker Image / Container Cleaning">
+<meta name="twitter:description" content="Docker image and container clean up on your computer">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://naoko.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Docker Image / Container Cleaning",
+      "item": "https://naoko.github.io/posts/2019-08-25-docker-cleaning/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Docker Image / Container Cleaning",
+  "name": "Docker Image \/ Container Cleaning",
+  "description": "Docker image and container clean up on your computer",
+  "keywords": [
+    "docker", "purge", "df"
+  ],
+  "articleBody": "Unused Docker image and container can quickly take up your disk spaces.\nLet’s check disk usage Summary of data used. You can add -v flag for detailed info.\n$ docker system df TYPE TOTAL ACTIVE SIZE RECLAIMABLE Images 87 1 63.39GB 63.17GB (99%) Containers 1 0 0B 0B Local Volumes 69 1 2.732GB 2.683GB (98%) Build Cache 0 0 0B 0B Remove unused data The following command will remove:\nall stopped containers all networks not used by at least one container all dangling images (see below fo dangling images) all build cache By default, volumes are not removed to prevent important data from being deleted. $ docker system prune WARNING! This will remove: - all stopped containers - all networks not used by at least one container - all dangling images - all dangling build cache Are you sure you want to continue? [y/N] y Deleted Containers: ... Total reclaimed space: 13.91GB Options:\n--all, -a: Remove all unsued images not just dnaling ones. --volumes: prune volumes. What’s dangling images? Docker images consist of multiple layers. Dangling images, are layers that have no relationship to any tagged images. They no longer serve a purpose and consume disk space.\nYou can list dangling iamges:\n$ docker images -f dangling=true Cheers!\n",
+  "wordCount" : "208",
+  "inLanguage": "en",
+  "datePublished": "2019-08-25T00:00:00Z",
+  "dateModified": "2019-08-25T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Naoko Reeves"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naoko.github.io/posts/2019-08-25-docker-cleaning/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "the art of simplicity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://naoko.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
+            <a href="https://naoko.github.io/" accesskey="h" title="the art of simplicity (Alt + H)">the art of simplicity</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,22 +171,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://naoko.github.io/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://naoko.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://naoko.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/pydict_to_json/" title="Python Dict to JSON">
+                <a href="https://naoko.github.io/pydict_to_json/" title="Python Dict to JSON">
                     <span>Python Dict to JSON</span>
                 </a>
             </li>
@@ -185,17 +254,17 @@ They no longer serve a purpose and consume disk space.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
-      <li><a href="http://localhost:1313/tags/purge/">Purge</a></li>
-      <li><a href="http://localhost:1313/tags/df/">Df</a></li>
+      <li><a href="https://naoko.github.io/tags/docker/">Docker</a></li>
+      <li><a href="https://naoko.github.io/tags/purge/">Purge</a></li>
+      <li><a href="https://naoko.github.io/tags/df/">Df</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2020-01-25-kafka-cli-kaf/">
+  <a class="prev" href="https://naoko.github.io/posts/2020-01-25-kafka-cli-kaf/">
     <span class="title">« Prev</span>
     <br>
     <span>Kafka CLI kaf</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/2019-08-07-compress-targz/">
+  <a class="next" href="https://naoko.github.io/posts/2019-08-07-compress-targz/">
     <span class="title">Next »</span>
     <br>
     <span>Create and Extract tar.gz on Ubuntu</span>
@@ -207,7 +276,7 @@ They no longer serve a purpose and consume disk space.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">the art of simplicity</a></span> · 
+        <span>&copy; 2026 <a href="https://naoko.github.io/">the art of simplicity</a></span> · 
 
     <span>
         Powered by
