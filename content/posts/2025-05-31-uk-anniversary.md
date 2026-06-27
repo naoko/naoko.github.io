@@ -185,7 +185,7 @@ We walked the Royal Mile, where a piper in full kit gave the whole scene a sound
 
 ![A piper on the streets of Edinburgh](/images/2025-05-31/edinburgh_piper.jpg)
 
-We also made time for the astonishing **Rosslyn Chapel** just south of the city, every inch of it carved.
+We also made time for the astonishing **[Rosslyn Chapel](https://www.rosslynchapel.com/)** just south of the city, every inch of it carved.
 
 ![Rosslyn Chapel](/images/2025-05-31/rosslyn_chapel.jpg)
 
@@ -209,4 +209,4 @@ Thirty years together, and we managed to find a trip that gave each of us exactl
 
 What I'll remember isn't any single landmark. It's the *texture* of the place - how the Romans built spas we'd still recognize, how the Welsh kept their language, how the British respect their mountains, how the Scots tucked a modern life inside their ancient walls. A country that holds onto its past while quietly getting on with the present.
 
-Would we do it again? In a heartbeat. Here's to the next thirty years - and the next country to drive across.
+Would we do it again? In a heartbeat. And to whoever's reading this, dreaming up a trip of your own - cheers to your next adventure, wherever the road takes you. 🥃
