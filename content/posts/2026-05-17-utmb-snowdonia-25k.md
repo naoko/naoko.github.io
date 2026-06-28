@@ -40,6 +40,12 @@ Race morning was everything I love about mountain racing - long, brutal climbs, 
 
 ![A trail signpost on course - Llanberis 4.5 km, Yr Wyddfa (Snowdon) the other way](/images/2026-05-17/course.jpg)
 
+![Grinding up one of the long climbs - poles out](/images/2026-05-17/the_hill.jpg)
+
+I was *so* glad I'd packed my **poles**. They were a huge help powering up the steep climbs, and even more so for staying balanced and keeping momentum through the slick, muddy sections. If you're on the fence about poles for Snowdonia, bring them - you'll be reaching for them constantly.
+
+![When the mist lifted, views like this made every climb worth it](/images/2026-05-17/lake.jpg)
+
 ## Dodging the Sheep
 
 There was one obstacle the course map didn't warn me about: **sheep poop**, absolutely everywhere. These hills belong to the sheep, and they leave their mark all over the trail. Picking a clean line became its own little game, somewhere between trail running and hopscotch.
