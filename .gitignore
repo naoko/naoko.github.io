@@ -1,0 +1,9 @@
+# Hugo build output (regenerated on every deploy by CI)
+/public/
+
+# Hugo cache and lock
+/resources/_gen/
+.hugo_build.lock
+
+# OS / editor
+.DS_Store
