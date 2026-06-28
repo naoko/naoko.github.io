@@ -64,4 +64,6 @@ The best kind of recovery followed: my husband Coy played a round at Caernarfon 
 
 The UTMB Snowdonia weekend lived up to its reputation - a serious mountain race in a genuinely wild, beautiful place. The mud and mist only made it more memorable. I came for the mountains and left with a finisher's medal, muddy shoes, and a real soft spot for Eryri.
 
-Would I run a UTMB race in Wales again? Without a doubt - and next time I'll pack a second pair of shoes.
+Would I run it again? Honestly, probably not - but I'm genuinely glad I did it once. It was a wonderful experience and I learned so much, from mandatory kit and mountain weather to just how much a pair of poles can save you.
+
+Cheers to the next mountain, wherever it turns out to be. 🥃
