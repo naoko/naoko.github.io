@@ -1,8 +1,8 @@
 ---
 title: "Mud, Mist, and Mountains: The UTMB Snowdonia 25K"
 date: 2026-05-17
-description: "Racing the UTMB Snowdonia 25K (Ultra-Trail Snowdonia by UTMB) in Eryri National Park, Wales - 4,600 feet of climbing, a soaked and muddy course, and sheep everywhere."
-tags: ["snowdonia", "utmb", "ultra-trail snowdonia", "trail", "race", "wales", "trail running", "eryri"]
+description: "Racing the UTMB Snowdonia 25K (Ultra-Trail Snowdonia by UTMB) in Eryri National Park, Wales - 4,600 feet of climbing, a strict mandatory gear check, a soaked and muddy course, and a warning about waterproof jackets."
+tags: ["snowdonia", "utmb", "ultra-trail snowdonia", "trail", "race", "wales", "trail running", "eryri", "gear check", "mandatory kit"]
 categories: ["running", "race"]
 cover:
   image: "/images/2026-05-17/cover.jpg"
@@ -21,6 +21,18 @@ I'd signed up for the **UTMB Snowdonia 25K**, part of the Ultra-Trail Snowdonia 
 ## Packet Pickup in Llanberis
 
 We drove out to the Ultra-Trail Village in Llanberis the day before, and the energy was instantly familiar - the UTMB branding, the gear tents, the nervous-excited buzz of runners checking and re-checking their kit. The clouds were sitting right down on the peaks, which told me exactly what kind of day I was in for.
+
+## The Toughest Gear Check I've Ever Faced
+
+Snowdonia has the strictest mandatory-kit check I've ever been through. The required list for the 25K: a **bivvy bag (not a foil blanket), a waterproof jacket, and a long-sleeved top** - and they run checks on the start line *and* out on the course, so there's no leaving anything in the car.
+
+![The 25K kit-check board: bivvy bag, waterproof jacket, long-sleeved top](/images/2026-05-17/gear_check.jpg)
+
+Here's the part that nearly ended my day before it began: the "waterproof" jacket I'd brought was **rejected**. The volunteer looked at it, shook her head, and told me - kindly but very firmly - that if I wore *that* jacket, I'd be disqualified. It turns out there are different grades of "waterproof," and a serious mountain race requires a genuine, high-rated one (taped seams, a real waterproof rating), not just something water-resistant. **Lesson learned: if you're racing Snowdonia, make sure your waterproof is *actually* waterproof to the required standard.**
+
+And the weather - every race video I'd watched from the past couple of years looked warm and sunny. Not this year. It rained, it blew, and it was *cold*. So pack for all of it: warm layers, gloves, and that proper waterproof. These mountains make their own weather, and it can swing in minutes.
+
+![Bundled up at a cold, grey start line - nothing like the sunny videos I'd watched](/images/2026-05-17/start_cold.jpg)
 
 ## The Climbs
 
