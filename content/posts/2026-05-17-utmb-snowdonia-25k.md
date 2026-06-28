@@ -6,7 +6,7 @@ tags: ["snowdonia", "utmb", "ultra-trail snowdonia", "trail", "race", "wales", "
 categories: ["running", "race"]
 cover:
   image: "/images/2026-05-17/cover.jpg"
-  alt: "The UTMB Snowdonia start area in Llanberis with the mist-covered mountains behind"
+  alt: "A misty lake and valley view from the Snowdonia race course"
   relative: false
 ---
 
@@ -28,7 +28,7 @@ Snowdonia has the strictest mandatory-kit check I've ever been through. The requ
 
 ![The 25K kit-check board: bivvy bag, waterproof jacket, long-sleeved top](/images/2026-05-17/gear_check.jpg)
 
-Here's the part that nearly ended my day before it began: the "waterproof" jacket I'd brought was **rejected**. The volunteer looked at it, shook her head, and told me - kindly but very firmly - that if I wore *that* jacket, I'd be disqualified. It turns out there are different grades of "waterproof," and a serious mountain race requires a genuine, high-rated one (taped seams, a real waterproof rating), not just something water-resistant. **Lesson learned: if you're racing Snowdonia, make sure your waterproof is *actually* waterproof to the required standard.**
+Here's the part that nearly ended my day before it began: the "waterproof" jacket I'd brought was **rejected**. The volunteer looked at it, shook her head, and told me - kindly but very firmly - that if I wore *that* jacket, I'd be disqualified. It turns out there are different grades of "waterproof," and a serious mountain race requires a genuine, high-rated one (taped seams, a real waterproof rating), not just something water-resistant. **Lesson learned: if you're racing Snowdonia, make sure your waterproof is *actually* waterproof to the required standard.** I ended up buying a properly-rated jacket on the spot at the packet-pickup expo - it cost me over **$200**. An expensive lesson in reading the kit requirements carefully.
 
 And the weather - every race video I'd watched from the past couple of years looked warm and sunny. Not this year. It rained, it blew, and it was *cold*. So pack for all of it: warm layers, gloves, and that proper waterproof. These mountains make their own weather, and it can swing in minutes.
 
@@ -44,8 +44,6 @@ Race morning was everything I love about mountain racing - long, brutal climbs, 
 
 I was *so* glad I'd packed my **poles**. They were a huge help powering up the steep climbs, and even more so for staying balanced and keeping momentum through the slick, muddy sections. If you're on the fence about poles for Snowdonia, bring them - you'll be reaching for them constantly.
 
-![When the mist lifted, views like this made every climb worth it](/images/2026-05-17/lake.jpg)
-
 ## Dodging the Sheep
 
 There was one obstacle the course map didn't warn me about: **sheep poop**, absolutely everywhere. These hills belong to the sheep, and they leave their mark all over the trail. Picking a clean line became its own little game, somewhere between trail running and hopscotch.
@@ -53,6 +51,8 @@ There was one obstacle the course map didn't warn me about: **sheep poop**, abso
 ## Caked in Mud
 
 The course was so wet that staying upright was a challenge in itself. At one point I slipped and went straight down - my pants were filthy and my shoes, which had started the day a proud bright white, were unrecognizable by the finish. But I crossed that line a finisher, and that's all that mattered.
+
+![Almost there - grinding toward the finish line with the mountains behind](/images/2026-05-17/almost_finish.png)
 
 ![At the finish with my medal - those shoes used to be white](/images/2026-05-17/finish.jpg)
 
