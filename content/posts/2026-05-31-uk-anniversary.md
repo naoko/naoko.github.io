@@ -14,7 +14,7 @@ cover:
 
 For our 30th anniversary, Coy and I decided to do something we'd never done together: rent a car and drive the length of Britain, bottom to top. We landed at London Heathrow and, over the next two and a half weeks, worked our way north - through England, into Wales, up the spine of the Lake District, across the Scottish Highlands and the Isle of Skye, and finally into Edinburgh, where we flew home.
 
-It was the perfect trip for the two of us, because it had a little of everything we love. I got a trail race in Snowdonia. Coy got golf - and one of the biggest reasons we chose the UK at all was the **Old Course at St Andrews**, the home of golf, which had sat at the very top of his bucket list for as long as I've known him. We both got more history, whisky, sheep, and dramatic weather than we knew what to do with.
+It was the perfect trip for the two of us, because it had a little of everything we love. I got a trail race in Snowdonia. Coy got golf - and one of the biggest reasons we chose the UK at all was the **Old Course at St Andrews**, the home of golf, which had sat at the very top of his bucket list. We both got more history, whisky, sheep, and dramatic weather than we knew what to do with.
 
 Here's how it went.
 
