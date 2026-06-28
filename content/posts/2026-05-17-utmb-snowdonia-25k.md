@@ -66,4 +66,4 @@ The UTMB Snowdonia weekend lived up to its reputation - a serious mountain race 
 
 Would I run it again? Honestly, probably not - but I'm genuinely glad I did it once. It was a wonderful experience and I learned so much, from mandatory kit and mountain weather to just how much a pair of poles can save you.
 
-Cheers to the next mountain, wherever it turns out to be. 🥃
+Cheers to the next mountain, wherever it turns out to be. 🥂
