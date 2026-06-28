@@ -4,6 +4,7 @@ date: 2021-02-19
 lastmod: 2021-02-19
 description: "Great tools to decided refnanice"
 tags: ["refinance", "finance", "money"]
+categories: ["life"]
 ---
 
 realtor.com has great tool to show mortage trend [here](https://www.realtor.com/mortgage/tools/mortgage-rate-trends/)

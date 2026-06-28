@@ -3,6 +3,7 @@ title: "Get started with Cython"
 date: 2019-03-24
 description: "Quick intro to how you can use Cython"
 tags: ["cython"]
+categories: ["tech"]
 ---
 
 Cython is designed as a C-extension for Python. 

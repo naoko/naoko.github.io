@@ -1,5 +1,6 @@
 ---
 title: "Britain, Bottom to Top: History and Wild Beauty 🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+image: "/images/2026-05-31/cover.jpg"
 date: 2026-05-31
 description: "Two weeks driving from London to Edinburgh for our 30th anniversary - the Roman Baths, the Ultra-Trail Snowdonia (UTMB) 25K, the Isle of Skye's wind, Highland cows, and Coy finally playing the Old Course at St Andrews."
 tags: ["uk", "scotland", "wales", "england", "travel", "road trip", "anniversary", "snowdonia", "utmb", "ultra-trail snowdonia", "trail", "golf", "old course", "st andrews", "isle of skye", "edinburgh", "bath", "cotswolds", "lake district", "highland cows"]

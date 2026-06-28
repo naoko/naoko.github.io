@@ -1,8 +1,9 @@
 ---
 title: "Imogene Run"
+image: "/images/2025-09-07/peak.jpeg"
 date: 2025-09-07
 tags: ["imogene", "trail", "race"]
-categories: ["running", "race"]
+categories: ["running"]
 cover:
   image: "/images/2025-09-07/peak.jpeg"
   alt: "Imogene Pass summit sign at 13,114 ft elevation"

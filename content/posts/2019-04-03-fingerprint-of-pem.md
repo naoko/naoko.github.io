@@ -3,6 +3,7 @@ title: "Fingerprint of PEM ssh key"
 date: 2019-04-03
 description: "Generate fingerprint of PEM ssh key"
 tags: ["aws", "PEM", "fingerprint"]
+categories: ["tech"]
 ---
 
 ### The problem

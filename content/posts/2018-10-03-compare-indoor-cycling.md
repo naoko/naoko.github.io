@@ -4,6 +4,7 @@ date: 2018-10-03
 lastmod: 2018-09-03
 description: "In search of configuring / buing fun Indoor Training"
 tags: ["cycling", "indoor", "exercise", "spinner", "bike"]
+categories: ["life"]
 ---
 
 ### The Goal:

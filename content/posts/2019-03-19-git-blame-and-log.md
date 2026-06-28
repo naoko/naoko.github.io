@@ -3,6 +3,7 @@ title: "list changes of specific line(s) with git"
 date: 2019-03-19
 description: "list changes of specific line(s) with git blame and git log"
 tags: ["git", "blame", "log", "changes"]
+categories: ["tech"]
 ---
 
 

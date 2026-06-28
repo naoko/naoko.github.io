@@ -4,6 +4,7 @@ date: 2020-12-20
 lastmod: 2020-12-20
 description: "easy actions you can take and become richer"
 tags: ["money", "robo-advisor", "betterment", "acorn", "investment"]
+categories: ["life"]
 ---
 
 ### You loos your money if you have your money in saving account

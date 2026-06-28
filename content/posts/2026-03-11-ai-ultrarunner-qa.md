@@ -1,9 +1,10 @@
 ---
 title: "I Built an AI Ultrarunner to QA My App"
+image: "/images/2026-03-11/cover.png"
 date: 2026-03-11
 description: "How I set up a Claude Code agent to explore my race tracking app as a real user every week — and it found real bugs on its first run."
 tags: ["claude", "ai", "github-actions", "playwright", "testing", "automation"]
-categories: ["software"]
+categories: ["tech"]
 cover:
   image: "/images/2026-03-11/cover.png"
   alt: "A robot in trail running gear sitting at a laptop, surrounded by GitHub issues and bugs"

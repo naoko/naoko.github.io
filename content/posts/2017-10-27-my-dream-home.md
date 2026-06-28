@@ -1,11 +1,13 @@
 ---
 title: "Our Dream Home"
+image: "/images/2017-10-27/living_dining.jpg"
 date: 2017-10-27
 lastmod: 2017-10-27
 description: "After living below our means for a while, Coy and I decided to go out of comfortable zone"
 cover:
   image: "/images/2017-10-27/living_dining.jpg"
 tags: ["my-house"]
+categories: ["life"]
 ---
 
 ## We've built our dream house.

@@ -1,68 +1,87 @@
 baseURL = "https://naoko.github.io/"
-languageCode = "en-us"
 title = "the art of simplicity"
-theme = "PaperMod"
+theme = "hugo-theme-cleanwhite"
+languageCode = "en-us"
+hasCJKLanguage = true
 enableRobotsTXT = true
 buildDrafts = false
 
 [pagination]
   pagerSize = 5
 
-[markup.goldmark.renderer]
-  unsafe = true
-
-[params]
-  author = "Naoko Reeves"
-  description = "I enjoy building software. Care about being green. Started home gardening..."
-  defaultTheme = "auto"
-  showReadingTime = true
-  showToc = false
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = false
-  ShowCodeCopyButtons = true
-
-  [params.homeInfoParams]
-    Title = "the art of simplicity"
-    Content = "Writing about software, food, life."
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/naoko"
-  [[params.socialIcons]]
-    name = "twitter"
-    url = "https://twitter.com/naoko_reeves"
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com/in/naokoreeves"
-  [[params.socialIcons]]
-    name = "rss"
-    url = "/index.xml"
-
-[menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 1
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
-  [[menu.main]]
-    name = "Python Dict to JSON"
-    url = "/pydict_to_json/"
-    weight = 4
+[outputs]
+  home = ["HTML", "RSS"]
 
 [taxonomies]
   tag = "tags"
   category = "categories"
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+[author]
+  name = "Naoko Reeves"
+
+[params]
+  header_image = "images/lake-louise.jpeg"
+  SEOTitle = "the art of simplicity | Naoko Reeves"
+  description = "Writing about software, food, life. I enjoy building software, care about being green, and run ultras on the side."
+  keyword = "naoko reeves, software, running, ultra, trail, travel, python, devops"
+  slogan = "Writing about software, food, life."
+
+  image_404 = "images/abstract-6.jpg"
+  title_404 = "Nothing here :("
+  # Categories are listed explicitly in additional_menus below (for custom order),
+  # so suppress the theme's auto alphabetical category nav.
+  omit_categories = true
+
+  # Sidebar
+  sidebar_about_description = "Still a software engineer, still hooked on building apps. Off the clock you'll find me cooking, eating, outside, or trying to live a bit greener - less plastic, local produce, renewable energy where I can."
+  sidebar_avatar = "images/mountain-naoko.jpg"
+
+  featured_tags = true
+  featured_condition_size = 2
+
+  # Disable China-centric / external integrations
+  page_view_counter = false
+  algolia_search = false
+  reward = false
+  friends = false
+  bookmarks = false
+  about_me = true
+  last_posts = true
+
+  [params.social]
+    rss      = true
+    email    = "naokoreeves@gmail.com"
+    twitter  = "https://twitter.com/naoko_reeves"
+    linkedin = "https://linkedin.com/in/naokoreeves"
+    github   = "https://github.com/naoko"
+
+  [[params.additional_menus]]
+    title = "running"
+    href  = "/categories/running/"
+  [[params.additional_menus]]
+    title = "tech"
+    href  = "/categories/tech/"
+  [[params.additional_menus]]
+    title = "travel"
+    href  = "/categories/travel/"
+  [[params.additional_menus]]
+    title = "life"
+    href  = "/categories/life/"
+  [[params.additional_menus]]
+    title = "TAGS"
+    href  = "/tags/"
+  [[params.additional_menus]]
+    title = "ABOUT"
+    href  = "/about/"
+  [[params.additional_menus]]
+    title = "PYTHON DICT TO JSON"
+    href  = "/pydict_to_json/"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "dracula"
 
 # Allow our own trusted text/html content files (e.g. pydict_to_json.html).
 # Hugo v0.162+ denies text/html content by default (CVE-2026-50133).

@@ -4,6 +4,7 @@ date: 2018-09-03
 lastmod: 2018-09-03
 description: "Setup custom domain in Blogger via Namechape"
 tags: ["namecheap", "blogger", "domain", "subdomain"]
+categories: ["tech"]
 ---
 
 ### The Goal:

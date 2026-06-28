@@ -4,6 +4,7 @@ date: 2021-02-18
 lastmod: 2021-02-18
 description: "Customized groot sudoers lecture give you smile every time."
 tags: ["linux", "sudo", "sudoers", "lecture", "ubuntu"]
+categories: ["tech"]
 ---
 
 ![groot](/images/2021-02-18-groot.png)

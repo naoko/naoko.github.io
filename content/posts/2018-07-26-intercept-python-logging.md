@@ -4,6 +4,7 @@ date: 2018-07-26
 lastmod: 2018-07-26
 description: "Filter Handle python logging with Custom Logic"
 tags: ["python", "logging"]
+categories: ["tech"]
 ---
 
 ### The problem:

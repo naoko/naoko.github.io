@@ -1,9 +1,10 @@
 ---
 title: "Mud, Mist, and Mountains: The UTMB Snowdonia 25K"
+image: "/images/2026-05-17/cover.jpg"
 date: 2026-05-17
 description: "Racing the UTMB Snowdonia 25K (Ultra-Trail Snowdonia by UTMB) in Eryri National Park, Wales - 4,600 feet of climbing, a strict mandatory gear check, a soaked and muddy course, and a warning about waterproof jackets."
 tags: ["snowdonia", "utmb", "ultra-trail snowdonia", "trail", "race", "wales", "trail running", "eryri", "gear check", "mandatory kit"]
-categories: ["running", "race"]
+categories: ["running"]
 cover:
   image: "/images/2026-05-17/cover.jpg?v=3"
   alt: "A misty lake and valley view from the Snowdonia race course"

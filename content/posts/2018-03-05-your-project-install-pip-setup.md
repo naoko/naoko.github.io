@@ -4,6 +4,7 @@ date: 2018-03-05
 lastmod: 2018-03-05
 description: "Wha't the difference between setup.py develop vs install vs pip install -e"
 tags: ["python", "pip", "setuptools"]
+categories: ["tech"]
 ---
 
 ### The problem:

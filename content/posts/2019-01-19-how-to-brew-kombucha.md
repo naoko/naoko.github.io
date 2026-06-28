@@ -4,6 +4,7 @@ date: 2019-01-19
 lastmod: 2019-01-19
 description: "コンブチャの作り方"
 tags: ["kombucha", "health", "コンブチャ"]
+categories: ["life"]
 ---
 
 ## 準備するもの

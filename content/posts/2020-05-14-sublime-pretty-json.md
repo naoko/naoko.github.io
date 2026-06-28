@@ -4,6 +4,7 @@ date: 2020-05-14
 lastmod: 2020-05-14
 description: "pretty JSON in Sublimie on Linux"
 tags: ["pretty", "json", "linux", "sublime"]
+categories: ["tech"]
 ---
 
 I've been using [JSONLint](https://jsonlint.com/) for every JSON prettifier needs.

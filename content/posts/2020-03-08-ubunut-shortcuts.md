@@ -4,6 +4,7 @@ date: 2020-03-08
 lastmod: 2020-03-08
 description: "Useful Ubuntu Keyboard Shortcuts"
 tags: ["ubuntu", "shortcuts"]
+categories: ["tech"]
 ---
 
 See [Useful keyboard shortcuts](https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html)

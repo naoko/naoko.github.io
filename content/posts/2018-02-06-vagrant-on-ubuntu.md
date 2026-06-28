@@ -4,6 +4,7 @@ date: 2018-02-06
 lastmod: 2018-01-30
 description: "Upgrade vagrant to latest"
 tags: ["vagrant", "ubuntu"]
+categories: ["tech"]
 ---
 
 ### The Problem:

@@ -4,6 +4,7 @@ date: 2020-01-25
 lastmod: 2020-01-25
 description: "Kafka cli kaf to make you more productive"
 tags: ["kafka", "kaf"]
+categories: ["tech"]
 ---
 
 Kafka is super popular and powerful data streaming platform but I'm surprised by lack of easy cli tool.

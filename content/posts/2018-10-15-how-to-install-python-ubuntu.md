@@ -4,6 +4,7 @@ date: 2018-10-15
 lastmod: 2019-06-14
 description: "Install latest python on ubuntu"
 tags: ["python", "install", "3.7", "3.8", "ubuntu"]
+categories: ["tech"]
 ---
 
 Check the latest version [here](https://www.python.org/)

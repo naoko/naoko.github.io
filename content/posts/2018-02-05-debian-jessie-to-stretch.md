@@ -4,6 +4,7 @@ date: 2018-02-05
 lastmod: 2018-01-30
 description: "Upgrade from Debian Jessie to Stretch"
 tags: ["debian", "stretch", "jessie"]
+categories: ["tech"]
 ---
 
 ### The Problem:

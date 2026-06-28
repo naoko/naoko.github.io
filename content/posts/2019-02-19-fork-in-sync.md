@@ -4,6 +4,7 @@ date: 2019-02-19
 lastmod: 2019-01-19
 description: "How to fork and keeping your github repo in sync"
 tags: ["fork", "github"]
+categories: ["tech"]
 ---
 
 ## Forking a Github Repository

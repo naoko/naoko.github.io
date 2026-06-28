@@ -1,11 +1,13 @@
 ---
 title: "Secret Management with Vault"
+image: "/images/2017-10-28-vault.png"
 date: 2017-10-28
 lastmod: 2017-10-28
 description: "Simple Secret Management"
 cover:
   image: "/images/2017-10-28-vault.png"
 tags: ["devops"]
+categories: ["tech"]
 ---
 
 ### The problem:

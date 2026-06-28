@@ -1,9 +1,10 @@
 ---
 title: "The Harness Engineering Cheat Sheet"
+image: "/images/2026-04-28/cover.png"
 date: 2026-04-28
 description: "A quick comparative tour through how OpenAI, Anthropic, Google, Microsoft, Shopify, and Stripe each approach the same problem: keeping coding agents on the rails."
 tags: ["ai", "agents", "claude", "coding-agents", "harness", "infrastructure", "agentops"]
-categories: ["software"]
+categories: ["tech"]
 cover:
   image: "/images/2026-04-28/cover.png"
   alt: "Decision tree: ship code with AI agents vs. build an agent application — branching into Claude Code, Codex, Cursor, OpenAI Symphony, Stripe Minions, Shopify Roast, Google ADK, Microsoft Agent Framework, and AgentOS"

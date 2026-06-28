@@ -7,3 +7,4 @@
 
 # OS / editor
 .DS_Store
+.gstack/

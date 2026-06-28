@@ -4,6 +4,7 @@ date: 2019-04-14
 lastmod: 2019-04-14
 description: "Install GraalVM community edition on Ubuntu and run python with debugger"
 tags: ["python", "graalvm", "ubuntu"]
+categories: ["tech"]
 ---
 ### What is GraalVM?
 > GraalVM is a high-performance, embeddable, polyglot virtual machine for running 

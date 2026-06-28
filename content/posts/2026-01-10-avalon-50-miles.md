@@ -1,9 +1,10 @@
 ---
 title: "Avalon 50 Miles"
+image: "/images/2026-01-10/ocean_view_solo.jpg"
 date: 2026-01-10
 description: "Returning to Catalina Island to take on the 50-mile distance at the Avalon 50/50 Benefit Run"
 tags: ["avalon", "catalina", "ultra", "trail", "race", "50-miler"]
-categories: ["running", "race"]
+categories: ["running"]
 cover:
   image: "/images/2026-01-10/ocean_view_solo.jpg"
   alt: "Running along the Catalina Island coastline"

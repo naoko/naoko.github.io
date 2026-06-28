@@ -4,6 +4,7 @@ date: 2018-06-05
 lastmod: 2018-03-05
 description: "After the upgrade to 10.04 LST, I saw ugly lowest resolution"
 tags: ["ubuntu", "upgrade", "18.04-lst"]
+categories: ["tech"]
 ---
 
 ### The problem:

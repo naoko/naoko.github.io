@@ -4,6 +4,7 @@ date: 2023-04-01
 lastmod: 2023-04-02
 description: "Every runner's question - How soon can I resume running post hysterectomy"
 tags: ["hysterectomy", "running", "women", "runner"]
+categories: ["running"]
 ---
 
 

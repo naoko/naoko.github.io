@@ -4,6 +4,7 @@ date: 2018-01-30
 lastmod: 2018-01-30
 description: "Edit Remote Linux file with PyCharm on OS X"
 tags: ["pycharm", "sshfs"]
+categories: ["tech"]
 ---
 
 ### The Problem:

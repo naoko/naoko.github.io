@@ -4,6 +4,7 @@ date: 2019-08-07
 lastmod: 2019-08-07
 description: "Just a quick reference to create and extract tar.gz on Ubuntu"
 tags: ["ubuntu", "tar.gz", "archive"]
+categories: ["tech"]
 ---
 ### Create tar.gz archives
 ```

@@ -4,6 +4,7 @@ date: 2018-08-22
 lastmod: 2018-08-22
 description: "Configure Elasticsearch and Server to be able to access from outside"
 tags: ["es", "elasticsesarch", "firewall", "ufw", "netstat", "nmap"]
+categories: ["tech"]
 ---
 
 ### The problem:

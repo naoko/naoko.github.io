@@ -4,6 +4,7 @@ date: 2018-02-18
 lastmod: 2018-02-18
 description: "Super brief version of small actions you can take and become richer"
 tags: ["money", "robo-advisor", "betterment", "acorn", "ebates", "investment"]
+categories: ["life"]
 ---
 
 ### 鉄則１：出費しながらお金を貰う

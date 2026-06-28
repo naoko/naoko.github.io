@@ -4,6 +4,7 @@ date: 2019-08-25
 lastmod: 2019-08-25
 description: "Docker image and container clean up on your computer"
 tags: ["docker", "purge", "df"]
+categories: ["tech"]
 ---
 
 Unused Docker image and container can quickly take up your disk spaces.

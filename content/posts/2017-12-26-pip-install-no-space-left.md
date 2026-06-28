@@ -4,6 +4,7 @@ date: 2017-12-26
 lastmod: 2017-12-26
 description: "Solving the problem of tiny /tmp directory"
 tags: ["python", "pip"]
+categories: ["tech"]
 ---
 
 ### The Problem:

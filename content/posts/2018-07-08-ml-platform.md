@@ -4,6 +4,7 @@ date: 2018-07-08
 lastmod: 2018-07-08
 description: "Platform to manage the ML experiments and development"
 tags: ["ml", "ml-flow", "machine", "learning", "platform"]
+categories: ["tech"]
 ---
 
 ### The problem:
