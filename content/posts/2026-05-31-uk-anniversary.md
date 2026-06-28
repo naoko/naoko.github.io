@@ -209,4 +209,4 @@ Thirty years together, and we managed to find a trip that gave each of us exactl
 
 What I'll remember isn't any single landmark. It's the *texture* of the place - how the Romans built spas we'd still recognize, how the Welsh kept their language, how the British respect their mountains, how the Scots tucked a modern life inside their ancient walls. A country that holds onto its past while quietly getting on with the present.
 
-Would we do it again? In a heartbeat. Cheers to your next adventure, wherever the road takes you. 🥃
+Cheers to your next adventure, wherever the road takes you. 🥃
