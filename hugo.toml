@@ -63,3 +63,8 @@ buildDrafts = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+# Allow our own trusted text/html content files (e.g. pydict_to_json.html).
+# Hugo v0.162+ denies text/html content by default (CVE-2026-50133).
+[security]
+  allowContent = ['.*']
