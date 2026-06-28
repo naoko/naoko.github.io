@@ -1,5 +1,5 @@
 ---
-title: "Britain, Bottom to Top: History and Wild Beauty"
+title: "Britain, Bottom to Top: History and Wild Beauty 🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿"
 date: 2026-05-31
 description: "Two weeks driving from London to Edinburgh for our 30th anniversary - ancient Roman baths, a Snowdonia trail race, the Isle of Skye's wind, and Coy finally playing the Old Course."
 tags: ["uk", "scotland", "wales", "england", "travel", "anniversary", "snowdonia", "golf", "isle-of-skye", "trail"]
@@ -10,7 +10,7 @@ cover:
   relative: false
 ---
 
-# Britain, Bottom to Top: History and Wild Beauty
+# Britain, Bottom to Top: History and Wild Beauty 🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿
 
 For our 30th anniversary, Coy and I decided to do something we'd never done together: rent a car and drive the length of Britain, bottom to top. We landed at London Heathrow and, over the next two and a half weeks, worked our way north - through England, into Wales, up the spine of the Lake District, across the Scottish Highlands and the Isle of Skye, and finally into Edinburgh, where we flew home.
 
@@ -195,9 +195,9 @@ And we celebrated 30 years with dinner at **The Kitchin**, Tom Kitchin's Micheli
 
 ![A beautifully plated course at The Kitchin in Edinburgh](/images/2026-05-31/fine_dining.jpg)
 
-Of course, this being Scotland, we couldn't leave without a proper **whisky experience** to toast the milestone.
+Coy rounded off the meal with a proper Scottish whisky - that part was strictly his.
 
-![Toasting 30 years over a whisky flight](/images/2026-05-31/whisky.jpg)
+![Coy and his whisky to finish our dinner at The Kitchin](/images/2026-05-31/whisky.jpg)
 
 ## What We Ate (and the Full Breakfast Verdict)
 
