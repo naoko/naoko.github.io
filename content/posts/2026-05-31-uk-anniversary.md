@@ -175,6 +175,8 @@ The coastal trail had its own surprises: more Highland cows (kept along the path
 
 ![Canola fields blazing yellow under a big Scottish sky](/images/2026-05-31/countryside.jpg)
 
+One thing that genuinely surprised me about Scotland - and St Andrews especially - was how *safe* it felt, as safe as Japan. In the cafés I'd watch people leave their laptops out on a table, wander off for ages, and come back to find everything exactly where they'd left it. Coming from the States, that took some getting used to, in the best possible way.
+
 ## Edinburgh - Full Circle
 
 We finished where the trip's history theme came full circle: **Edinburgh**. After all the small lairds' castles scattered across the countryside, the royal grandeur of Edinburgh Castle on its volcanic rock really lands. I got an early-morning run up to Arthur's Seat, with the whole city - castle and all - laid out below.
