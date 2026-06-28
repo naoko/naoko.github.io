@@ -28,7 +28,7 @@ We picked up the rental car at Heathrow and pointed it straight at Stonehenge, w
 
 That night we stayed at the [Gainsborough Bath Spa](https://www.thegainsboroughbathspa.co.uk/), the only hotel in Bath with access to the natural thermal waters, and the next morning we went to the Roman Baths themselves.
 
-This is where I had my favorite realization of the whole trip. Walking through the ruins, you see that the Romans had a **gym, a sauna, and a massage room**. Two thousand years ago. Honestly? Nothing has changed. We still go to spas to sweat, soak, and get rubbed down - they just did it with better mosaics.
+This is where I had my favorite realization of the whole trip. Walking through the ruins, you see that the Romans had a **gym, a sauna, and a massage room**. Two thousand years ago. What? Nothing has changed. We still go to spas to sweat, soak, and get rubbed down - they just did it with better mosaics.
 
 ![The Roman Baths in Bath](/images/2026-05-31/roman_baths.jpg)
 
@@ -64,7 +64,7 @@ And the finish - I was absolutely **caked in mud**. The course was so wet that I
 
 ![So muddy at the finish - I slipped, and those shoes used to be white](/images/2026-05-31/snowdonia_finish.jpg)
 
-After I finished, we drove over so Coy could play a round at Caernarfon Golf Club (sunset in Wales in May isn't until 9 PM, so he had all the time in the world). I walked the whole course alongside him - it was *super* windy, but honestly the easy walking afterward was exactly what my legs needed.
+After I finished, we drove over so Coy could play a round at Caernarfon Golf Club (sunset in Wales in May isn't until 9 PM, so he had all the time in the world). I walked the whole course alongside him - it was *super* windy, but the easy walking afterward was exactly what my legs needed.
 
 ## The Lake District - Where Everyone Is Secretly an Expert
 
