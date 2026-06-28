@@ -5,7 +5,7 @@ description: "Racing the UTMB Snowdonia 25K (Ultra-Trail Snowdonia by UTMB) in E
 tags: ["snowdonia", "utmb", "ultra-trail snowdonia", "trail", "race", "wales", "trail running", "eryri", "gear check", "mandatory kit"]
 categories: ["running", "race"]
 cover:
-  image: "/images/2026-05-17/cover.jpg"
+  image: "/images/2026-05-17/cover.jpg?v=2"
   alt: "A misty lake and valley view from the Snowdonia race course"
   relative: false
 ---
@@ -16,7 +16,7 @@ This race was the centerpiece of our big UK anniversary trip (the full travel st
 
 I'd signed up for the **UTMB Snowdonia 25K**, part of the Ultra-Trail Snowdonia by UTMB weekend, set deep in **Eryri National Park** (Snowdonia) in northern Wales. On paper: about 25 kilometers and 4,600 feet of climbing. In reality: mud, mist, sheep, and some of the most dramatic mountain running I've ever done.
 
-![The UTMB Snowdonia start area in Llanberis, mist sitting low on the mountains](/images/2026-05-17/start.jpg)
+![The UTMB Snowdonia start area in Llanberis, mist sitting low on the mountains](/images/2026-05-17/start.jpg?v=2)
 
 ## Packet Pickup in Llanberis
 
@@ -26,21 +26,21 @@ We drove out to the Ultra-Trail Village in Llanberis the day before, and the ene
 
 Snowdonia has the strictest mandatory-kit check I've ever been through. The required list for the 25K: a **bivvy bag (not a foil blanket), a waterproof jacket, and a long-sleeved top** - and they run checks on the start line *and* out on the course, so there's no leaving anything in the car.
 
-![The 25K kit-check board: bivvy bag, waterproof jacket, long-sleeved top](/images/2026-05-17/gear_check.jpg)
+![The 25K kit-check board: bivvy bag, waterproof jacket, long-sleeved top](/images/2026-05-17/gear_check.jpg?v=2)
 
 Here's the part that nearly ended my day before it began: the "waterproof" jacket I'd brought was **rejected**. The volunteer looked at it, shook her head, and told me - kindly but very firmly - that if I wore *that* jacket, I'd be disqualified. It turns out there are different grades of "waterproof," and a serious mountain race requires a genuine, high-rated one (taped seams, a real waterproof rating), not just something water-resistant. **Lesson learned: if you're racing Snowdonia, make sure your waterproof is *actually* waterproof to the required standard.** I ended up buying a properly-rated jacket on the spot at the packet-pickup expo - it cost me over **$200**. An expensive lesson in reading the kit requirements carefully.
 
 And the weather - every race video I'd watched from the past couple of years looked warm and sunny. Not this year. It rained, it blew, and it was *cold*. So pack for all of it: warm layers, gloves, and that proper waterproof. These mountains make their own weather, and it can swing in minutes.
 
-![Bundled up at a cold, grey start line - nothing like the sunny videos I'd watched](/images/2026-05-17/start_cold.jpg)
+![Bundled up at a cold, grey start line - nothing like the sunny videos I'd watched](/images/2026-05-17/start_cold.jpg?v=2)
 
 ## The Climbs
 
 Race morning was everything I love about mountain racing - long, brutal climbs, and big views that appeared and vanished as the mist rolled through. Every time the clouds parted, Eryri showed off: green ridgelines, stone walls, and the path winding up toward Yr Wyddfa (Snowdon) itself.
 
-![A trail signpost on course - Llanberis 4.5 km, Yr Wyddfa (Snowdon) the other way](/images/2026-05-17/course.jpg)
+![A trail signpost on course - Llanberis 4.5 km, Yr Wyddfa (Snowdon) the other way](/images/2026-05-17/course.jpg?v=2)
 
-![Grinding up one of the long climbs - poles out](/images/2026-05-17/the_hill.jpg)
+![Grinding up one of the long climbs - poles out](/images/2026-05-17/the_hill.jpg?v=2)
 
 I was *so* glad I'd packed my **poles**. They were a huge help powering up the steep climbs, and even more so for staying balanced and keeping momentum through the slick, muddy sections. If you're on the fence about poles for Snowdonia, bring them - you'll be reaching for them constantly.
 
@@ -52,9 +52,9 @@ There was one obstacle the course map didn't warn me about: **sheep poop**, abso
 
 The course was so wet that staying upright was a challenge in itself. At one point I slipped and went straight down - my pants were filthy and my shoes, which had started the day a proud bright white, were unrecognizable by the finish. But I crossed that line a finisher, and that's all that mattered.
 
-![Almost there - grinding toward the finish line with the mountains behind](/images/2026-05-17/almost_finish.png)
+![Almost there - grinding toward the finish line with the mountains behind](/images/2026-05-17/almost_finish.png?v=2)
 
-![At the finish with my medal - those shoes used to be white](/images/2026-05-17/finish.jpg)
+![At the finish with my medal - those shoes used to be white](/images/2026-05-17/finish.jpg?v=2)
 
 ## After the Finish
 
