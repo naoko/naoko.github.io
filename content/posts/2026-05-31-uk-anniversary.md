@@ -26,7 +26,7 @@ We picked up the rental car at Heathrow and pointed it straight at Stonehenge, w
 
 ![Stonehenge under a moody English sky](/images/2026-05-31/stonehenge.jpg)
 
-That night we stayed at the Gainsborough Bath Spa, the only hotel in Bath with access to the natural thermal waters, and the next morning we went to the Roman Baths themselves.
+That night we stayed at the [Gainsborough Bath Spa](https://www.thegainsboroughbathspa.co.uk/), the only hotel in Bath with access to the natural thermal waters, and the next morning we went to the Roman Baths themselves.
 
 This is where I had my favorite realization of the whole trip. Walking through the ruins, you see that the Romans had a **gym, a sauna, and a massage room**. Two thousand years ago. Honestly? Nothing has changed. We still go to spas to sweat, soak, and get rubbed down - they just did it with better mosaics.
 
