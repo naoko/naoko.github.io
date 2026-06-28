@@ -52,19 +52,11 @@ Then we crossed into Wales and everything changed - the road signs, the mountain
 
 ![Bilingual road signs everywhere in Wales - Welsh first, then English](/images/2026-05-31/wales_sign.jpg)
 
-The whole reason we were here: I'd signed up for the **UTMB Snowdonia 25K**, about 4,600 feet of climbing through Eryri National Park. We drove out to the Ultra-Trail Village in Llanberis for packet pickup, with the clouds sitting right down on the mountains.
-
-![The UTMB Snowdonia start area in Llanberis](/images/2026-05-31/snowdonia_start.jpg)
-
-Race morning was everything I love about mountain racing - brutal climbs, big views, and that particular kind of suffering you somehow pay money for. There was even an unexpected skill to master: **dodging the sheep poop** scattered all over the trail. Those hills belong to the sheep, and they leave their mark everywhere.
-
-![Out on the Snowdonia 25K course](/images/2026-05-31/snowdonia_race.jpg)
-
-And the finish - I was absolutely **caked in mud**. The course was so wet that I slipped and went down, so my pants were filthy and my shoes (which had started out bright white) were unrecognizable.
+The whole reason we were in Wales was my race: the **UTMB Snowdonia 25K**, about 4,600 feet of climbing through Eryri National Park. It was muddy, misty, and unforgettable - I slipped on the soaked course and finished absolutely caked in mud. I wrote the full race report here: **[Mud, Mist, and Mountains: The UTMB Snowdonia 25K](/posts/2026-05-17-utmb-snowdonia-25k/)**.
 
 ![So muddy at the finish - I slipped, and those shoes used to be white](/images/2026-05-31/snowdonia_finish.jpg)
 
-After I finished, we drove over so Coy could play a round at Caernarfon Golf Club (sunset in Wales in May isn't until 9 PM, so he had all the time in the world). I walked the whole course alongside him - it was *super* windy, but the easy walking afterward was exactly what my legs needed.
+Afterward, Coy played a round at Caernarfon Golf Club (sunset in Wales in May isn't until 9 PM, so he had all the time in the world) while I walked the whole windy course alongside him - the easy walking was exactly what my legs needed.
 
 ## The Lake District - Where Everyone Is Secretly an Expert
 
