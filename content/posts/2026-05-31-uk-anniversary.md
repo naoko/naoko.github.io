@@ -60,7 +60,7 @@ Race morning was everything I love about mountain racing - brutal climbs, big vi
 
 ![Out on the Snowdonia 25K course](/images/2026-05-31/snowdonia_race.jpg)
 
-And the finish - I was absolutely **caked in mud**. The course was so wet that I slipped and went down, so my pants were filthy and my shoes (which had started out bright white) were unrecognizable. I didn't care one bit.
+And the finish - I was absolutely **caked in mud**. The course was so wet that I slipped and went down, so my pants were filthy and my shoes (which had started out bright white) were unrecognizable.
 
 ![So muddy at the finish - I slipped, and those shoes used to be white](/images/2026-05-31/snowdonia_finish.jpg)
 
