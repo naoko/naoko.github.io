@@ -6,13 +6,11 @@ tags: ["ai", "agents", "claude", "coding-agents", "tokens", "rust", "knowledge-g
 categories: ["tech"]
 ---
 
-# Two Ways to Stop Your Coding Agent Burning Tokens: RTK and CodeGraph
-
 I keep a few Claude Code and Cursor sessions running through the day, and at some point I started actually watching the token counter instead of ignoring it. The thing that struck me wasn't how *much* it climbed. It was *what* it climbed on. Most of the budget wasn't going on the model reasoning about my problem. It was going on plumbing: `ls`, `grep`, reading the same file three times to rebuild a call path, scrolling a 400-line `cargo test` dump to find the one assertion that failed.
 
 That's the dirty secret of agentic coding. The expensive part isn't the thinking. It's the *finding out*, plus the *noise on the way back*.
 
-Two open-source projects went semi-viral this spring solving exactly this, and they're interesting precisely because they attack opposite ends of the same pipe. Both went from a January 2026 first commit to north of 55,000 GitHub stars by June. That's not nothing, so I went and read both.
+Two open-source projects went semi-viral this spring solving exactly this, and they're interesting precisely because they attack opposite ends of the same pipe. Both went from a first commit earlier this year to north of 50,000 GitHub stars apiece by June — the READMEs embed star-history charts if you want to see the curve. That's not nothing, so I went and read both.
 
 > ⚠️ **Snapshot warning.** Both repos are weeks old and moving fast. Star counts, benchmark numbers, and supported-tool lists below are as of late June 2026 and will drift. Both projects publish their own benchmarks, so always read those with a healthy squint (vendor benchmarks measure the case the vendor optimized for). Re-check before you make a decision on either.
 
@@ -26,7 +24,7 @@ Two open-source projects went semi-viral this spring solving exactly this, and t
 | **Built in** | TypeScript, SQLite + tree-sitter | Rust, single zero-dependency binary |
 | **Runs** | 100% local, MCP server | 100% local, bash hook / plugin |
 | **License** | MIT | Apache-2.0 |
-| **Stars (Jun 2026)** | ~55.6k | ~66.7k |
+| **Stars (Jun 2026)** | ~56k | ~67k |
 
 The key thing: **these are not competitors.** One shrinks what the agent has to read to *understand* your codebase. The other shrinks what comes *back* when it runs a command. You can run both, and probably should.
 
@@ -36,11 +34,11 @@ When an agent needs to understand code to answer a question or make a change, it
 
 CodeGraph pre-builds the map. The pipeline is refreshingly un-magical:
 
-1. **Extract.** Tree-sitter parses your source into ASTs; language-specific queries pull out symbols (functions, classes, methods) and edges (calls, imports, inheritance).
+1. **Extract.** Tree-sitter parses your source into ASTs; language-specific queries pull out symbols (functions, classes, methods) and edges (calls, imports, inheritance). It ships grammars for 20+ languages — TS/JS, Python, Go, Rust, Java, C#, Swift, Kotlin, Ruby, C/C++, and more — so this isn't a two-language toy.
 2. **Store.** Everything lands in a local SQLite database with FTS5 full-text search, in a `.codegraph/` directory in your project.
 3. **Resolve & sync.** A post-pass wires up cross-file references and class hierarchies, and a native file watcher (FSEvents/inotify) does debounced incremental updates as you type.
 
-Then it exposes one MCP tool, `codegraph_explore`, that hands the agent the exact code it asked for in a single call: the relevant source grouped by file, the call paths between symbols *including dynamic-dispatch hops that grep can't follow*, and the blast radius of a change. Surgical context instead of a file-by-file search.
+Then it exposes a single MCP tool *by default*, `codegraph_explore`, that hands the agent the exact code it asked for in a single call: the relevant source grouped by file, the call paths between symbols *including dynamic-dispatch hops that grep can't follow*, and the blast radius of a change. Surgical context instead of a file-by-file search. (Seven finer-grained tools — `codegraph_search`, `codegraph_callers`, `codegraph_callees`, `codegraph_impact`, `codegraph_node`, `codegraph_files`, `codegraph_status` — ship alongside it but stay hidden unless you set `CODEGRAPH_MCP_TOOLS`, on the maintainer's theory that one strong tool steers an agent better than a menu of narrow ones. It's a deliberate design choice, not a missing feature.)
 
 The benchmark (their methodology: `claude -p` on Claude Opus 4.8, headless, with vs. without the MCP server, 4 runs per arm, median reported):
 
@@ -56,7 +54,9 @@ The benchmark (their methodology: `claude -p` on Claude Opus 4.8, headless, with
 
 The fair read on this, and to their credit the project says so itself, is that the **reliable** win is the left side of the table: fewer tool calls, near-zero file reads, faster answers, on every repo regardless of size. The **token and dollar** savings on the right are real but *scale-dependent*. On a 500-file project they're small and noisy run-to-run; they only compound into a real line item once you're at monorepo scale multiplied by a whole team's daily usage. So: adopt it for the speed and precision now, and the cost savings show up when the codebase (and the team) gets big.
 
-Setup is three steps. Install the CLI (`npm i -g @colbymchenry/codegraph`), run `codegraph install` to wire up your agent, and `codegraph init` per project to build the graph. After that it's transparent: the agent uses the tools whenever a `.codegraph/` exists.
+Two more things to hold in mind reading that table. First, it's *one architecture-comprehension question per repo* — a narrow task family, not a spread of real edit-and-test work. Second, and more interesting: the maintainer notes these Opus 4.8 numbers came in *lower* than the earlier Opus 4.7 run. That's not a CodeGraph regression — it's a stronger baseline. Opus 4.8 greps and reads efficiently on the main thread instead of fanning out into big discovery sweeps, so it needed the graph less. Which means the gap this tool closes will keep *shrinking* as the models themselves get better at discovery — a genuinely double-edged wrinkle for a tool whose whole pitch is discovery, and one that says more about where this is all heading than any single row in the table.
+
+Setup is quick. Install the CLI — the headline path is now a no-Node.js installer (`curl -fsSL …/install.sh | sh`), or `npm i -g @colbymchenry/codegraph` if you'd rather — then `codegraph install` to wire up your agent and `codegraph init` per project to build the graph. After that it's transparent: the agent uses the tools whenever a `.codegraph/` exists. (That directory is a rebuildable local index, so `.gitignore` it.)
 
 ## RTK: stop the agent drowning in output
 
@@ -81,7 +81,9 @@ Their self-reported savings for a 30-minute Claude Code session:
 
 Take the total with the usual salt. It's an estimate on a medium TypeScript/Rust project, and your command mix will differ. But the *shape* is right. Test runners and verbose `git` plumbing are pure noise to a model that just wants the one failing assertion, and that's exactly where the cuts are deepest.
 
-It ships specialized filters for 100+ commands (test runners, linters, Docker/k8s, AWS CLI, package managers), claims sub-10ms overhead, passes unrecognized commands through untouched, and has `rtk gain` / `rtk discover` to show you what you're saving and what you're missing. Install via Homebrew, `cargo`, or the install script; `rtk init -g` wires up the Claude Code hook.
+There's one caveat that matters more than the salt on the total, and it's the single most important thing to know before you install RTK: **the hook only rewrites `Bash` tool calls.** Claude Code's native `Read`, `Grep`, and `Glob` tools don't pass through it, so they're never auto-compressed. That's a big deal, because two of the fattest lines in that table — `cat`/`read` (−70%) and `grep` (−80%) — only materialize when the agent reaches for the *shell* versions rather than its built-in tools (or when you call `rtk read` / `rtk grep` / `rtk find` explicitly). Since Claude Code leans hard on native Read/Grep, real-world savings land meaningfully below the headline unless your agent is shell-heavy. Worth watching your own counter rather than trusting the total.
+
+It ships specialized filters for 100+ commands (test runners, linters, Docker/k8s, AWS CLI, package managers), claims sub-10ms overhead, passes unrecognized commands through untouched, and has `rtk gain` / `rtk discover` to show you what you're saving and what you're missing. Install via Homebrew (`brew install rtk`), the install script, or `cargo install --git https://github.com/rtk-ai/rtk` — note the `--git`, because a *different* project called `rtk` (Rust Type Kit) squats the name on crates.io, and a plain `cargo install rtk` fetches the wrong binary. Then `rtk init -g` wires up the Claude Code hook.
 
 ## Why both of these caught fire
 
@@ -92,7 +94,7 @@ There's a nice symmetry in *where* they intervene:
 - **CodeGraph** is a deterministic index. It replaces probabilistic file-crawling with an exact lookup, so call graphs are answers, not leads. Its cost is an upfront build and a `.codegraph/` directory to keep in sync.
 - **RTK** is a deterministic filter. It replaces "dump everything and let the model sift" with "show the model the part that matters." Its cost is trusting the filter not to drop the line you needed, which the tee-on-failure escape hatch is there to mitigate.
 
-Both are 100% local, which matters more than it sounds. Plenty of "code intelligence" products want to ship your source to a cloud index. Both of these keep everything on your machine: no API keys, no data egress. For anyone working in a codebase they can't send to a third party, that's the difference between "can use" and "can't."
+Both are 100% local, which matters more than it sounds. Plenty of "code intelligence" products want to ship your source to a cloud index. Both of these keep everything on your machine: no API keys, no source egress. The one asterisk: RTK ships an opt-in telemetry system — off by default, and it asks for explicit consent during `rtk init` — so the precise framing is "no telemetry unless you say yes," not "none at all." (Its tee-on-failure output also lands on local disk, not a server.) For anyone working in a codebase they can't send to a third party, both still clear the bar that matters.
 
 ## So which one?
 
@@ -100,6 +102,8 @@ If I had to pick an order: **CodeGraph first if you work in a big, tangled codeb
 
 The caveat for both is the same: they're young, the benchmarks are self-published, and a filter or an index is only as good as its coverage of *your* stack. Try them on a real task, watch your own token counter, and trust that over anyone's table, mine included.
 
-What I like most is what they represent. For a year the entire conversation was "which model is smartest." These two repos, and ~120k stars between them, are a quiet vote for a different question: *how little can we make the smart model read?* Turns out the answer is "a lot less than it currently does."
+One adoption note worth keeping your eyes open on: both projects are quietly commercializing. CodeGraph has a hosted platform in beta at [getcodegraph.com](https://getcodegraph.com), and RTK teases a cloud tier. The open-source cores are genuinely useful and genuinely free — they're also the on-ramp to paid products, which is worth knowing before a whole team builds a workflow on top of either.
+
+What I like most is what they represent. For a year the entire conversation was "which model is smartest." These two repos, well over 100k stars between them, are a quiet vote for a different question: *how little can we make the smart model read?* Turns out the answer is "a lot less than it currently does."
 
 Cheers to leaner, cheaper, AI-assisted coding! 🥂
