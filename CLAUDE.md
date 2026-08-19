@@ -28,6 +28,12 @@ One of these in a post is a flourish. Three is a drumbeat, and every paragraph s
 
 Delete on sight: "Here's the moment I knew…", "Here's the thing nobody tells you about…", "Here's the part that actually explains…". They announce a reveal instead of just telling it.
 
+### Filler openers
+
+"Honestly," / "Frankly," / "To be honest," / "I'll be honest," bolted onto the front of a sentence. Heavily overused by AI, and they add nothing — the sentence is just as honest without them. `No. I don't think I'll sign up again.` beats `Honestly, no. …`
+
+Same for "genuinely", "truly", and "actually" used as intensifiers rather than to draw a real contrast.
+
 ### Naoko's actual voice
 
 Read `2026-01-10-avalon-50-miles.md` and `2025-09-07-imogene-run.md` before drafting. The register is:

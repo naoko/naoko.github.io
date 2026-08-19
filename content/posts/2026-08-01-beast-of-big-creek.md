@@ -65,7 +65,7 @@ I won't oversell the views, because we didn't really get them. What we got inste
 
 Somewhere on the way down I rolled my ankle. I got my poles under me and hauled myself back up, and then stood there for a minute doing the thing you do where you test it carefully and try to guess how bad it is. It came good again after about five minutes, which was an enormous relief, because it could very easily have been the end of my day out there.
 
-The bigger surprise came at the aid station on the way back. I stopped, and only then did I notice what had happened to my legs. My quads were completely gone. They felt like squid legs, no bones in them at all, just wobbling around underneath me. I genuinely hadn't registered how far past empty I was until I stood still long enough to feel it.
+The bigger surprise came at the aid station on the way back. I stopped, and only then did I notice what had happened to my legs. My quads were completely gone. They felt like squid legs, no bones in them at all, just wobbling around underneath me. I hadn't registered how far past empty I was until I stood still long enough to feel it.
 
 And I had it in my head that I needed to finish within 5 hours. So from that aid station on I pushed anyway, harder than I usually let myself push, watching my watch and redoing the arithmetic over and over the way you do when you're tired and the numbers won't stay still, on a descent that did not care at all what my watch said.
 
@@ -113,7 +113,7 @@ If you run this race, stay the night instead of driving home. The whole trip is 
 
 ## Would I Do It Again
 
-Honestly, no. I don't think I'll sign up for this one a second time.
+No. I don't think I'll sign up for this one a second time.
 
 I love mountain races, but most of the ones I love roll a bit — they give you a flat stretch or a gentle bit where you can settle into a rhythm and get something back before the next climb. The Beast doesn't do that. It's one long way up and one long way down, and that means the descent is just as relentless as the climb, on quads that have already been emptied out getting to the top. My legs need to be a lot stronger before that's something I can enjoy rather than survive.
 
