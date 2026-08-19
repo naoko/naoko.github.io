@@ -69,6 +69,8 @@ I came in at 5:04:34, and I teared up.
 
 Not because of the four minutes. I think it was everything at once — how hard I'd pushed on a mountain that had already taken everything, and the relief of not having to push anymore.
 
+My Garmin logged 15.50 miles and 5,449 feet of climbing, against the official 15 miles and 5,300, which is about as close as a watch ever gets to agreeing with a mountain course. It also put my average pace at 19:39 per mile, which tells you most of what you need to know about the terrain.
+
 Only 3 people out of 163 starters didn't finish. Everybody else went up and came back down.
 
 ## What 45th of 51 Actually Means
@@ -113,8 +115,12 @@ If you run this race, stay the night instead of driving home. The whole trip is 
 
 ## Would I Do It Again
 
-Yes, though I'd like to go back knowing what I know now.
+Honestly, no. I don't think I'll sign up for this one a second time.
 
-I'd stop giving myself a time in my head before I've seen the course. The 5 hours was something I made up, and I spent the whole descent paying for it on legs that had nothing left. Next time I'd like to run it as it comes.
+I love mountain races, but most of the ones I love roll a bit — they give you a flat stretch or a gentle bit where you can settle into a rhythm and get something back before the next climb. The Beast doesn't do that. It's one long way up and one long way down, and that means the descent is just as relentless as the climb, on quads that have already been emptied out getting to the top. My legs need to be a lot stronger before that's something I can enjoy rather than survive.
 
-But I got to stand on a start line with athletes I'd otherwise only read about, watch them warm up for a race that scared me, and then climb the same mountain they climbed. Slower, and in the same clouds. Fifty-one of us started up Ellinor and fifty-one of us came back down, and I was tearing up at the bottom of it, which tells you it mattered.
+That's not a criticism of the race. It's a good race and it's honest about what it is, which is right there in the name.
+
+And I'd still tell you to go. It's a beautiful piece of the Olympics, the summit is worth standing on even in the clouds, and the weekend around it is lovely, especially if you like oysters. Just turn up with stronger legs than I had.
+
+I got to stand on a start line with athletes I'd otherwise only read about, watch them warm up for a race that scared me, and then climb the same mountain they climbed, slower and in the same clouds. Fifty-one of us started up Ellinor and fifty-one of us came back down, and I was tearing up at the bottom of it, which tells you it mattered.
