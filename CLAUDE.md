@@ -43,6 +43,7 @@ Read `2026-01-10-avalon-50-miles.md` and `2025-09-07-imogene-run.md` before draf
 - Self-deprecation stated flatly, never performed ("wobbly baby giraffe", "legs like squid legs")
 - Occasional direct address or rhetorical question
 - Gratitude at the end, specific rather than general
+- Race reports sign off with a toast: "Cheers to the next mountain, wherever it turns out to be. 🥂" Keep it specific to that race. This 🥂 is about the only emoji that appears in the posts.
 
 ### On race results
 

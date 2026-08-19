@@ -122,3 +122,5 @@ That's not a criticism of the race. It's a good race and it's honest about what 
 And I'd still tell you to go. It's a beautiful piece of the Olympics, the summit is worth standing on even in the clouds, and the weekend around it is lovely, especially if you like oysters. Just turn up with stronger legs than I had.
 
 I got to stand on a start line with athletes I'd otherwise only read about, watch them warm up for a race that scared me, and then climb the same mountain they climbed, slower and in the same clouds. Fifty-one of us started up Ellinor and fifty-one of us came back down, and I was tearing up at the bottom of it, which tells you it mattered.
+
+Cheers to mountain races, and to the oysters that come after them. 🥂
