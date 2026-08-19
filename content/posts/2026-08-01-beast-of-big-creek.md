@@ -75,6 +75,10 @@ Not because of the four minutes. I think it was everything at once — how hard 
 
 My Garmin logged 15.50 miles and 5,449 feet of climbing, against the official 15 miles and 5,300, which is about as close as a watch ever gets to agreeing with a mountain course. It also put my average pace at 19:39 per mile, which tells you most of what you need to know about the terrain.
 
+![Garmin stats from the race](/images/2026-08-01/garmin_stats.png)
+
+The colour on the track is pace, and it gives the whole thing away. That long blue arm reaching off to the northwest is the climb to the summit, blue the entire way, which is what a 40% grade does to anybody's pace.
+
 Only 3 people out of 163 starters didn't finish. Everybody else went up and came back down.
 
 ## A Note on the Results Page
