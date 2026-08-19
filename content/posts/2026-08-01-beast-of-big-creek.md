@@ -63,7 +63,11 @@ I won't oversell the views, because we didn't really get them. What we got inste
 
 ## Squid Legs, and the Finish
 
-I had it in my head that I needed to finish within 5 hours. So the whole way down I pushed, harder than I usually let myself push, watching my watch and doing the arithmetic over and over the way you do when you're tired and the numbers won't stay still. My quads were completely gone by then. My legs felt like squid legs — no bones in them at all, just wobbling around underneath me while I tried to make them go faster on a descent that did not care what my watch said.
+Somewhere on the way down I rolled my ankle. I got my poles under me and hauled myself back up, and then stood there for a minute doing the thing you do where you test it carefully and try to guess how bad it is. It came good again after about five minutes, which was an enormous relief, because it could very easily have been the end of my day out there.
+
+The bigger surprise came at the aid station on the way back. I stopped, and only then did I notice what had happened to my legs. My quads were completely gone. They felt like squid legs, no bones in them at all, just wobbling around underneath me. I genuinely hadn't registered how far past empty I was until I stood still long enough to feel it.
+
+And I had it in my head that I needed to finish within 5 hours. So from that aid station on I pushed anyway, harder than I usually let myself push, watching my watch and redoing the arithmetic over and over the way you do when you're tired and the numbers won't stay still, on a descent that did not care at all what my watch said.
 
 I came in at 5:04:34, and I teared up.
 
