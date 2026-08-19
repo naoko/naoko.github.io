@@ -23,7 +23,7 @@ And then I noticed people jogging past me. Not walking to the start, but actuall
 
 This is the steepest race I've done, around 350 feet of climbing for every mile, and Broken Arrow is the closest thing to it I've run. And here were all these elite-looking runners getting in a serious warm-up first. It did not do much for my nerves.
 
-## Who Actually Shows Up in Hoodsport
+## Who Actually Shows Up
 
 Hoodsport, Washington has a population of a few hundred people. It's a small town on the Hood Canal where you'd go for oysters and a quiet weekend, and it doesn't sound anything like an international race destination.
 
@@ -77,23 +77,13 @@ My Garmin logged 15.50 miles and 5,449 feet of climbing, against the official 15
 
 Only 3 people out of 163 starters didn't finish. Everybody else went up and came back down.
 
-## What 45th of 51 Actually Means
+## A Note on the Results Page
 
 Afterward I went and pulled the full results, not just the top ten, because I wanted to understand the day better.
 
-I finished 45th out of 51 women, and 144th out of 160 overall. The median woman in this race ran **3:32:55**, so I was an hour and a half behind the middle of the field and more than twice the winner's time.
+I finished 45th out of 51 women, and 144th out of 160 overall. The median woman ran **3:32:55**, and 37 of the 51 of us were under 40.
 
-But look at who the field actually was:
-
-- 37 of the 51 women were under 40. That's 73% of them.
-- Exactly **five** women in the whole race were 50 or older.
-- The oldest woman to finish was 56. I'm 55.
-
-So I was the second-oldest woman out there, and of the five of us over 50, I came in third.
-
-I'm not going to pretend that makes me fast, because it doesn't, and a five-person age group isn't much of a podium. But it does mean that "45th out of 51" is measuring something other than what it looks like it's measuring. I wasn't 45th out of 51 ordinary runners. I was 45th out of 51 in a field made up mostly of sponsored athletes and women half my age, on a course hard enough that people flew in from three continents for it.
-
-That's worth knowing before you look at a results page and feel bad about yourself.
+I put that here mostly because a results page is such a flat way to describe a day like this. It records where you came and nothing else, and it has nothing at all to say about the mist coming through the trees, or the ankle, or standing at that aid station finding out my legs were gone, which is what the race actually was.
 
 ## Hoodsport, and the Oysters
 
