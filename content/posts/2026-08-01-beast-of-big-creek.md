@@ -21,7 +21,7 @@ The Beast is 24 km with 5,300 feet of climbing, up to the summit of Mount Ellino
 
 And then I noticed people jogging past me. Not walking to the start, but actually running, fast, doing warm-up laps and striding out and loosening their legs before a race that was about to take us 5,000 feet up into the Olympics.
 
-I don't think I've ever seen that at a race this steep. Nobody warms up for something they're worried about surviving. You only warm up if you're planning to race it.
+This is the steepest race I've done, around 350 feet of climbing for every mile, and Broken Arrow is the closest thing to it I've run. And here were all these elite-looking runners getting in a serious warm-up first. It did not do much for my nerves.
 
 ## Who Actually Shows Up in Hoodsport
 
