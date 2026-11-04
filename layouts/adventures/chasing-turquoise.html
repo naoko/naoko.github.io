@@ -1,5 +1,5 @@
 {{ define "header" }}
-<link rel="stylesheet" href="{{ "css/chasing-turquoise.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/chasing-turquoise.css?v=3" | relURL }}">
 <header class="ct-hero">
   <div class="ct-hero__mountains" aria-hidden="true"></div>
   <div class="ct-shell ct-hero__content">
@@ -171,11 +171,32 @@
       <h2>Desert to glacier.</h2>
     </div>
     <div class="ct-route" aria-label="Proposed flight route">
-      <div><strong>PHX</strong><span>Phoenix</span></div>
+      <div><strong>PHX</strong><span>Phoenix area</span></div>
       <div class="ct-route__line"><span>Outbound Friday</span><i aria-hidden="true"></i><span>Return Sunday</span></div>
       <div><strong>FCA</strong><span>Kalispell</span></div>
     </div>
-    <p class="ct-tentative">Flight times are tentative and will be selected around lodge availability, trail timing, and the seasonal Phoenix-Kalispell schedule.</p>
+    <div class="ct-travel-times" aria-label="Estimated travel times">
+      <article>
+        <p class="ct-number">01 / Fly</p>
+        <strong>2.5-3 hr</strong>
+        <h3>Phoenix area to FCA</h3>
+        <p>Seasonal nonstop estimate. PHX itineraries with a connection may take roughly 4.5-7 hours.</p>
+      </article>
+      <article>
+        <p class="ct-number">02 / Drive</p>
+        <strong>2 hr 35 min</strong>
+        <h3>FCA to the hotel</h3>
+        <p>About 138 miles by rental car to Many Glacier Hotel.</p>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Glacier%20Park%20International%20Airport%2C%20MT&amp;destination=Many%20Glacier%20Hotel%2C%20MT&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Open the driving route <span aria-hidden="true">↗</span></a>
+      </article>
+      <article>
+        <p class="ct-number">03 / Walk</p>
+        <strong>1-20 min</strong>
+        <h3>Hotel to trailheads</h3>
+        <p>Cracker Lake access is beside the hotel, about 1 minute away. Grinnell Glacier trailhead is about 0.9 mile or 20 minutes on foot.</p>
+      </article>
+    </div>
+    <p class="ct-tentative">Planning estimates only. Seasonal nonstop service may use Phoenix-Mesa (AZA), while PHX options may connect. Road and trail access can change with weather and park operations.</p>
   </section>
 
   <section class="ct-ready">
