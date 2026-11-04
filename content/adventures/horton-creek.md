@@ -10,7 +10,7 @@ showtoc: false
 series: "Bask in Nature"
 country: "United States"
 states: ["Arizona"]
-month: "November 7 or 8, 2026 · Day TBD"
+month: "November"
 tags: ["travel", "hiking", "payson", "arizona"]
 categories: ["travel"]
 ---
