@@ -4,7 +4,11 @@
   <div class="ct-hero__mountains" aria-hidden="true"></div>
   <div class="ct-shell ct-hero__content">
     <p class="ct-eyebrow">Bask in Nature · Escape No. 001</p>
-    <p class="ct-kicker">Glacier National Park · August 6–8, 2027</p>
+    <div class="ct-meta" aria-label="Trip location and timing">
+      <span><b>Country</b>{{ .Params.country }}</span>
+      <span><b>State</b>{{ delimit .Params.states ", " }}</span>
+      <span><b>When</b>{{ .Params.month }}</span>
+    </div>
     <h1>Chasing<br><em>Turquoise</em></h1>
     <p class="ct-hero__lede">Two iconic trails. One big Saturday. A long weekend for women who would rather catch up while climbing.</p>
     <div class="ct-hero__facts" aria-label="Trip overview">
@@ -95,17 +99,17 @@
     <ol class="ct-days">
       <li>
         <div class="ct-day-number">01</div>
-        <div class="ct-day-heading"><span>Friday · August 6</span><h3>Arrive &amp; exhale</h3></div>
+        <div class="ct-day-heading"><span>Friday</span><h3>Arrive &amp; exhale</h3></div>
         <p>Fly Phoenix to Kalispell, collect the rental car, and make the scenic drive into Many Glacier. Check in, share an early dinner, lay out tomorrow's kit, and get some sleep.</p>
       </li>
       <li class="ct-days__feature">
         <div class="ct-day-number">02</div>
-        <div class="ct-day-heading"><span>Saturday · August 7</span><h3>Chase the blue</h3></div>
+        <div class="ct-day-heading"><span>Saturday</span><h3>Chase the blue</h3></div>
         <p>Start early for Cracker Lake. Return to Many Glacier for food, water, and a quick reset, then head back out for Grinnell Glacier. Finish the day with dinner and very tired legs.</p>
       </li>
       <li>
         <div class="ct-day-number">03</div>
-        <div class="ct-day-heading"><span>Sunday · August 8</span><h3>Slow morning, homeward</h3></div>
+        <div class="ct-day-heading"><span>Sunday</span><h3>Slow morning, homeward</h3></div>
         <p>Sleep in, enjoy breakfast and one last mountain view, then drive back to Kalispell for the return flight to Phoenix.</p>
       </li>
     </ol>
@@ -122,8 +126,13 @@
         <h2>Stay inside the story.</h2>
         <p class="ct-stay__name">Many Glacier Hotel</p>
         <p>Two nights on Swiftcurrent Lake, close to both trailheads. Less driving, more mountain time.</p>
+        <div class="ct-cost">
+          <span>Rough lodging budget</span>
+          <strong>$350–$550</strong>
+          <p>per room / night · about $700–$1,100 for two nights, before tax</p>
+        </div>
         <a class="ct-button ct-button--light" href="https://www.glaciernationalparklodges.com/lodging/many-glacier-hotel/" target="_blank" rel="noopener noreferrer">View the official hotel site <span aria-hidden="true">↗</span></a>
-        <p class="ct-small">Lodging is proposed and subject to 2027 availability. Reservations and park access requirements will need to be confirmed when booking windows open.</p>
+        <p class="ct-small">Planning estimate only. Availability, room type, taxes, and seasonal pricing will affect the final cost.</p>
       </div>
     </div>
   </section>
