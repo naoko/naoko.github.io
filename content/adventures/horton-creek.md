@@ -1,0 +1,16 @@
+---
+title: "Following Horton Creek"
+description: "Bask in Nature Escape No. 002: a one-day Payson escape, with Horton Creek hike options, Tesla charging and a noon lunch."
+date: 2026-11-04
+draft: true
+layout: "horton-creek"
+url: "/adventures/horton-creek/"
+navstyle: "invert"
+showtoc: false
+series: "Bask in Nature"
+country: "United States"
+states: ["Arizona"]
+month: "November 7 or 8, 2026 · Day TBD"
+tags: ["travel", "hiking", "payson", "arizona"]
+categories: ["travel"]
+---

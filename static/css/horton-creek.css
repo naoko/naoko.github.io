@@ -1,0 +1,14 @@
+.hc-hero { background: radial-gradient(circle at 74% 32%, rgba(185,218,170,.5), transparent 34%), linear-gradient(145deg,#729b83,#366859 40%,#173d35 76%,#0e2d29); }
+.hc-table-wrap { overflow-x:auto; margin:40px 0; }
+.hc-table-wrap:focus-visible { outline:2px solid var(--ct-forest); outline-offset:4px; }
+.hc-table { width:100%; min-width:650px; border-collapse:collapse; font:16px/1.6 "Helvetica Neue",Arial,sans-serif; }
+.hc-table caption { text-align:left; color:var(--ct-water-text); padding-bottom:16px; }
+.hc-table th,.hc-table td { padding:20px; text-align:left; border-bottom:1px solid #bdc6c0; }
+.hc-table thead { background:var(--ct-forest); color:white; }
+.hc-table tbody tr:nth-child(even) { background:#edf2ec; }
+.hc-charge { margin-bottom:35px; }
+.hc-charge p { color:#dceae5; }
+.hc-charge strong { color:white; }
+.hc-light-note { color:#c4d5cf; max-width:800px; font-size:16px; line-height:1.8; }
+.hc-hero h1 { font-size:clamp(66px,10vw,140px); }
+@media(max-width:560px) { .hc-hero h1 { font-size:56px; } }
