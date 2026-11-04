@@ -1,0 +1,198 @@
+{{ define "header" }}
+<link rel="stylesheet" href="{{ "css/chasing-turquoise.css" | relURL }}">
+<header class="ct-hero">
+  <div class="ct-hero__mountains" aria-hidden="true"></div>
+  <div class="ct-shell ct-hero__content">
+    <p class="ct-eyebrow">Bask in Nature · Escape No. 001</p>
+    <div class="ct-meta" aria-label="Trip location and timing">
+      <span><b>Country</b>{{ .Params.country }}</span>
+      <span><b>State</b>{{ delimit .Params.states ", " }}</span>
+      <span><b>When</b>{{ .Params.month }}</span>
+    </div>
+    <h1>Chasing<br><em>Turquoise</em></h1>
+    <p class="ct-hero__lede">Two iconic trails. One big Saturday. A long weekend for women who would rather catch up while climbing.</p>
+    <div class="ct-hero__facts" aria-label="Trip overview">
+      <span><strong>3</strong> days</span>
+      <span><strong>2</strong> nights</span>
+      <span><strong>23-24</strong> trail miles</span>
+    </div>
+    <a class="ct-scroll" href="#escape">Discover the escape <span aria-hidden="true">↓</span></a>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<main class="chasing-page" id="escape">
+  <section class="ct-intro ct-shell">
+    <div>
+      <p class="ct-section-label">The invitation</p>
+      <h2>Trade the group chat<br>for the trail.</h2>
+    </div>
+    <div class="ct-intro__copy">
+      <p class="ct-dropcap">A three-day girls' escape built around one big day in Many Glacier: Cracker Lake in the morning, then Grinnell Glacier in the afternoon.</p>
+      <p>For experienced trail runners. Social pace, real mountain terrain, no race clock.</p>
+      <span class="ct-status">Proposed adventure · Plans subject to change</span>
+    </div>
+  </section>
+
+  <section class="ct-trails">
+    <div class="ct-shell">
+      <div class="ct-section-head">
+        <div>
+          <p class="ct-section-label">Saturday's double</p>
+          <h2>Two shades of impossible blue.</h2>
+        </div>
+        <p>Back-to-back out-and-backs from the Many Glacier area, with a reset and refuel between trails.</p>
+      </div>
+
+      <article class="ct-trail-card ct-trail-card--cracker">
+        <div class="ct-photo-slot">
+          {{ if fileExists "static/images/adventures/chasing-turquoise/cracker-lake.jpeg" }}
+          <img src="{{ "/images/adventures/chasing-turquoise/cracker-lake.jpeg" | relURL }}" alt="Turquoise water at Cracker Lake beneath the mountains in Glacier National Park" loading="lazy" decoding="async">
+          {{ else }}
+          <div class="ct-photo-placeholder"><span>Cracker Lake</span><small>Photograph to be added</small></div>
+          {{ end }}
+        </div>
+        <div class="ct-trail-card__content">
+          <p class="ct-number">01 / Morning</p>
+          <h3>Cracker Lake</h3>
+          <p>A steady climb through forest and open country to a lake so intensely turquoise it hardly looks real, tucked beneath the sheer walls of Siyeh Peak.</p>
+          <dl>
+            <div><dt>Distance</dt><dd>About 12.6 miles</dd></div>
+            <div><dt>Style</dt><dd>Out &amp; back</dd></div>
+          </dl>
+          <a href="https://www.alltrails.com/trail/us/montana/cracker-lake-trail" target="_blank" rel="noopener noreferrer">View Cracker Lake on AllTrails <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="ct-trail-card ct-trail-card--grinnell">
+        <div class="ct-photo-slot">
+          {{ if fileExists "static/images/adventures/chasing-turquoise/grinnell-glacier-trail.jpeg" }}
+          <img src="{{ "/images/adventures/chasing-turquoise/grinnell-glacier-trail.jpeg" | relURL }}" alt="The Grinnell Glacier Trail above a turquoise lake in Glacier National Park" loading="lazy" decoding="async">
+          {{ else }}
+          <div class="ct-photo-placeholder"><span>Grinnell Glacier</span><small>Photograph to be added</small></div>
+          {{ end }}
+        </div>
+        <div class="ct-trail-card__content">
+          <p class="ct-number">02 / Afternoon</p>
+          <h3>Grinnell Glacier</h3>
+          <p>Cliffs, waterfalls, wildlife country, and an ever-widening view over the Many Glacier valley before the final arrival at Upper Grinnell Lake.</p>
+          <dl>
+            <div><dt>Distance</dt><dd>About 10.6 miles</dd></div>
+            <div><dt>Style</dt><dd>Out &amp; back</dd></div>
+          </dl>
+          <a href="https://www.alltrails.com/trail/us/montana/grinnell-glacier-trail" target="_blank" rel="noopener noreferrer">View Grinnell Glacier on AllTrails <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <p class="ct-mileage-note">Trail totals vary slightly by recording and access. Allow roughly 23-24 miles for the full day.</p>
+    </div>
+  </section>
+
+  <section class="ct-itinerary ct-shell">
+    <div class="ct-section-head ct-section-head--dark">
+      <div>
+        <p class="ct-section-label">Three days / two nights</p>
+        <h2>A weekend with one wild center.</h2>
+      </div>
+    </div>
+    <ol class="ct-days">
+      <li>
+        <div class="ct-day-number">01</div>
+        <div class="ct-day-heading"><span>Friday</span><h3>Arrive &amp; exhale</h3></div>
+        <p>Fly Phoenix to Kalispell, collect the rental car, and make the scenic drive into Many Glacier. Check in, share an early dinner, lay out tomorrow's kit, and get some sleep.</p>
+      </li>
+      <li class="ct-days__feature">
+        <div class="ct-day-number">02</div>
+        <div class="ct-day-heading"><span>Saturday</span><h3>Chase the blue</h3></div>
+        <p>Start early for Cracker Lake. Return to Many Glacier for food, water, and a quick reset, then head back out for Grinnell Glacier. Finish the day with dinner and very tired legs.</p>
+      </li>
+      <li>
+        <div class="ct-day-number">03</div>
+        <div class="ct-day-heading"><span>Sunday</span><h3>Slow morning, homeward</h3></div>
+        <p>Sleep in, enjoy breakfast and one last mountain view, then drive back to Kalispell for the return flight to Phoenix.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="ct-stay">
+    <div class="ct-shell ct-stay__grid">
+      <figure class="ct-stay__media">
+        <img src="{{ "/images/adventures/chasing-turquoise/many-glacier-hotel.jpg" | relURL }}" alt="Many Glacier Hotel beneath the mountains at sunset" decoding="async">
+        <figcaption>Photo: Glacier National Park Lodges</figcaption>
+      </figure>
+      <div class="ct-stay__copy">
+        <p class="ct-section-label">Base camp</p>
+        <h2>Stay inside the story.</h2>
+        <p class="ct-stay__name">Many Glacier Hotel</p>
+        <p>Two nights on Swiftcurrent Lake, close to both trailheads. Less driving, more mountain time.</p>
+        <div class="ct-cost">
+          <span>Rough lodging budget</span>
+          <strong>$350-$550</strong>
+          <p>per room / night, before tax</p>
+        </div>
+        <a class="ct-button ct-button--light" href="https://www.glaciernationalparklodges.com/lodging/many-glacier-hotel/" target="_blank" rel="noopener noreferrer">View the official hotel site <span aria-hidden="true">↗</span></a>
+        <p class="ct-small">Planning estimate only. Availability, room type, taxes, and seasonal pricing will affect the final cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-food ct-shell">
+    <div class="ct-section-head">
+      <div>
+        <p class="ct-section-label">Eat well</p>
+        <h2>Dinner without another drive.</h2>
+      </div>
+      <p>Both picks are inside Many Glacier Hotel, ideal after a 23-24 mile day.</p>
+    </div>
+    <div class="ct-food__grid">
+      <article class="ct-food__feature">
+        <img src="{{ "/images/adventures/chasing-turquoise/ptarmigan-dining-room.jpg" | relURL }}" alt="The historic Ptarmigan Dining Room inside Many Glacier Hotel" decoding="async">
+        <div class="ct-food__copy">
+          <p class="ct-number">Best dinner</p>
+          <h3>Ptarmigan Dining Room</h3>
+          <p>Continental cuisine, Montana beer, and lake-and-peak views. First come, first served. No reservations.</p>
+          <a class="ct-button" href="https://www.glaciernationalparklodges.com/dining/many-glacier-hotel/the-ptarmigan-dining-room/" target="_blank" rel="noopener noreferrer">Official restaurant page <span aria-hidden="true">↗</span></a>
+          <small>Photo: Glacier National Park Lodges</small>
+        </div>
+      </article>
+      <aside class="ct-food__backup">
+        <p class="ct-number">Easy backup</p>
+        <h3>Swiss Lounge</h3>
+        <p>A quicker bite and full bar menu in the same hotel. Useful if dinner timing gets loose after the trails.</p>
+        <a href="https://www.glaciernationalparklodges.com/dining/many-glacier-hotel/swiss-lounge/" target="_blank" rel="noopener noreferrer">View the official lounge page <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="ct-logistics ct-shell">
+    <div class="ct-logistics__heading">
+      <p class="ct-section-label">Getting there</p>
+      <h2>Desert to glacier.</h2>
+    </div>
+    <div class="ct-route" aria-label="Proposed flight route">
+      <div><strong>PHX</strong><span>Phoenix</span></div>
+      <div class="ct-route__line"><span>Outbound Friday</span><i aria-hidden="true"></i><span>Return Sunday</span></div>
+      <div><strong>FCA</strong><span>Kalispell</span></div>
+    </div>
+    <p class="ct-tentative">Flight times are tentative and will be selected around lodge availability, trail timing, and the seasonal Phoenix-Kalispell schedule.</p>
+  </section>
+
+  <section class="ct-ready">
+    <div class="ct-shell">
+      <p class="ct-section-label">Come prepared</p>
+      <h2>For runners who know<br>what a long day feels like.</h2>
+      <div class="ct-ready__grid">
+        <p>Comfort on mountain trails and the fitness to cover 23-24 miles across two outings in one day.</p>
+        <p>Self-sufficient trail kit, layers for fast-changing alpine weather, and a practiced fueling plan.</p>
+        <p>Flexibility. Weather, trail conditions, wildlife activity, and park access can change the plan.</p>
+      </div>
+      <div class="ct-closing">
+        <span>Bask in Nature</span>
+        <p>Extraordinary places.<br>A few unforgettable days.</p>
+        <a href="#escape">Back to the beginning ↑</a>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
