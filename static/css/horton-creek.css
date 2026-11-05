@@ -1,0 +1,34 @@
+.hc-hero { background: radial-gradient(circle at 74% 32%, rgba(185,218,170,.5), transparent 34%), linear-gradient(145deg,#729b83,#366859 40%,#173d35 76%,#0e2d29); }
+.hc-table-wrap { overflow-x:auto; margin:40px 0; }
+.hc-table-wrap:focus-visible { outline:2px solid var(--ct-forest); outline-offset:4px; }
+.hc-table { width:100%; min-width:650px; border-collapse:collapse; font:16px/1.6 "Helvetica Neue",Arial,sans-serif; }
+.hc-table caption { text-align:left; color:var(--ct-water-text); padding-bottom:16px; }
+.hc-table th,.hc-table td { padding:20px; text-align:left; border-bottom:1px solid #bdc6c0; }
+.hc-table thead { background:var(--ct-forest); color:white; }
+.hc-table tbody tr:nth-child(even) { background:#edf2ec; }
+.hc-charge { margin-bottom:35px; }
+.hc-charge p { color:#dceae5; }
+.hc-charge strong { color:white; }
+.hc-light-note { color:#c4d5cf; max-width:800px; font-size:16px; line-height:1.8; }
+.hc-hero h1 { font-size:clamp(66px,10vw,140px); }
+@media(max-width:560px) { .hc-hero h1 { font-size:56px; } }
+
+.hc-route-map { display:block; width:100%; height:520px; border:1px solid #bdc6c0; background:var(--ct-sand); }
+.hc-map-links { display:flex; flex-wrap:wrap; gap:12px; margin:24px 0; }
+@media(max-width:560px) { .hc-route-map { height:420px; } }
+
+.hc-evidence { margin:32px 0; } .hc-evidence img { display:block; width:100%; max-width:850px; margin:auto; } .hc-evidence figcaption { color:#52615c; font:14px/1.7 Arial,sans-serif; margin:16px 0; }
+
+.hc-spring-photo { margin:0; position:relative; display:flex; flex-direction:column; } .hc-spring-photo img { flex:1; min-height:480px; } .hc-spring-photo figcaption { padding:12px 20px; background:#fff; font:12px/1.6 Arial,sans-serif; color:#52615c; } .hc-spring-photo figcaption a { font:inherit; letter-spacing:normal; text-transform:none; } .hc-route-details { margin:30px 0; } .hc-route-details summary { cursor:pointer; padding:20px; border:1px solid #bdc6c0; font:600 16px/1.5 Arial,sans-serif; } .hc-spring-reason { font-size:19px!important; color:var(--ct-forest)!important; } .hc-elevation { padding-bottom:30px; } @media(max-width:560px) { .hc-spring-photo img { min-height:320px; } .hc-table { min-width:570px; } }
+
+@media(max-width:560px) { .hc-elevation .hc-evidence { overflow-x:auto; } .hc-elevation .hc-evidence img { min-width:640px; } }
+
+.hc-pace-table { table-layout:fixed; } .hc-pace-table th,.hc-pace-table td { vertical-align:middle; } .hc-pace-table th small { display:block; margin-top:6px; font-weight:400; font-size:13px; line-height:1.5; } .hc-table td.hc-recommended { background:#dceae5; box-shadow:inset 3px 0 0 var(--ct-water-text); } .hc-recommendation { display:inline-flex; align-items:center; gap:6px; margin-bottom:10px; padding:5px 9px; border-radius:20px; background:var(--ct-forest); color:white; font-size:11px; font-weight:700; white-space:nowrap; } .hc-pace-time { display:block; white-space:nowrap; }
+
+.hc-hero { background:#173d35; } .hc-hero-photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 48%; } .hc-hero::before { z-index:1; background:linear-gradient(90deg,rgba(5,25,22,.65),rgba(5,25,22,.08) 80%),linear-gradient(0deg,rgba(5,25,22,.85),rgba(5,25,22,.1) 85%); } .hc-hero .ct-hero__content { z-index:2; } .hc-spring-photo img { object-position:50% 50%; } @media(max-width:560px) { .hc-hero-photo { object-position:48% center; } }
+
+.hc-day-copy p { margin:0 0 18px; font:16px/1.75 "Helvetica Neue",Arial,sans-serif; color:#52615c; } .hc-day-copy p:last-child { margin-bottom:0; } .ct-day-heading span span[aria-hidden] { display:inline; }
+
+body:has(.hc-hero) .navbar-custom { background:rgba(13,46,41,.96); border-color:rgba(255,255,255,.15); } body:has(.hc-hero) .navbar-custom .navbar-brand, body:has(.hc-hero) .navbar-custom .nav li a { color:#fff; } body:has(.hc-hero) .navbar-custom .nav li a:hover { color:#b5ece4; } body:has(.hc-hero) .navbar-toggle .icon-bar { background:#fff; } @media(max-width:767px) { body:has(.hc-hero) #huxblog_navbar .navbar-collapse { background:#0d2e29; } }
+
+@media(max-width:900px) { .hc-day-copy { grid-column:2; } } @media(max-width:560px) { .hc-day-copy { grid-column:1; } }
