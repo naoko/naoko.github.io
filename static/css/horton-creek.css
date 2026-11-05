@@ -18,3 +18,7 @@
 @media(max-width:560px) { .hc-route-map { height:420px; } }
 
 .hc-evidence { margin:32px 0; } .hc-evidence img { display:block; width:100%; max-width:850px; margin:auto; } .hc-evidence figcaption { color:#52615c; font:14px/1.7 Arial,sans-serif; margin:16px 0; }
+
+.hc-spring-photo { margin:0; position:relative; display:flex; flex-direction:column; } .hc-spring-photo img { flex:1; min-height:480px; } .hc-spring-photo figcaption { padding:12px 20px; background:#fff; font:12px/1.6 Arial,sans-serif; color:#52615c; } .hc-spring-photo figcaption a { font:inherit; letter-spacing:normal; text-transform:none; } .hc-route-details { margin:30px 0; } .hc-route-details summary { cursor:pointer; padding:20px; border:1px solid #bdc6c0; font:600 16px/1.5 Arial,sans-serif; } .hc-spring-reason { font-size:19px!important; color:var(--ct-forest)!important; } .hc-elevation { padding-bottom:30px; } @media(max-width:560px) { .hc-spring-photo img { min-height:320px; } .hc-table { min-width:570px; } }
+
+@media(max-width:560px) { .hc-elevation .hc-evidence { overflow-x:auto; } .hc-elevation .hc-evidence img { min-width:640px; } }
