@@ -32,3 +32,5 @@
 body:has(.hc-hero) .navbar-custom { background:rgba(13,46,41,.96); border-color:rgba(255,255,255,.15); } body:has(.hc-hero) .navbar-custom .navbar-brand, body:has(.hc-hero) .navbar-custom .nav li a { color:#fff; } body:has(.hc-hero) .navbar-custom .nav li a:hover { color:#b5ece4; } body:has(.hc-hero) .navbar-toggle .icon-bar { background:#fff; } @media(max-width:767px) { body:has(.hc-hero) #huxblog_navbar .navbar-collapse { background:#0d2e29; } }
 
 @media(max-width:900px) { .hc-day-copy { grid-column:2; } } @media(max-width:560px) { .hc-day-copy { grid-column:1; } }
+
+.hc-base-heading { margin-top:90px; margin-bottom:30px; } .hc-base-days { margin-top:40px; } .hc-base-days li { grid-template-columns:150px 1fr 1.2fr; } .hc-base-days .ct-day-number { font:600 17px/1.5 "Helvetica Neue",Arial,sans-serif; font-style:normal; } @media(max-width:900px) { .hc-base-days li { grid-template-columns:130px 1fr; } } @media(max-width:560px) { .hc-base-days li { grid-template-columns:1fr; } .hc-base-heading { margin-top:60px; } }
