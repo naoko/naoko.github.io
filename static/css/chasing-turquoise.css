@@ -142,6 +142,44 @@
 .ct-closing p { margin: 0; font: italic 23px/1.25 Georgia, "Times New Roman", serif; }
 .ct-closing a { text-align: right; color: var(--ct-ink); font: 700 11px/1 "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; letter-spacing: .12em; }
 
+/* Keep this editorial palette intact when the site-wide dark theme is active. */
+[data-theme="dark"] .ct-hero h1 { color: white !important; }
+[data-theme="dark"] .ct-hero .ct-eyebrow { color: #d8f1ec !important; }
+[data-theme="dark"] .ct-hero__lede { color: rgba(255,255,255,.9) !important; }
+[data-theme="dark"] .ct-hero .ct-scroll { color: white !important; }
+[data-theme="dark"] .ct-hero .ct-scroll:hover,
+[data-theme="dark"] .ct-hero .ct-scroll:focus { color: #b5ece4 !important; }
+
+[data-theme="dark"] .chasing-page { color: var(--ct-ink) !important; background: var(--ct-paper) !important; }
+[data-theme="dark"] .chasing-page h2,
+[data-theme="dark"] .chasing-page h3 { color: var(--ct-ink) !important; }
+[data-theme="dark"] .chasing-page p { color: var(--ct-body) !important; }
+[data-theme="dark"] .chasing-page a { color: var(--ct-forest) !important; }
+[data-theme="dark"] .chasing-page .ct-section-label,
+[data-theme="dark"] .chasing-page .ct-number { color: var(--ct-rust) !important; }
+[data-theme="dark"] .chasing-page .ct-dropcap { color: var(--ct-ink) !important; }
+[data-theme="dark"] .chasing-page .ct-mileage-note,
+[data-theme="dark"] .chasing-page .ct-tentative { color: var(--ct-muted) !important; }
+
+[data-theme="dark"] .chasing-page .ct-stay h2 { color: white !important; }
+[data-theme="dark"] .chasing-page .ct-stay p { color: var(--ct-on-dark) !important; }
+[data-theme="dark"] .chasing-page .ct-stay .ct-section-label { color: #e9a184 !important; }
+[data-theme="dark"] .chasing-page .ct-stay__name { color: var(--ct-ice) !important; }
+[data-theme="dark"] .chasing-page .ct-button--light { color: white !important; }
+[data-theme="dark"] .chasing-page .ct-button:not(.ct-button--light):hover,
+[data-theme="dark"] .chasing-page .ct-button:not(.ct-button--light):focus-visible { color: white !important; }
+[data-theme="dark"] .chasing-page .ct-button--light:hover,
+[data-theme="dark"] .chasing-page .ct-button--light:focus-visible { color: var(--ct-pine) !important; }
+[data-theme="dark"] .chasing-page .ct-closing a { color: var(--ct-ink) !important; }
+[data-theme="dark"] .chasing-page .ct-trail-card a:hover,
+[data-theme="dark"] .chasing-page .ct-trail-card a:focus-visible,
+[data-theme="dark"] .chasing-page .ct-food__backup a:hover,
+[data-theme="dark"] .chasing-page .ct-food__backup a:focus-visible,
+[data-theme="dark"] .chasing-page .ct-travel-times a:hover,
+[data-theme="dark"] .chasing-page .ct-travel-times a:focus-visible,
+[data-theme="dark"] .chasing-page .ct-closing a:hover,
+[data-theme="dark"] .chasing-page .ct-closing a:focus-visible { color: var(--ct-rust) !important; }
+
 @media (max-width: 1100px) {
   .ct-food__grid { grid-template-columns: 1fr; }
 }
