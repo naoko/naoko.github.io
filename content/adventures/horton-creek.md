@@ -9,7 +9,7 @@ cover:
   alt: "Horton Spring cascades among mossy rocks and green woodland"
 layout: "horton-creek"
 url: "/adventures/horton-creek/"
-navstyle: "invert"
+navstyle: ""
 showtoc: false
 series: "Bask in Nature"
 country: "United States"
