@@ -34,3 +34,5 @@ body:has(.hc-hero) .navbar-custom { background:rgba(13,46,41,.96); border-color:
 @media(max-width:900px) { .hc-day-copy { grid-column:2; } } @media(max-width:560px) { .hc-day-copy { grid-column:1; } }
 
 .hc-base-heading { margin-top:90px; margin-bottom:30px; } .hc-base-days { margin-top:40px; } .hc-base-days li { grid-template-columns:150px 1fr 1.2fr; } .hc-base-days .ct-day-number { font:600 17px/1.5 "Helvetica Neue",Arial,sans-serif; font-style:normal; } @media(max-width:900px) { .hc-base-days li { grid-template-columns:130px 1fr; } } @media(max-width:560px) { .hc-base-days li { grid-template-columns:1fr; } .hc-base-heading { margin-top:60px; } }
+
+.hc-charging-map { height:380px; border-color:#8fa9a0; } .hc-light-note a { color:#b5ece4; text-decoration:underline; text-underline-offset:3px; }
