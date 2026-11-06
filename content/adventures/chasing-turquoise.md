@@ -10,6 +10,6 @@ series: "Bask in Nature"
 country: "United States"
 states: ["Montana"]
 month: "August"
-tags: ["travel", "trail running", "glacier national park", "montana"]
+tags: ["Bask in Nature", "travel", "trail running", "glacier national park", "montana"]
 categories: ["travel"]
 ---

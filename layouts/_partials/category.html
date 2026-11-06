@@ -1,4 +1,3 @@
-{{/* Local override: our posts live in content/posts/ (section "posts"),
-     while the upstream theme hardcodes section "post". */}}
-{{ $paginator := .Paginate (where .Data.Pages "Section" "posts") }}
+{{/* Include blog posts and escape guides in tag and category archives. */}}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "posts" "adventures")) }}
 {{ partial "posts.html" . }}
