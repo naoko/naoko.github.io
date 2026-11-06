@@ -69,7 +69,7 @@ buildDrafts = false
     href  = "/categories/life/"
   [[params.additional_menus]]
     title = "BASK IN NATURE"
-    href  = "/adventures/chasing-turquoise"
+    href  = "/tags/bask-in-nature/"
   [[params.additional_menus]]
     title = "TAGS"
     href  = "/tags/"
