@@ -1,7 +1,7 @@
 ---
 title: "Dolomites 2027: Four Ways We Could Run It"
 date: 2026-11-07
-lastmod: 2026-11-09
+lastmod: 2026-11-10
 draft: false
 description: "Comparing Rogue Expeditions, two Runcation Alta Via 1 options, and a two-base hotel hybrid while we decide what kind of Dolomites trip we actually want."
 image: "/images/2026-11-07/tre-cime.jpg"
@@ -15,9 +15,30 @@ categories: ["running", "travel"]
 .dolomites-note { background:#f3f7f4; border-left:4px solid #5f7f67; padding:1rem 1.2rem; margin:1.5rem 0; }
 .post-container table { display:block; overflow-x:auto; min-width:900px; margin:1.5rem 0; }
 .post-container th:first-child, .post-container td:first-child { min-width:145px; font-weight:600; }
-.post-container .mermaid { overflow-x:auto; }
-.post-container .mermaid svg { min-width:650px; max-width:none !important; }
 .dolomites-status { display:inline-block; padding:.1rem .45rem; border-radius:999px; background:#edf1ed; font-size:.85em; white-space:nowrap; }
+.dolomites-decision { margin:1.5rem 0 2rem; font-size:16px; line-height:1.55; }
+.dolomites-decision-question { padding:1rem 1.2rem; background:#355f4b; color:#fff; border-radius:8px; font-size:1.15em; font-weight:700; text-align:center; }
+.dolomites-decision-branches { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem; }
+.dolomites-decision-branch { border:1px solid #ccd8cf; border-radius:8px; padding:1rem 1.2rem; background:#f8faf8; }
+.dolomites-decision-answer { display:inline-block; margin-bottom:.55rem; padding:.18rem .65rem; border-radius:999px; background:#dfe9e2; color:#294838; font-weight:700; }
+.dolomites-decision-branch h3 { margin:.15rem 0 .6rem; font-size:1.12em; }
+.dolomites-decision-branch ol { margin:0; padding-left:1.25rem; }
+@media (max-width:767px) {
+  .dolomites-decision-branches { grid-template-columns:1fr; }
+  #the-option-comparison + .table-responsive { overflow:visible; border:0; }
+  #the-option-comparison + .table-responsive table { display:block; min-width:0; width:100%; overflow:visible; font-size:15px; }
+  #the-option-comparison + .table-responsive thead { display:none; }
+  #the-option-comparison + .table-responsive tbody,
+  #the-option-comparison + .table-responsive tr,
+  #the-option-comparison + .table-responsive td { display:block; width:100%; }
+  #the-option-comparison + .table-responsive tr { box-sizing:border-box; margin:0 0 1rem; border:1px solid #d9e1db; border-radius:8px; overflow:hidden; }
+  #the-option-comparison + .table-responsive td { box-sizing:border-box; min-width:0; padding:.75rem 1rem; border:0; border-top:1px solid #edf0ed; }
+  #the-option-comparison + .table-responsive td:first-child { min-width:0; border-top:0; background:#eef4ef; color:#294838; font-size:1.08em; }
+  #the-option-comparison + .table-responsive td:nth-child(n+2)::before { display:block; margin-bottom:.2rem; color:#68756c; font-size:.78em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+  #the-option-comparison + .table-responsive td:nth-child(2)::before { content:"Rogue guided highlights"; }
+  #the-option-comparison + .table-responsive td:nth-child(3)::before { content:"Runcation guided AV1"; }
+  #the-option-comparison + .table-responsive td:nth-child(4)::before { content:"Runcation self-guided AV1"; }
+}
 </style>
 
 I started looking at the Dolomites because I wanted a beautiful running trip with friends, which sounds simple enough. Then I found two trips that use the same mountains in completely different ways. Rogue Expeditions strings together five highlight runs with hotels, drivers, long lunches, and one night in a rifugio. Runcation follows an Alta Via 1 variant from hut to hut, with more miles and five nights in shared mountain dorms.
@@ -34,19 +55,29 @@ Then Runcation added a five-day self-guided express option, which made the decis
 
 The first decision is not Rogue versus Runcation. It is whether **a shared bathroom is acceptable for even one night**.
 
-```mermaid
-flowchart TD
-    A{"Is a shared bathroom acceptable<br/>for even one night?"}
-    A -- "No" --> B["Runcation's scheduled guided AV1 is out"]
-    B --> C["Ask Runcation to check every Express stop<br/>for a private room AND private bathroom"]
-    C --> D{"Can every night meet that requirement?"}
-    D -- "Yes" --> E["Self-guided five-day AV1 Express<br/>remains possible"]
-    D -- "No" --> F["Choose a hotel-based Dolomites trip<br/>with spectacular day routes"]
-    A -- "Yes" --> G{"Do we want guides?"}
-    G -- "Yes" --> H["Scheduled guided AV1<br/>shared rifugio dorms"]
-    G -- "No" --> I["Self-guided AV1 Express<br/>standard huts or available upgrades"]
-    F --> J["Tre Cime · Passo Giau · Croda da Lago<br/>Cinque Torri · Cima Rosetta"]
-```
+<div class="dolomites-decision">
+  <div class="dolomites-decision-question">Is a shared bathroom acceptable for even one night?</div>
+  <div class="dolomites-decision-branches">
+    <section class="dolomites-decision-branch">
+      <div class="dolomites-decision-answer">No</div>
+      <h3>Alta Via 1 becomes conditional</h3>
+      <ol>
+        <li>The scheduled guided AV1 is out because it uses communal rifugio dorms.</li>
+        <li>Ask Runcation to check every Express stop for both a private room <strong>and</strong> a private bathroom.</li>
+        <li>If every night qualifies, the self-guided Express remains possible. If one does not, choose the hotel-based Dolomites plan.</li>
+      </ol>
+    </section>
+    <section class="dolomites-decision-branch">
+      <div class="dolomites-decision-answer">Yes</div>
+      <h3>Then the next question is guides</h3>
+      <ol>
+        <li>Want guides and mountain support? Choose the scheduled guided AV1 with shared rifugio dorms.</li>
+        <li>Comfortable navigating and managing weather ourselves? Consider the self-guided Express.</li>
+        <li>Want private hotels and landmark day routes instead? Compare Rogue with the two-base hybrid.</li>
+      </ol>
+    </section>
+  </div>
+</div>
 
 That is the honest version. A continuous Alta Via 1 trip is not literally impossible for somebody who refuses shared bathrooms, because a few huts do have true ensuite rooms. But we should not plan around getting one at every stop, especially for summer 2027. If a single shared bathroom is a deal-breaker and Runcation cannot confirm every night in writing, then **this AV1 trip is not our option**. The Dolomites still are.
 
@@ -60,15 +91,13 @@ For early planning, I would use **$1,200–$1,500 per person** for airfare, then
 
 The overnight flight matters almost as much as the price. We should arrive in Italy at least one day before any trail start, both for delayed bags and because running in the Dolomites while completely jet-lagged sounds like a poor experiment.
 
-| Shared logistics | Rogue guided highlights | Runcation guided Alta Via 1 | Runcation self-guided/custom AV1 |
-|---|---|---|---|
-| International flight | PHX → VCE, not included | PHX → VCE, not included | PHX → VCE, not included |
-| August 2027 airfare budget | **$1,200–$1,500 estimate** | Same | Same |
-| Where the trip starts | Rogue pickup in Venice on Day 1 | Cortina d'Ampezzo; we get ourselves there | Trail begins at Lago di Braies; public-transport instructions supplied |
-| Where it ends | Rogue returns the group to Venice on Day 7 | Included transfer to Venice on Day 7 | Agordo; return transport to Venice is not included |
-| Extra buffer I would add | Venice night before pickup | Venice or Cortina night before meeting | Cortina night before Day 1; not in package price |
+### What changes after Venice
 
-## The four-column comparison
+- **Rogue:** pickup in Venice on Day 1 and return to Venice on Day 7. I would add one Venice hotel night before pickup.
+- **Runcation guided:** we get ourselves to the Cortina start; the Day 7 transfer to Venice is included. I would add a Venice or Cortina night before the group meets.
+- **Runcation self-guided:** we get ourselves to Lago di Braies and home from the Agordo finish. Runcation supplies public-transport instructions, but those journeys and a pre-trip Cortina hotel are not included.
+
+## The option comparison
 
 | What we are deciding | Rogue guided highlights | Runcation guided Alta Via 1 | Runcation self-guided/custom AV1 |
 |---|---|---|---|
