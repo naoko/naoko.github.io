@@ -31,6 +31,10 @@ categories: ["running", "travel"]
 #the-option-comparison + .table-responsive table { background:#fff !important; color:#26352d !important; }
 #the-option-comparison + .table-responsive th { background:#e8f0ea !important; color:#203d2e !important; }
 #the-option-comparison + .table-responsive td { background:#fff !important; color:#26352d !important; }
+#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive table { background:#fff !important; color:#26352d !important; }
+#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive th { background:#e8f0ea !important; color:#203d2e !important; }
+#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { background:#fff !important; color:#26352d !important; }
+#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive a { color:#1f5f45 !important; text-decoration:underline; }
 @media (max-width:767px) {
   .dolomites-decision-branches { grid-template-columns:1fr; }
   #the-option-comparison + .table-responsive { overflow:visible; border:0; }
@@ -46,6 +50,20 @@ categories: ["running", "travel"]
   #the-option-comparison + .table-responsive td:nth-child(2)::before { content:"Rogue guided highlights"; }
   #the-option-comparison + .table-responsive td:nth-child(3)::before { content:"Runcation guided AV1"; }
   #the-option-comparison + .table-responsive td:nth-child(4)::before { content:"Runcation self-guided AV1"; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive { overflow:visible; border:0; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive table { display:block; min-width:0; width:100%; overflow:visible; font-size:15px; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive thead { display:none; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive tbody,
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive tr,
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { display:block; width:100%; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive tr { box-sizing:border-box; margin:0 0 1rem; border:1px solid #aebfb2; border-radius:8px; overflow:hidden; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { box-sizing:border-box; min-width:0; padding:.75rem 1rem; border:0; border-top:1px solid #dfe7e1; white-space:normal !important; overflow-wrap:anywhere; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:first-child { min-width:0; border-top:0; background:#e8f0ea !important; color:#203d2e !important; font-size:1.08em; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(n+2)::before { display:block; margin-bottom:.2rem; color:#4b5c51; font-size:.78em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(2)::before { content:"Why this route"; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(3)::before { content:"Hut-to-hut required?"; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(4)::before { content:"Lavaredo by UTMB connection"; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(5)::before { content:"AllTrails"; }
 }
 </style>
 
