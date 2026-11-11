@@ -1,9 +1,9 @@
 ---
 title: "Dolomites 2027: Four Ways We Could Run It"
 date: 2026-11-07
-lastmod: 2026-11-10
+lastmod: 2026-11-11
 draft: false
-description: "Comparing Rogue Expeditions, two Runcation Alta Via 1 options, and a two-base hotel hybrid while we decide what kind of Dolomites trip we actually want."
+description: "Comparing Rogue's hotel-based day routes, two Runcation Alta Via 1 options, and a car-free hotel hybrid while we decide what kind of Dolomites trip we actually want."
 image: "/images/2026-11-07/tre-cime.jpg"
 cover:
   image: "/images/2026-11-07/tre-cime.jpg"
@@ -27,6 +27,7 @@ categories: ["running", "travel"]
 .dolomites-summary-card dt { color:#4b5c51 !important; font-size:.82em; font-weight:700; text-transform:uppercase; }
 .dolomites-summary-card dd { margin:0; color:#26352d !important; font-weight:600; }
 .dolomites-summary-verdict { margin:0; padding-top:.7rem; border-top:1px solid #d9e1db; color:#26352d !important; }
+.dolomites-summary-card a { color:#1f5f45 !important; text-decoration:underline; }
 [data-theme="dark"] .post-container .dolomites-summary-card dd,
 [data-theme="dark"] .post-container .dolomites-summary-verdict { color:#26352d !important; }
 .post-container table { display:block; overflow-x:auto; min-width:900px; margin:1.5rem 0; }
@@ -129,47 +130,47 @@ Then Runcation added a five-day self-guided express option, which made the decis
     <p class="dolomites-summary-verdict"><strong>Best if:</strong> we want an AV1 journey at our own pace and accept responsibility for navigation, weather, and exit decisions.</p>
   </article>
   <article class="dolomites-summary-card">
-    <h3>Two-base hotel hybrid</h3>
+    <h3>Car-free hotel hybrid</h3>
     <p class="dolomites-summary-kicker">Our likely fit</p>
     <dl>
-      <dt>Package</dt><dd>TBD: hotels, transfers, and one guide day priced separately</dd>
+      <dt>Package</dt><dd>TBD: hotels, coaches, selective taxis, and perhaps one guide day</dd>
       <dt>PTO</dt><dd>About 6–7 workdays for the proposed week</dd>
       <dt>Trip</dt><dd>7 nights proposed</dd>
       <dt>Bathrooms</dt><dd>Private ensuite hotel rooms throughout</dd>
     </dl>
-    <p class="dolomites-summary-verdict"><strong>Best if:</strong> the route can be any spectacular Dolomites trails and we want comfort, flexibility, and only one hotel move.</p>
+    <p class="dolomites-summary-verdict"><strong>Best if:</strong> the route can be any spectacular Dolomites trails and we want to travel together, sleep in hotels, and use the regional transport network instead of renting a car.</p>
   </article>
 </div>
 
 ## The decision tree
 
-The first decision is not Rogue versus Runcation. It is whether **a shared bathroom is acceptable for even one night**.
+The first decision is not Rogue versus Runcation, and it is not the bathroom. It is whether **the trip itself must be Alta Via 1**. That answer determines whether a hut-to-hut week is the point or merely one way to see the Dolomites.
 
 <div class="dolomites-decision">
-  <div class="dolomites-decision-question">Is a shared bathroom acceptable for even one night?</div>
+  <div class="dolomites-decision-question">Must the trip itself be Alta Via 1?</div>
   <div class="dolomites-decision-branches">
     <section class="dolomites-decision-branch">
-      <div class="dolomites-decision-answer">No</div>
-      <h3>Alta Via 1 becomes conditional</h3>
+      <div class="dolomites-decision-answer">Yes</div>
+      <h3>Then hut life is part of the route</h3>
       <ol>
-        <li>The scheduled guided AV1 is out because it uses communal rifugio dorms.</li>
-        <li>Ask Runcation to check every Express stop for both a private room <strong>and</strong> a private bathroom.</li>
-        <li>If every night qualifies, the self-guided Express remains possible. If one does not, choose the hotel-based Dolomites plan.</li>
+        <li>Accept shared rifugio dorms and choose the scheduled guided Runcation trip.</li>
+        <li>Or ask Runcation to check every Express stop for both a private room <strong>and</strong> a private bathroom.</li>
+        <li>If one night fails the bathroom test, this 2027 AV1 plan is not our option.</li>
       </ol>
     </section>
     <section class="dolomites-decision-branch">
-      <div class="dolomites-decision-answer">Yes</div>
-      <h3>Then the next question is guides</h3>
+      <div class="dolomites-decision-answer">No</div>
+      <h3>Then compare the actual day routes</h3>
       <ol>
-        <li>Want guides and mountain support? Choose the scheduled guided AV1 with shared rifugio dorms.</li>
-        <li>Comfortable navigating and managing weather ourselves? Consider the self-guided Express.</li>
-        <li>Want private hotels and landmark day routes instead? Compare Rogue with the two-base hybrid.</li>
+        <li>Rogue connects five separate highlight runs with guides, drivers, hotels, meals, and one rifugio night.</li>
+        <li>A hotel-based trip can use many of the same public trail areas with buses, selective taxis, and perhaps one local guide.</li>
+        <li>This shape also lets runners and a non-running companion share the vacation instead of separating for a hut-to-hut week.</li>
       </ol>
     </section>
   </div>
 </div>
 
-That is the honest version. A continuous Alta Via 1 trip is not literally impossible for somebody who refuses shared bathrooms, because a few huts do have true ensuite rooms. But we should not plan around getting one at every stop, especially for summer 2027. If a single shared bathroom is a deal-breaker and Runcation cannot confirm every night in writing, then **this AV1 trip is not our option**. The Dolomites still are.
+That is the honest version. A continuous Alta Via 1 trip is not literally impossible for somebody who refuses shared bathrooms, because a few huts do have true ensuite rooms. But we should not plan around getting one at every stop, especially for summer 2027. If the route must be AV1, the lodging constraints come with it. If the goal is simply the best week of Dolomites trails, we have far more freedom.
 
 Also, Alta Via 1 is probably the Dolomites' best-known **long-distance hut-to-hut route**. It is not the only famous trail. Tre Cime di Lavaredo is arguably the most recognizable day route, and a hotel-based trip can combine several landscapes instead of following one continuous line.
 
@@ -186,6 +187,124 @@ The overnight flight matters almost as much as the price. We should arrive in It
 - **Rogue:** pickup in Venice on Day 1 and return to Venice on Day 7. I would add one Venice hotel night before pickup.
 - **Runcation guided:** we get ourselves to the Cortina start; the Day 7 transfer to Venice is included. I would add a Venice or Cortina night before the group meets.
 - **Runcation self-guided:** we get ourselves to Lago di Braies and home from the Agordo finish. Runcation supplies public-transport instructions, but those journeys and a pre-trip Cortina hotel are not included.
+
+## Rogue decoded: which trails, which base, and how we move
+
+Rogue is **not** an Alta Via 1 trip. It is five separate day outings in different parts of the Dolomites, joined by professional drivers. That distinction matters because several of the landmarks are publicly accessible from hotels; the hard part to reproduce is the exact route selection, vehicle repositioning, weather decisions, and the point-to-point days.
+
+The AllTrails links below are public comparison routes, **not Rogue's official GPX**. Rogue does not publish its tracks, and in several cases its mileage proves that it is using a different variant.
+
+<div class="dolomites-summary-grid">
+  <article class="dolomites-summary-card">
+    <h3>Day 2: Cima Rosetta</h3>
+    <p class="dolomites-summary-kicker">San Martino di Castrozza</p>
+    <dl>
+      <dt>Route</dt><dd>5 mi / 4,000 ft; steep, occasionally exposed, and mostly hiking</dd>
+      <dt>Access</dt><dd>Starts directly from town; about 20 minutes down by gondola</dd>
+      <dt>Sleep</dt><dd>Second night at the same unnamed lodge in central San Martino</dd>
+      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Cima%20Rosetta">AllTrails search: Cima Rosetta</a></dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Guide value: high.</strong> This is the day where exposure, route judgment, and mountain conditions make a local guide easiest to justify.</p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>Day 3: “Happy Valley”</h3>
+    <p class="dolomites-summary-kicker">Passo Rolle → overnight rifugio</p>
+    <dl>
+      <dt>Route</dt><dd>9 mi / 1,600 ft, plus a 1.5-mi walk back to the vans</dd>
+      <dt>Access</dt><dd>Drive to Passo Rolle; Rogue publishes about 1 hr 45 min total driving that day</dd>
+      <dt>Sleep</dt><dd>An unnamed mountaintop rifugio between San Martino and Cortina</dd>
+      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Passo%20Rolle%20Val%20Venegia">AllTrails search: Passo Rolle / Val Venegia</a></dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Match unknown.</strong> “Happy Valley” is Rogue's label, not a verifiable public trail name. We should ask for the actual start, finish, and overnight hut before comparing it with a DIY route.</p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>Day 4: Cinque Torri</h3>
+    <p class="dolomites-summary-kicker">Rifugio area → Cortina</p>
+    <dl>
+      <dt>Route</dt><dd>8 mi / 3,300 ft; technical loop</dd>
+      <dt>Access</dt><dd>Runs from the mountain area, then about 50 minutes of driving to Cortina</dd>
+      <dt>Sleep</dt><dd>First of three nights at an unnamed boutique hotel in central Cortina</dd>
+      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Cinque%20Torri%20Loop">AllTrails search: Cinque Torri loop</a></dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Guide value: medium.</strong> The landmark is easy to identify and public transport reaches the area seasonally, but Rogue's 8-mile technical loop is not published.</p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>Day 5: Passo Giau → Monte Pelmo</h3>
+    <p class="dolomites-summary-kicker">Point-to-point from Cortina</p>
+    <dl>
+      <dt>Route</dt><dd>12 mi / 2,300 ft gain / 3,200 ft descent, ending at Rifugio Venezia</dd>
+      <dt>Access</dt><dd>About 1.5 hours of total driving, plus a 3-mi walk because vans cannot enter the finish valley</dd>
+      <dt>Sleep</dt><dd>Return to the same Cortina hotel</dd>
+      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Passo%20Giau%20Rifugio%20Venezia">AllTrails search: Passo Giau to Rifugio Venezia</a></dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Driver value: high.</strong> This is the hardest Rogue day to copy with one personal car because the start and finish are far apart and the last valley excludes vehicles.</p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>Day 6: Tre Cime di Lavaredo</h3>
+    <p class="dolomites-summary-kicker">Day trip from Cortina</p>
+    <dl>
+      <dt>Route</dt><dd>7–10 mi / 1,600–3,000 ft, plus a 1.5-mi walk back to the vans</dd>
+      <dt>Access</dt><dd>About 1.5 hours of total driving; the Rifugio Auronzo road requires advance access planning</dd>
+      <dt>Sleep</dt><dd>Return to the same Cortina hotel</dd>
+      <dt>Public map</dt><dd><a href="https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen">AllTrails: Tre Cime di Lavaredo / Drei Zinnen</a></dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Guide value: low to medium.</strong> The classic public loop is easy to identify, but Rogue's longer mileage range and hut finish show that its exact route is not necessarily the linked loop.</p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>Alta Via 1, for contrast</h3>
+    <p class="dolomites-summary-kicker">A continuous journey, not day trips</p>
+    <dl>
+      <dt>Route</dt><dd>Lago di Braies south through successive mountain stages toward Belluno</dd>
+      <dt>Access</dt><dd>Different start and finish; baggage and people move forward rather than returning to one hotel</dd>
+      <dt>Sleep</dt><dd>Rifugios on the route; this is why room availability controls the itinerary</dd>
+      <dt>Public map</dt><dd><a href="https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno">AllTrails: Alta Via 1, Lago di Braies to Belluno</a></dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Guide and baggage value: structurally different.</strong> AV1 cannot be reproduced as hotel-based day trips without changing the experience itself.</p>
+  </article>
+</div>
+
+### What are we really paying Rogue for?
+
+The major landmarks are not secret trails. The premium is for turning them into a frictionless group week.
+
+<div class="dolomites-summary-grid">
+  <article class="dolomites-summary-card">
+    <h3>Public trail ideas</h3>
+    <p class="dolomites-summary-kicker">Relatively easy to replace</p>
+    <p class="dolomites-summary-verdict">Tre Cime, Cinque Torri, Passo Giau, and Cima Rosetta are established public areas. AllTrails and official maps can identify representative routes, though not Rogue's exact variants.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>Mountain judgment</h3>
+    <p class="dolomites-summary-kicker">Harder to replace</p>
+    <p class="dolomites-summary-verdict">Most valuable on exposed Cima Rosetta and when storms force a same-day substitute. This is real expertise, not merely GPX navigation.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>Drivers and retrieval</h3>
+    <p class="dolomites-summary-kicker">High value on two days</p>
+    <p class="dolomites-summary-verdict">Especially valuable for Passo Giau → Rifugio Venezia. Less essential for ordinary loops from a Cortina hotel.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>Hotels, hut, and meals</h3>
+    <p class="dolomites-summary-kicker">Replaceable with planning</p>
+    <p class="dolomites-summary-verdict">Time-consuming to coordinate, but possible if we book early. Rogue does not publish the property names, so we cannot yet compare rooms directly.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>The ready-made group</h3>
+    <p class="dolomites-summary-kicker">Personal value</p>
+    <p class="dolomites-summary-verdict">This may be the best part for some travelers. It may be a drawback if it means leaving a companion behind for a week.</p>
+  </article>
+</div>
+
+If we want zero logistics, a cohesive running group, professional weather decisions, and somebody waiting with a van, Rogue has a clear value. If we want to travel with a companion, sleep together in a Cortina hotel, and choose recognizable loops, paying for full-time guiding becomes harder to justify. **The fair DIY comparison is not a rental car; it is airport coach + hotel + trail buses + a few taxis + one strategically chosen guide day.**
+
+<div class="dolomites-note">
+<strong>A new option to investigate:</strong> Rogue's current pricing section now shows a <strong>“Self Guided” price of $3,000</strong>, but the public page does not explain whether that uses the same route, hotels, rifugio, meals, luggage moves, or transfers. This could be the most relevant middle ground, but it is only a price label until Rogue supplies the itinerary and inclusions in writing.
+</div>
 
 ## The option comparison
 
@@ -220,8 +339,8 @@ AllTrails is useful for seeing public route ideas and recent user reports, but t
 
 | Trail or area | Why it belongs on the list | Hut-to-hut required? | Lavaredo by UTMB connection | AllTrails |
 |---|---|---|---|---|
-| **Alta Via 1** | The classic long-distance choice: a north-to-south journey through Fanes, Lagazuoi/Cinque Torri, Passo Giau, Pelmo, and Civetta country | Yes for a continuous trip; otherwise selected stages can be run as day outings | **Partial corridor overlap.** The Lavaredo 120K/80K/50K use Val Travenanzes, Rifugio Col Gallina, Passo Giau, and Croda da Lago. That does not prove identical mile-for-mile routing. | [Search Alta Via 1](https://www.alltrails.com/search?q=Alta%20Via%201%20Dolomites) |
-| **Tre Cime di Lavaredo loop** | The iconic three towers and probably the most recognizable single day in the Dolomites | No; return to a hotel | **Strong landmark overlap:** both the official Lavaredo 120K and 80K pass beneath Tre Cime | [Search Tre Cime loop](https://www.alltrails.com/search?q=Tre%20Cime%20di%20Lavaredo%20Loop) |
+| **Alta Via 1** | The classic long-distance choice: a north-to-south journey through Fanes, Lagazuoi/Cinque Torri, Passo Giau, Pelmo, and Civetta country | Yes for a continuous trip; otherwise selected stages can be run as day outings | **Partial corridor overlap.** The Lavaredo 120K/80K/50K use Val Travenanzes, Rifugio Col Gallina, Passo Giau, and Croda da Lago. That does not prove identical mile-for-mile routing. | [Alta Via 1: Lago di Braies to Belluno](https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno) |
+| **Tre Cime di Lavaredo loop** | The iconic three towers and probably the most recognizable single day in the Dolomites | No; return to a hotel | **Strong landmark overlap:** both the official Lavaredo 120K and 80K pass beneath Tre Cime | [Tre Cime di Lavaredo / Drei Zinnen](https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen) |
 | **Passo Giau and Cinque Torri** | Huge views, World War I history, and easy access from Cortina; both Rogue and Runcation feature this area | No; several day-route combinations are possible | **Yes at Passo Giau:** it is an official checkpoint on the 120K, 80K, and 50K. Cinque Torri is nearby, but I have not verified that every race uses the same Cinque Torri trail. | [Search Passo Giau–Cinque Torri](https://www.alltrails.com/search?q=Passo%20Giau%20Cinque%20Torri) |
 | **Croda da Lago loop** | A beautiful Cortina-based loop with forest, lake, rifugio, and high mountain scenery | No; return to Cortina | **Yes:** Rifugio Croda da Lago is an official checkpoint on the 120K, 80K, and 50K | [Search Croda da Lago](https://www.alltrails.com/search?q=Croda%20da%20Lago%20Loop) |
 | **Lago di Sorapis** | Turquoise alpine lake and dramatic cliffs; famous, busy, and better with an early start | No | No overlap verified from the published race checkpoints | [Search Lago di Sorapis](https://www.alltrails.com/search?q=Lago%20di%20Sorapis) |
@@ -232,11 +351,25 @@ The UTMB event here is the **La Sportiva Lavaredo Ultra Trail by UTMB**, not the
 
 For our group, the most logical non-AV1 concept would be a comfortable hotel base in Cortina with private bathrooms, then day routes at Tre Cime, Passo Giau/Cinque Torri, and Croda da Lago. That would retain several of the landscapes used by Lavaredo by UTMB without making bathroom tolerance the price of admission.
 
-## The hybrid plan: how many hotel bases do we actually need?
+## The car-free hybrid: what replaces Rogue's vans?
 
-Transportation is the strongest argument for paying Rogue, so a DIY or hybrid plan only makes sense if it stays geographically simple. The good news is that Cortina is an unusually useful hub.
+Transportation is the strongest argument for paying Rogue, but that does not automatically make a rental car the answer. A car would sit unused during long runs, create a retrieval problem on point-to-point routes, and still would not solve restricted-access trailheads. A DIY or hybrid plan makes more sense if it stays geographically simple and buys transportation only when needed.
 
-Representative driving times below were checked in Google Maps on November 9, 2026. They are planning estimates, not promises about August traffic, parking, road restrictions, or 2027 timetables.
+### Is there a Chamonix-style bus system?
+
+**Yes, but it is more fragmented and seasonal than Chamonix.** [Cortina Express](https://www.cortinaexpress.it/en/) links Venice Airport, Venice/Mestre, Cortina, and several mountain destinations. [Dolomiti Bus](https://dolomitibus.it/) operates the local urban, regional, and summer seasonal network. The official Tre Cime guide specifically confirms summer buses from Cortina all the way to Rifugio Auronzo, the trailhead for the classic loop.
+
+The practical car-free stack would be:
+
+1. **Cortina Express from Venice Airport to Cortina.** The live route planner currently shows trips around 2 hours 15 minutes, similar to driving, but August 2027 schedules are not published yet.
+2. **A central Cortina hotel**, so town, restaurants, and the bus station are walkable.
+3. **Seasonal buses for the obvious trail corridors**, especially Tre Cime and the Falzarego/Cinque Torri side when the timetable works.
+4. **Pre-booked taxis or private transfers for awkward starts and finishes**, rather than paying for a rental car every day.
+5. **One inter-base transfer** only if Cima Rosetta matters enough to add San Martino di Castrozza.
+
+This is not as effortless as Chamonix's valley system. We would select the routes after the summer timetable appears, and we should budget for taxis on the days when the bus schedule and the trail do not line up.
+
+Representative road times below were checked in Google Maps on November 9, 2026. They show the size of the taxi/transfer problem; they are **not** a recommendation to rent a car. They are planning estimates, not promises about August traffic, parking, road restrictions, or 2027 timetables.
 
 | From a Cortina hotel | Approximate drive | What it unlocks |
 |---|---:|---|
@@ -252,15 +385,17 @@ That creates three possible shapes:
 
 | Plan | Hotel moves | Trail coverage | Transportation verdict |
 |---|---:|---|---|
-| **Cortina only** | **0** | Tre Cime, Sorapis, Passo Giau, Cinque Torri, Croda da Lago, Lagazuoi/Travenanzes | Simplest. Most trailheads are roughly 15–45 minutes away. This already covers most of our eastern-Dolomites and Lavaredo by UTMB interests. |
-| **Cortina + San Martino** | **1** | Everything above, plus Cima Rosetta and the Pale di San Martino | **My preferred hybrid.** One substantial transfer buys a genuinely different landscape rather than another variation of Cortina. |
+| **Cortina only** | **0** | Tre Cime, Sorapis, Passo Giau, Cinque Torri, Croda da Lago, Lagazuoi/Travenanzes | Simplest car-free choice. Most trailheads are roughly 15–45 minutes away by seasonal bus or taxi. This already covers most of our eastern-Dolomites and Lavaredo by UTMB interests. |
+| **Cortina + San Martino** | **1** | Everything above, plus Cima Rosetta and the Pale di San Martino | **My preferred hybrid if Rosetta is essential.** One private inter-base transfer buys a genuinely different landscape; no daily rental car is necessary. |
 | **Cortina + San Martino + Val Gardena** | **2** | Adds Seceda, Odle, Adolf Munkel, and Sassolungo | Beautiful, but probably too many moves for one week. Better for a longer trip or if Seceda is non-negotiable. |
 
 ### A seven-night version that stays sane
 
+- **Airport coach or arranged transfer to San Martino:** no rental car collected.
 - **Two nights in San Martino di Castrozza:** arrival/recovery plus Cima Rosetta and the Pale plateau.
 - **One private transfer to Cortina:** roughly two hours; luggage moves with us.
-- **Five nights in Cortina:** choose four routes from Tre Cime, Passo Giau/Cinque Torri, Croda da Lago, Sorapis, and Lagazuoi/Travenanzes, leaving one weather or recovery day.
+- **Five nights in central Cortina:** choose four routes from Tre Cime, Passo Giau/Cinque Torri, Croda da Lago, Sorapis, and Lagazuoi/Travenanzes, leaving one weather or recovery day.
+- **Cortina Express back to Venice:** subject to the eventual 2027 timetable.
 
 Venice Marco Polo is roughly two hours by road from either San Martino or Cortina, so the order can follow hotel availability and flight timing. Finishing in Cortina may be slightly simpler because scheduled airport-bus options are easier to find there, but 2027 schedules still need confirmation.
 
@@ -270,29 +405,13 @@ This is not the cheapest-possible DIY trip. It deliberately buys back the parts 
 
 - **Private hotel rooms with ensuite bathrooms**, reserved early and preferably on refundable rates.
 - **One inter-base private transfer** between San Martino and Cortina.
-- **Trailhead transportation** for point-to-point routes and days when parking or a reserved-access road is the real problem.
+- **Trailhead buses and selective taxis** for point-to-point routes and days when a reserved-access road or schedule is the real problem.
 - **One local guide for Cima Rosetta**, where Rogue describes steep, occasionally exposed terrain and expects substantial hiking.
 - Optional guiding for a long point-to-point day, while keeping obvious loops self-guided if the group is comfortable with navigation and mountain weather.
 
 Tre Cime deserves advance logistics even though it is close to Cortina. The [official access guide](https://auronzo.info/en/how-to-get-to-the-tre-cime-di-lavaredo/) says the Rifugio Auronzo road requires a reservation, includes paid parking, and is especially busy in July and August. Seasonal buses run from Cortina, Auronzo, and Dobbiaco, with timetables that change. San Martino's official lift page confirms that the [Col Verde gondola and Rosetta cable car](https://www.sanmartino.com/en/lifts-and-slopes-live-info/lifts-open) provide access toward the Pale plateau, though summer 2027 dates and hours are not yet published.
 
 This hybrid is the fair comparison to Rogue: not “Can we reproduce a $5,795 trip for almost nothing?” but “Can we keep the hotels, transfers, great routes, and one useful guide day while removing the full-time support we may not value enough?”
-
-## Day by day: Rogue guided highlights
-
-Rogue's itinerary is the easiest one to shorten mentally because every running day is its own outing. Distances below are the current published figures.
-
-| Day | Route / plan | Distance | Elevation gain | Where we sleep / useful link |
-|---|---|---:|---:|---|
-| 1 | Venice pickup, transfer, aperitivo | No run | — | Family-run lodge in San Martino di Castrozza |
-| 2 | Cima Rosetta | **5 mi** | **4,000 ft** | Same San Martino lodge; gondola descent |
-| 3 | “Happy Valley” loop, then transfer | **9 mi** | **1,600 ft** | Traditional mountain rifugio; small overnight bag transferred |
-| 4 | Cinque Torri loop | **8 mi** | **3,300 ft** | Boutique hotel in Cortina d'Ampezzo |
-| 5 | Passo Giau to Monte Pelmo / Rifugio Venezia | **12 mi** | **2,300 ft** | Same Cortina hotel; plus a 3-mile walk to the vans |
-| 6 | Tre Cime | **7–10 mi** | **1,600–3,000 ft** | Same Cortina hotel |
-| 7 | Breakfast and transfer to Venice | No run | — | Trip ends |
-
-Rogue does not name the two hotels or the overnight rifugio on the public itinerary, so I am not going to guess. Its [official Dolomites itinerary and photo gallery](https://roguexpeditions.com/running-tours/europe/italy/) is the honest accommodation-photo reference until room names appear in a booking proposal.
 
 ## Day by day: Runcation guided Alta Via 1
 
@@ -344,7 +463,9 @@ These are examples, not a claim that Runcation uses Fanes or Lagazuoi. Runcation
 
 ## What I think we are really choosing
 
-If the group wants a mountain vacation with running in it, Rogue makes a strong case. It has the easiest pace policy, more comfortable nights, and a driver waiting when a route ends. We would also see Cima Rosetta, Cinque Torri, Monte Pelmo, and Tre Cime in one week.
+If the whole group wants a mountain vacation built around running, Rogue makes a strong case. It has the easiest pace policy, more comfortable nights, and a driver waiting when a route ends. We would also see Cima Rosetta, Cinque Torri, Monte Pelmo, and Tre Cime in one week.
+
+But the route-by-route view makes the tradeoff sharper. Rogue is not unlocking a secret continuous trail. It is packaging recognizable Dolomites areas into a supported week. That is valuable, especially on Cima Rosetta and the Passo Giau-to-Pelmo traverse, but it is harder to justify if it means leaving a travel companion behind for six or seven days. A central hotel allows us to share breakfast, dinner, recovery days, and the scenery even when only some of us run.
 
 If the group wants running to be the journey, the guided Runcation is closer to that idea. Sixty-five-ish miles and nearly 19,000 feet of climbing through a continuous line in the mountains sounds wonderful to me. Five dorm nights do not.
 
@@ -352,7 +473,7 @@ The self-guided express route might be the AV1 compromise: five trail days, bagg
 
 Runcation's reply removes the option I had been imagining: a shorter private guided version in August 2027. The rifugios on the guided route are already full, so the real choice is now between changing dates and accepting the scheduled guided trip's dorms, or keeping our preferred date range and asking Runcation to check the five-day self-guided Express for both space and private rooms.
 
-The new fourth option—the **two-base hybrid**—may fit us best: two nights in San Martino, five in Cortina, one major transfer, and private hotel bathrooms throughout. We would use a guide where local judgment matters most, probably Cima Rosetta, and run the simpler Cortina loops independently. It would not reproduce Rogue's invisible support, but it preserves the things we care about most while avoiding both dorms and a week of full-time guiding fees.
+The new fourth option—the **car-free hotel hybrid**—may fit us best: perhaps two nights in San Martino, five in Cortina, one major transfer, and private hotel bathrooms throughout. We would use a guide where local judgment matters most, probably Cima Rosetta, take buses to obvious trailheads such as Tre Cime, and use taxis only where the itinerary demands them. It would not reproduce Rogue's invisible support, but it preserves the things we care about most while avoiding dorms, a rental car, and a week of full-time guiding fees.
 
 I am still not picking a winner. The next decision is more basic: **Does the route itself have to be Alta Via 1, or do we want the best week of running in the Dolomites?** If it must be AV1, the Runcation choices remain relevant. If it can be any beautiful Dolomites trails, the hybrid deserves a real quote before we pay for Rogue's convenience.
 
@@ -364,7 +485,10 @@ I am still not picking a winner. The next decision is more basic: **Does the rou
 - What would private-room upgrades add to the published $2,195 price?
 - Does the route itself have to be Alta Via 1, or would we rather have the best collection of Dolomites day routes?
 - Would everyone prefer the two-base San Martino + Cortina hybrid to a hut-to-hut trip?
-- What would one San Martino-to-Cortina transfer, three trailhead transfers, and one guided Cima Rosetta day cost for our actual group size?
+- Which August 2027 seasonal buses will serve Tre Cime, Cinque Torri/Falzarego, Passo Giau, and Passo Tre Croci?
+- What would one San Martino-to-Cortina transfer, two or three trailhead taxis, and one guided Cima Rosetta day cost for our actual group size?
+- What are Rogue's actual “Happy Valley” start and finish, its overnight rifugio, and the exact GPX variants for Cinque Torri and Tre Cime?
+- What exactly is included in Rogue's newly listed **$3,000 self-guided** option, and can a non-running companion share the hotels and transfers?
 - On the scheduled guided trip, how do the two guides handle a large gap between the fastest and slowest runners during the longest stages?
 - What is the correct Day 3 mileage on the guided itinerary: 8 or 14 miles?
 - Once exact dates are set, what do flights and the pre-trip Cortina hotel actually cost?
@@ -379,7 +503,7 @@ The first email did its job. We no longer need to debate a custom guided 2027 tr
 
 ## Sources and verification date
 
-The original operator comparison was checked **November 7, 2026**. Runcation's availability, private-group, accommodation, and two-guide details were updated from its direct email reply received **November 9, 2026**. The trail, Lavaredo by UTMB, and hut examples were checked **November 9, 2026**.
+The original operator comparison was checked **November 7, 2026**. Runcation's availability, private-group, accommodation, and two-guide details were updated from its direct email reply received **November 9, 2026**. Rogue's route logistics and the car-free transport options were rechecked **November 11, 2026**. Summer 2027 local bus schedules are not yet published.
 
 - [Rogue Expeditions: Italian Dolomites itinerary, inclusions, dates, and price](https://roguexpeditions.com/running-tours/europe/italy/)
 - [Rogue Expeditions: pace and trip-grading policy](https://roguexpeditions.com/trip-grading-system/)
@@ -391,7 +515,11 @@ The original operator comparison was checked **November 7, 2026**. Runcation's a
 - [Rifugio Lagazuoi: private rooms, dorms, and shared bathrooms](https://www.rifugiolagazuoi.com/EN/p2-Overnight-stay-at-Rifugio-Lagazuoi)
 - [Lavaredo Ultra Trail by UTMB: 120K](https://lavaredo.utmb.world/races/lavaredo120k), [80K](https://lavaredo.utmb.world/races/lavaredo80k), and [50K](https://lavaredo.utmb.world/races/lavaredo50k)
 - [Tre Cime di Lavaredo: official road, parking, reservation, and bus information](https://auronzo.info/en/how-to-get-to-the-tre-cime-di-lavaredo/)
+- [Cortina Express: Venice, Cortina, and mountain destinations](https://www.cortinaexpress.it/en/)
+- [Dolomiti Bus: urban, regional, and seasonal services](https://dolomitibus.it/)
 - [San Martino di Castrozza: official lift information for Col Verde and Rosetta](https://www.sanmartino.com/en/lifts-and-slopes-live-info/lifts-open)
+- [AllTrails: Tre Cime di Lavaredo / Drei Zinnen](https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen)
+- [AllTrails: Alta Via 1, Lago di Braies to Belluno](https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno)
 - [Representative Google Flights search: PHX–VCE, August 7–16, 2027](https://www.google.com/travel/flights?hl=en&curr=USD&q=Flights%20from%20PHX%20to%20VCE%20Aug%207%202027%20return%20Aug%2016%202027)
 
 Representative road times for the hybrid-plan table were checked in Google Maps on **November 9, 2026**. They are estimates only; 2027 traffic, road controls, parking reservations, and summer transit schedules are not yet known.
