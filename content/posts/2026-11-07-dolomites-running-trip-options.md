@@ -88,10 +88,6 @@ I started looking at the Dolomites because I wanted a beautiful running trip wit
 
 Then Runcation added a five-day self-guided express option, which made the decision more interesting. It is shorter, can potentially work in August, and costs much less, but there is no guide or on-trail assistance. We emailed Runcation about a custom itinerary and private ensuite rooms, and their answer narrowed the options considerably. That led to a fourth idea: skip the continuous AV1 line, use two comfortable hotel bases, and hire a guide only where one adds the most value. Nothing is booked, and this page is the decision in progress rather than a recommendation.
 
-<div class="dolomites-note">
-<strong>Update, November 9, 2026:</strong> Runcation told us the rifugios on its guided route are already fully booked for summer 2027, so it cannot add a private or custom guided departure on that route. The scheduled guided trips still have spots, with communal dorm lodging. The other possibility is the five-day self-guided Express; Runcation can check its availability and whether any private rooms remain once we send a preferred date range and group size.
-</div>
-
 <small>Tre Cime di Lavaredo photo by [Wolfgang Moroder](https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg), resized from the original, licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).</small>
 
 ## TL;DR: the four choices
@@ -374,6 +370,12 @@ I am still not picking a winner. The next decision is more basic: **Does the rou
 - Once exact dates are set, what do flights and the pre-trip Cortina hotel actually cost?
 
 The first email did its job. We no longer need to debate a custom guided 2027 trip that cannot happen; we need to choose between guides, dates, and dorm rooms.
+
+## Runcation correspondence note
+
+<div class="dolomites-note">
+<strong>Email update received November 9, 2026:</strong> Runcation told us the rifugios on its guided route are already fully booked for summer 2027, so it cannot add a private or custom guided departure on that route. The scheduled guided trips still have spots, with communal dorm lodging. The other possibility is the five-day self-guided Express; Runcation can check its availability and whether any private rooms remain once we send a preferred date range and group size.
+</div>
 
 ## Sources and verification date
 
