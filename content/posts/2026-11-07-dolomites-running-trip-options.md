@@ -13,6 +13,22 @@ categories: ["running", "travel"]
 
 <style>
 .dolomites-note { background:#f3f7f4; border-left:4px solid #5f7f67; padding:1rem 1.2rem; margin:1.5rem 0; }
+.dolomites-summary-note { margin:1rem 0; padding:.8rem 1rem; border-left:4px solid #5f7f67; background:#eef4ef; color:#26352d; }
+[data-theme="dark"] .post-container .dolomites-summary-note { background:#eef4ef !important; color:#26352d !important; }
+.dolomites-summary-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1rem 0 2rem; }
+.dolomites-summary-card { border:1px solid #aebfb2; border-radius:8px; padding:1rem 1.1rem; background:#f8faf8; color:#26352d; }
+[data-theme="dark"] .post-container .dolomites-summary-card { background:#f8faf8 !important; color:#26352d !important; }
+.dolomites-summary-card h3 { margin:0 0 .35rem; color:#203d2e !important; font-size:1.12em; }
+[data-theme="dark"] .post-container .dolomites-summary-card h3 { color:#203d2e !important; }
+.dolomites-summary-kicker { margin:0 0 .85rem; color:#4b5c51 !important; font-size:.78em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+[data-theme="dark"] .post-container .dolomites-summary-kicker,
+[data-theme="dark"] .post-container .dolomites-summary-card dt { color:#4b5c51 !important; }
+.dolomites-summary-card dl { display:grid; grid-template-columns:auto 1fr; gap:.35rem .75rem; margin:0 0 .8rem; }
+.dolomites-summary-card dt { color:#4b5c51 !important; font-size:.82em; font-weight:700; text-transform:uppercase; }
+.dolomites-summary-card dd { margin:0; color:#26352d !important; font-weight:600; }
+.dolomites-summary-verdict { margin:0; padding-top:.7rem; border-top:1px solid #d9e1db; color:#26352d !important; }
+[data-theme="dark"] .post-container .dolomites-summary-card dd,
+[data-theme="dark"] .post-container .dolomites-summary-verdict { color:#26352d !important; }
 .post-container table { display:block; overflow-x:auto; min-width:900px; margin:1.5rem 0; }
 .post-container th:first-child, .post-container td:first-child { min-width:145px; font-weight:600; }
 .dolomites-status { display:inline-block; padding:.1rem .45rem; border-radius:999px; background:#edf1ed; font-size:.85em; white-space:nowrap; }
@@ -36,6 +52,7 @@ categories: ["running", "travel"]
 #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { background:#fff !important; color:#26352d !important; }
 #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive a { color:#1f5f45 !important; text-decoration:underline; }
 @media (max-width:767px) {
+  .dolomites-summary-grid { grid-template-columns:1fr; }
   .dolomites-decision-branches { grid-template-columns:1fr; }
   #the-option-comparison + .table-responsive { overflow:visible; border:0; }
   #the-option-comparison + .table-responsive table { display:block; min-width:0; width:100%; overflow:visible; font-size:15px; }
@@ -76,6 +93,57 @@ Then Runcation added a five-day self-guided express option, which made the decis
 </div>
 
 <small>Tre Cime di Lavaredo photo by [Wolfgang Moroder](https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg), resized from the original, licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).</small>
+
+## TL;DR: the four choices
+
+<div class="dolomites-summary-note"><strong>Shared starting point:</strong> add an estimated <strong>$1,200–$1,500 per person</strong> for PHX–VCE airfare, plus at least one buffer night in Italy. Package prices below do not include the international flight.</div>
+
+<div class="dolomites-summary-grid">
+  <article class="dolomites-summary-card">
+    <h3>Rogue guided highlights</h3>
+    <p class="dolomites-summary-kicker">Most convenient</p>
+    <dl>
+      <dt>Package</dt><dd>$5,795</dd>
+      <dt>PTO</dt><dd>About 7–9 workdays</dd>
+      <dt>Trip</dt><dd>7 days / 6 nights</dd>
+      <dt>Bathrooms</dt><dd>Mostly hotels; one bunk-room rifugio night with details not published</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Best if:</strong> we value drivers, easier pacing, varied landmark runs, and mostly hotel comfort enough to justify the premium.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>Runcation guided AV1</h3>
+    <p class="dolomites-summary-kicker">True guided traverse</p>
+    <dl>
+      <dt>Package</dt><dd>$3,145 early / $3,350 regular</dd>
+      <dt>PTO</dt><dd>About 6–7 workdays</dd>
+      <dt>Trip</dt><dd>7 days / 6 nights</dd>
+      <dt>Bathrooms</dt><dd>Five shared rifugio-dorm nights</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Best if:</strong> Alta Via 1 and guide support matter more than privacy. No custom August 2027 departure is available.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>Runcation self-guided Express</h3>
+    <p class="dolomites-summary-kicker">Lowest published price</p>
+    <dl>
+      <dt>Package</dt><dd>$2,195, based on two travelers</dd>
+      <dt>PTO</dt><dd>About 5–7 workdays</dd>
+      <dt>Trip</dt><dd>5 days / 4 nights on trail</dd>
+      <dt>Bathrooms</dt><dd>Shared on the standard trip; private room and ensuite availability still unknown</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Best if:</strong> we want an AV1 journey at our own pace and accept responsibility for navigation, weather, and exit decisions.</p>
+  </article>
+  <article class="dolomites-summary-card">
+    <h3>Two-base hotel hybrid</h3>
+    <p class="dolomites-summary-kicker">Our likely fit</p>
+    <dl>
+      <dt>Package</dt><dd>TBD: hotels, transfers, and one guide day priced separately</dd>
+      <dt>PTO</dt><dd>About 6–7 workdays for the proposed week</dd>
+      <dt>Trip</dt><dd>7 nights proposed</dd>
+      <dt>Bathrooms</dt><dd>Private ensuite hotel rooms throughout</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><strong>Best if:</strong> the route can be any spectacular Dolomites trails and we want comfort, flexibility, and only one hotel move.</p>
+  </article>
+</div>
 
 ## The decision tree
 
