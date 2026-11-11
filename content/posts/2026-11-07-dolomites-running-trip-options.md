@@ -81,7 +81,7 @@ categories: ["running", "travel"]
   #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(2)::before { content:"Why this route"; }
   #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(3)::before { content:"Hut-to-hut required?"; }
   #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(4)::before { content:"Lavaredo by UTMB connection"; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(5)::before { content:"AllTrails"; }
+  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(5)::before { content:"Route link status"; }
 }
 </style>
 
@@ -192,7 +192,7 @@ The overnight flight matters almost as much as the price. We should arrive in It
 
 Rogue is **not** an Alta Via 1 trip. It is five separate day outings in different parts of the Dolomites, joined by professional drivers. That distinction matters because several of the landmarks are publicly accessible from hotels; the hard part to reproduce is the exact route selection, vehicle repositioning, weather decisions, and the point-to-point days.
 
-The AllTrails links below are public comparison routes, **not Rogue's official GPX**. Rogue does not publish its tracks, and in several cases its mileage proves that it is using a different variant.
+Only the Tre Cime and full Alta Via 1 links below are exact public pages we could verify. They are still **not Rogue's official GPX**. For the other Rogue days, a search result is not good enough: Rogue does not publish its tracks, and in several cases its mileage proves that it is using a different variant.
 
 <div class="dolomites-summary-grid">
   <article class="dolomites-summary-card">
@@ -202,7 +202,7 @@ The AllTrails links below are public comparison routes, **not Rogue's official G
       <dt>Route</dt><dd>5 mi / 4,000 ft; steep, occasionally exposed, and mostly hiking</dd>
       <dt>Access</dt><dd>Starts directly from town; about 20 minutes down by gondola</dd>
       <dt>Sleep</dt><dd>Second night at the same unnamed lodge in central San Martino</dd>
-      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Cima%20Rosetta">AllTrails search: Cima Rosetta</a></dd>
+      <dt>Route status</dt><dd>No exact public match verified; ask Rogue for its GPX or precise trail sequence</dd>
     </dl>
     <p class="dolomites-summary-verdict"><strong>Guide value: high.</strong> This is the day where exposure, route judgment, and mountain conditions make a local guide easiest to justify.</p>
   </article>
@@ -214,7 +214,7 @@ The AllTrails links below are public comparison routes, **not Rogue's official G
       <dt>Route</dt><dd>9 mi / 1,600 ft, plus a 1.5-mi walk back to the vans</dd>
       <dt>Access</dt><dd>Drive to Passo Rolle; Rogue publishes about 1 hr 45 min total driving that day</dd>
       <dt>Sleep</dt><dd>An unnamed mountaintop rifugio between San Martino and Cortina</dd>
-      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Passo%20Rolle%20Val%20Venegia">AllTrails search: Passo Rolle / Val Venegia</a></dd>
+      <dt>Route status</dt><dd>No exact public match verified; “Happy Valley” is not the published name of a traceable route</dd>
     </dl>
     <p class="dolomites-summary-verdict"><strong>Match unknown.</strong> “Happy Valley” is Rogue's label, not a verifiable public trail name. We should ask for the actual start, finish, and overnight hut before comparing it with a DIY route.</p>
   </article>
@@ -226,7 +226,7 @@ The AllTrails links below are public comparison routes, **not Rogue's official G
       <dt>Route</dt><dd>8 mi / 3,300 ft; technical loop</dd>
       <dt>Access</dt><dd>Runs from the mountain area, then about 50 minutes of driving to Cortina</dd>
       <dt>Sleep</dt><dd>First of three nights at an unnamed boutique hotel in central Cortina</dd>
-      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Cinque%20Torri%20Loop">AllTrails search: Cinque Torri loop</a></dd>
+      <dt>Route status</dt><dd>No exact 8-mile / 3,300-ft Rogue loop verified</dd>
     </dl>
     <p class="dolomites-summary-verdict"><strong>Guide value: medium.</strong> The landmark is easy to identify and public transport reaches the area seasonally, but Rogue's 8-mile technical loop is not published.</p>
   </article>
@@ -238,7 +238,7 @@ The AllTrails links below are public comparison routes, **not Rogue's official G
       <dt>Route</dt><dd>12 mi / 2,300 ft gain / 3,200 ft descent, ending at Rifugio Venezia</dd>
       <dt>Access</dt><dd>About 1.5 hours of total driving, plus a 3-mi walk because vans cannot enter the finish valley</dd>
       <dt>Sleep</dt><dd>Return to the same Cortina hotel</dd>
-      <dt>Public map</dt><dd><a href="https://www.alltrails.com/search?q=Passo%20Giau%20Rifugio%20Venezia">AllTrails search: Passo Giau to Rifugio Venezia</a></dd>
+      <dt>Route status</dt><dd>No exact public match verified for Rogue's point-to-point variant</dd>
     </dl>
     <p class="dolomites-summary-verdict"><strong>Driver value: high.</strong> This is the hardest Rogue day to copy with one personal car because the start and finish are far apart and the last valley excludes vehicles.</p>
   </article>
@@ -250,7 +250,7 @@ The AllTrails links below are public comparison routes, **not Rogue's official G
       <dt>Route</dt><dd>7–10 mi / 1,600–3,000 ft, plus a 1.5-mi walk back to the vans</dd>
       <dt>Access</dt><dd>About 1.5 hours of total driving; the Rifugio Auronzo road requires advance access planning</dd>
       <dt>Sleep</dt><dd>Return to the same Cortina hotel</dd>
-      <dt>Public map</dt><dd><a href="https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen">AllTrails: Tre Cime di Lavaredo / Drei Zinnen</a></dd>
+      <dt>Closest reference</dt><dd><a href="https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen">AllTrails: Tre Cime di Lavaredo / Drei Zinnen</a>; not claimed as Rogue's route</dd>
     </dl>
     <p class="dolomites-summary-verdict"><strong>Guide value: low to medium.</strong> The classic public loop is easy to identify, but Rogue's longer mileage range and hut finish show that its exact route is not necessarily the linked loop.</p>
   </article>
@@ -262,7 +262,7 @@ The AllTrails links below are public comparison routes, **not Rogue's official G
       <dt>Route</dt><dd>Lago di Braies south through successive mountain stages toward Belluno</dd>
       <dt>Access</dt><dd>Different start and finish; baggage and people move forward rather than returning to one hotel</dd>
       <dt>Sleep</dt><dd>Rifugios on the route; this is why room availability controls the itinerary</dd>
-      <dt>Public map</dt><dd><a href="https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno">AllTrails: Alta Via 1, Lago di Braies to Belluno</a></dd>
+      <dt>Public reference</dt><dd><a href="https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno">AllTrails: Alta Via 1, Lago di Braies to Belluno</a>; not the shortened Runcation variant</dd>
     </dl>
     <p class="dolomites-summary-verdict"><strong>Guide and baggage value: structurally different.</strong> AV1 cannot be reproduced as hotel-based day trips without changing the experience itself.</p>
   </article>
@@ -306,6 +306,14 @@ If we want zero logistics, a cohesive running group, professional weather decisi
 <strong>A new option to investigate:</strong> Rogue's current pricing section now shows a <strong>“Self Guided” price of $3,000</strong>, but the public page does not explain whether that uses the same route, hotels, rifugio, meals, luggage moves, or transfers. This could be the most relevant middle ground, but it is only a price label until Rogue supplies the itinerary and inclusions in writing.
 </div>
 
+### What do Rogue's reviews actually tell us?
+
+Rogue's own [Italian Dolomites page](https://roguexpeditions.com/running-tours/europe/italy/) publishes dated testimonials from 2023–2025. The recurring praise is unusually consistent: excellent guides and support crew, thoughtfully selected routes, strong food and lodging, variety between running days, and calm itinerary changes when dangerous weather arrives. Multiple reviewers say they have booked several Rogue trips or already reserved another one, which is a meaningful positive signal.
+
+The limitation is important: these are testimonials selected and published by Rogue, not an independent review sample, and some appear more than once on the page. Rogue has a Google Maps business listing, but the accessible listing did not show a review score or review count. I could not verify a substantial independent review corpus on Google, Reddit, Yelp, or Trustpilot as of November 11, 2026.
+
+My honest review of the review evidence is therefore: **strong operator and repeat-customer signals, but weak independent verification**. Before paying the deposit, I would ask Rogue for two or three recent Dolomites alumni references and ask those travelers about the slowest/fastest pace split, hotel and hut quality, bad-weather decisions, and which parts of the week truly needed guides or drivers.
+
 ## The option comparison
 
 | What we are deciding | Rogue guided highlights | Runcation guided Alta Via 1 | Runcation self-guided/custom AV1 |
@@ -335,17 +343,17 @@ Runcation guided spends more of the budget on the hut-to-hut mountain experience
 
 ## If it does not have to be AV1: a Dolomites trail shortlist
 
-AllTrails is useful for seeing public route ideas and recent user reports, but these search links are **not** the operators' official GPX files. The names below are a shortlist for deciding what kind of Dolomites trip sounds exciting, not a ready-to-run itinerary.
+AllTrails is useful for seeing public route ideas and recent user reports, but a search page is not a route reference. The table links only the two exact public pages we have identified. Everything else stays explicitly unlinked until we verify a real route. None of these pages is an operator's official GPX.
 
-| Trail or area | Why it belongs on the list | Hut-to-hut required? | Lavaredo by UTMB connection | AllTrails |
+| Trail or area | Why it belongs on the list | Hut-to-hut required? | Lavaredo by UTMB connection | Route link status |
 |---|---|---|---|---|
 | **Alta Via 1** | The classic long-distance choice: a north-to-south journey through Fanes, Lagazuoi/Cinque Torri, Passo Giau, Pelmo, and Civetta country | Yes for a continuous trip; otherwise selected stages can be run as day outings | **Partial corridor overlap.** The Lavaredo 120K/80K/50K use Val Travenanzes, Rifugio Col Gallina, Passo Giau, and Croda da Lago. That does not prove identical mile-for-mile routing. | [Alta Via 1: Lago di Braies to Belluno](https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno) |
 | **Tre Cime di Lavaredo loop** | The iconic three towers and probably the most recognizable single day in the Dolomites | No; return to a hotel | **Strong landmark overlap:** both the official Lavaredo 120K and 80K pass beneath Tre Cime | [Tre Cime di Lavaredo / Drei Zinnen](https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen) |
-| **Passo Giau and Cinque Torri** | Huge views, World War I history, and easy access from Cortina; both Rogue and Runcation feature this area | No; several day-route combinations are possible | **Yes at Passo Giau:** it is an official checkpoint on the 120K, 80K, and 50K. Cinque Torri is nearby, but I have not verified that every race uses the same Cinque Torri trail. | [Search Passo Giau–Cinque Torri](https://www.alltrails.com/search?q=Passo%20Giau%20Cinque%20Torri) |
-| **Croda da Lago loop** | A beautiful Cortina-based loop with forest, lake, rifugio, and high mountain scenery | No; return to Cortina | **Yes:** Rifugio Croda da Lago is an official checkpoint on the 120K, 80K, and 50K | [Search Croda da Lago](https://www.alltrails.com/search?q=Croda%20da%20Lago%20Loop) |
-| **Lago di Sorapis** | Turquoise alpine lake and dramatic cliffs; famous, busy, and better with an early start | No | No overlap verified from the published race checkpoints | [Search Lago di Sorapis](https://www.alltrails.com/search?q=Lago%20di%20Sorapis) |
-| **Seceda / Odle and the Adolf Munkel Trail** | A different side of the Dolomites: sharp Odle spires and rolling green meadows, usually based from Val Gardena | No | No Lavaredo-course overlap; this is in the western Dolomites | [Search Seceda](https://www.alltrails.com/search?q=Seceda%20Dolomites) · [Search Adolf Munkel](https://www.alltrails.com/search?q=Adolf%20Munkel%20Trail) |
-| **Cima Rosetta / Pale di San Martino** | Rogue's steep opening route and a completely different, almost lunar Dolomites landscape | No; gondola-supported options exist | No Lavaredo-course overlap verified | [Search Cima Rosetta](https://www.alltrails.com/search?q=Cima%20Rosetta) |
+| **Passo Giau and Cinque Torri** | Huge views, World War I history, and easy access from Cortina; both Rogue and Runcation feature this area | No; several day-route combinations are possible | **Yes at Passo Giau:** it is an official checkpoint on the 120K, 80K, and 50K. Cinque Torri is nearby, but I have not verified that every race uses the same Cinque Torri trail. | No exact operator-equivalent route verified |
+| **Croda da Lago loop** | A beautiful Cortina-based loop with forest, lake, rifugio, and high mountain scenery | No; return to Cortina | **Yes:** Rifugio Croda da Lago is an official checkpoint on the 120K, 80K, and 50K | No exact route link verified yet |
+| **Lago di Sorapis** | Turquoise alpine lake and dramatic cliffs; famous, busy, and better with an early start | No | No overlap verified from the published race checkpoints | No exact route link verified yet |
+| **Seceda / Odle and the Adolf Munkel Trail** | A different side of the Dolomites: sharp Odle spires and rolling green meadows, usually based from Val Gardena | No | No Lavaredo-course overlap; this is in the western Dolomites | No exact route link verified yet |
+| **Cima Rosetta / Pale di San Martino** | Rogue's steep opening route and a completely different, almost lunar Dolomites landscape | No; gondola-supported options exist | No Lavaredo-course overlap verified | No exact Rogue-equivalent route verified |
 
 The UTMB event here is the **La Sportiva Lavaredo Ultra Trail by UTMB**, not the UTMB Mont-Blanc course in France. Its official pages publish maps and GPX files for the [120K](https://lavaredo.utmb.world/races/lavaredo120k), [80K](https://lavaredo.utmb.world/races/lavaredo80k), and [50K](https://lavaredo.utmb.world/races/lavaredo50k). The overlap labels above use the landmarks and checkpoints those pages currently publish. They do not claim that a Runcation or Rogue stage follows the race GPX exactly.
 
@@ -447,7 +455,7 @@ The 2027 booking page now publishes a full five-day route. These are useful plan
 
 The [official 2027 self-guided booking page](https://www.wetravel.com/trips/self-guided-dolomites-hut-to-hut-express-trail-running-2027-runcation-travel-4487133872) has the complete current itinerary and a photo gallery. Runcation supplies its own detailed itinerary and GPX files after booking.
 
-The AllTrails links above intentionally open searches by landmark rather than pretending a public route is the operator's route. I could not verify an AllTrails track that exactly matches either operator variant. For the actual trip, the operator GPX is the one that matters.
+I could not verify an AllTrails track that exactly matches either operator variant. For the actual trip, the operator GPX is the one that matters. If Rogue will not share a GPX before booking, we at least need the precise trail names, start, finish, and hut sequence in writing.
 
 ## What a Dolomites hut is actually like
 
@@ -489,6 +497,7 @@ I am still not picking a winner. The next decision is more basic: **Does the rou
 - What would one San Martino-to-Cortina transfer, two or three trailhead taxis, and one guided Cima Rosetta day cost for our actual group size?
 - What are Rogue's actual “Happy Valley” start and finish, its overnight rifugio, and the exact GPX variants for Cinque Torri and Tre Cime?
 - What exactly is included in Rogue's newly listed **$3,000 self-guided** option, and can a non-running companion share the hotels and transfers?
+- Will Rogue connect us with two or three recent Dolomites guests who can speak candidly about pacing, accommodations, weather changes, and the value of the guides?
 - On the scheduled guided trip, how do the two guides handle a large gap between the fastest and slowest runners during the longest stages?
 - What is the correct Day 3 mileage on the guided itinerary: 8 or 14 miles?
 - Once exact dates are set, what do flights and the pre-trip Cortina hotel actually cost?
