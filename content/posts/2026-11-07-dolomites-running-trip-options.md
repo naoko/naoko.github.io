@@ -19,10 +19,18 @@ categories: ["running", "travel"]
 .dolomites-decision { margin:1.5rem 0 2rem; font-size:16px; line-height:1.55; }
 .dolomites-decision-question { padding:1rem 1.2rem; background:#355f4b; color:#fff; border-radius:8px; font-size:1.15em; font-weight:700; text-align:center; }
 .dolomites-decision-branches { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem; }
-.dolomites-decision-branch { border:1px solid #ccd8cf; border-radius:8px; padding:1rem 1.2rem; background:#f8faf8; }
+.dolomites-decision-branch { border:1px solid #aebfb2; border-radius:8px; padding:1rem 1.2rem; background:#f8faf8; color:#26352d; }
 .dolomites-decision-answer { display:inline-block; margin-bottom:.55rem; padding:.18rem .65rem; border-radius:999px; background:#dfe9e2; color:#294838; font-weight:700; }
-.dolomites-decision-branch h3 { margin:.15rem 0 .6rem; font-size:1.12em; }
+.dolomites-decision-branch h3 { margin:.15rem 0 .6rem; color:#203d2e !important; font-size:1.12em; }
+[data-theme="dark"] .post-container .dolomites-decision-branch h3 { color:#203d2e !important; }
 .dolomites-decision-branch ol { margin:0; padding-left:1.25rem; }
+.dolomites-decision-branch li { color:#26352d !important; }
+[data-theme="dark"] .post-container .dolomites-decision-branch li { color:#26352d !important; }
+.dolomites-decision-branch li::marker { color:#2f674d !important; font-weight:700; }
+[data-theme="dark"] .post-container .dolomites-decision-branch li::marker { color:#2f674d !important; }
+#the-option-comparison + .table-responsive table { background:#fff !important; color:#26352d !important; }
+#the-option-comparison + .table-responsive th { background:#e8f0ea !important; color:#203d2e !important; }
+#the-option-comparison + .table-responsive td { background:#fff !important; color:#26352d !important; }
 @media (max-width:767px) {
   .dolomites-decision-branches { grid-template-columns:1fr; }
   #the-option-comparison + .table-responsive { overflow:visible; border:0; }
@@ -34,7 +42,7 @@ categories: ["running", "travel"]
   #the-option-comparison + .table-responsive tr { box-sizing:border-box; margin:0 0 1rem; border:1px solid #d9e1db; border-radius:8px; overflow:hidden; }
   #the-option-comparison + .table-responsive td { box-sizing:border-box; min-width:0; padding:.75rem 1rem; border:0; border-top:1px solid #edf0ed; }
   #the-option-comparison + .table-responsive td:first-child { min-width:0; border-top:0; background:#eef4ef; color:#294838; font-size:1.08em; }
-  #the-option-comparison + .table-responsive td:nth-child(n+2)::before { display:block; margin-bottom:.2rem; color:#68756c; font-size:.78em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+  #the-option-comparison + .table-responsive td:nth-child(n+2)::before { display:block; margin-bottom:.2rem; color:#4b5c51; font-size:.78em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
   #the-option-comparison + .table-responsive td:nth-child(2)::before { content:"Rogue guided highlights"; }
   #the-option-comparison + .table-responsive td:nth-child(3)::before { content:"Runcation guided AV1"; }
   #the-option-comparison + .table-responsive td:nth-child(4)::before { content:"Runcation self-guided AV1"; }
