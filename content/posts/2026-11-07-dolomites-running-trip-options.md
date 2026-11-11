@@ -312,7 +312,17 @@ Rogue's own [Italian Dolomites page](https://roguexpeditions.com/running-tours/e
 
 The limitation is important: these are testimonials selected and published by Rogue, not an independent review sample, and some appear more than once on the page. Rogue has a Google Maps business listing, but the accessible listing did not show a review score or review count. I could not verify a substantial independent review corpus on Google, Reddit, Yelp, or Trustpilot as of November 11, 2026.
 
+Several promising Reddit leads surfaced afterward: discussions in [r/XXRunning](https://www.reddit.com/r/XXRunning/comments/1srliu0/looking_for_recs_for_an_adventurerunningfriendly/), [r/running about running-vacation services](https://www.reddit.com/r/running/comments/zz23qy/experience_with_running_vacations_services/), and [r/running about guided tours](https://www.reddit.com/r/running/comments/1ekw63g/running_tour/). Reddit returned a security-block page when I tried to read the comments, so I have not counted their positive summaries as verified evidence. A separate “first-hand review” citation pointed only to a user's profile rather than the actual comment. We need comment permalinks or screenshots before quoting it.
+
 My honest review of the review evidence is therefore: **strong operator and repeat-customer signals, but weak independent verification**. Before paying the deposit, I would ask Rogue for two or three recent Dolomites alumni references and ask those travelers about the slowest/fastest pace split, hotel and hut quality, bad-weather decisions, and which parts of the week truly needed guides or drivers.
+
+### Why Rogue can be good and still feel wrong for us
+
+Rogue's own [group-travel article](https://roguexpeditions.com/blog/group-travel/) says the vast majority of its runners arrive knowing nobody. That clarifies a major part of the product: Rogue is not only selling routes, guides, and vans; it is selling an instant community for solo runners.
+
+Its [For Every Traveler FAQ](https://roguexpeditions.com/for-every-traveler/) makes the fit issue even clearer. Rogue says many trips can accommodate partners with different abilities, but specifically names **the Dolomites and Balkans as trips that are not ideal for non-running partners**.
+
+That explains my hesitation better than a price comparison does. A solo runner who wants a ready-made group may get enormous value from Rogue. If I want the running to sit inside a shared vacation with a companion, the same group structure can feel like paying a premium to spend most of the week apart. This is a product-fit problem, not evidence that Rogue runs a bad trip.
 
 ## The option comparison
 
@@ -516,6 +526,8 @@ The original operator comparison was checked **November 7, 2026**. Runcation's a
 
 - [Rogue Expeditions: Italian Dolomites itinerary, inclusions, dates, and price](https://roguexpeditions.com/running-tours/europe/italy/)
 - [Rogue Expeditions: pace and trip-grading policy](https://roguexpeditions.com/trip-grading-system/)
+- [Rogue Expeditions: group travel and solo attendance](https://roguexpeditions.com/blog/group-travel/)
+- [Rogue Expeditions: partner suitability, including the Dolomites caveat](https://roguexpeditions.com/for-every-traveler/)
 - [Runcation: guided Dolomites Alta Via 1](https://runcation.org/retreat-dolomites-running)
 - [Runcation: self-guided Dolomites overview](https://runcation.org/self-guided-dolomites)
 - [Runcation: 2027 five-day self-guided itinerary and price](https://www.wetravel.com/trips/self-guided-dolomites-hut-to-hut-express-trail-running-2027-runcation-travel-4487133872)
