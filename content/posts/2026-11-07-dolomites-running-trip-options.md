@@ -48,10 +48,6 @@ categories: ["running", "travel"]
 #the-option-comparison + .table-responsive table { background:#fff !important; color:#26352d !important; }
 #the-option-comparison + .table-responsive th { background:#e8f0ea !important; color:#203d2e !important; }
 #the-option-comparison + .table-responsive td { background:#fff !important; color:#26352d !important; }
-#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive table { background:#fff !important; color:#26352d !important; }
-#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive th { background:#e8f0ea !important; color:#203d2e !important; }
-#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { background:#fff !important; color:#26352d !important; }
-#if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive a { color:#1f5f45 !important; text-decoration:underline; }
 @media (max-width:767px) {
   .dolomites-summary-grid { grid-template-columns:1fr; }
   .dolomites-decision-branches { grid-template-columns:1fr; }
@@ -68,20 +64,6 @@ categories: ["running", "travel"]
   #the-option-comparison + .table-responsive td:nth-child(2)::before { content:"Rogue guided highlights"; }
   #the-option-comparison + .table-responsive td:nth-child(3)::before { content:"Runcation guided AV1"; }
   #the-option-comparison + .table-responsive td:nth-child(4)::before { content:"Runcation self-guided AV1"; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive { overflow:visible; border:0; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive table { display:block; min-width:0; width:100%; overflow:visible; font-size:15px; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive thead { display:none; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive tbody,
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive tr,
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { display:block; width:100%; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive tr { box-sizing:border-box; margin:0 0 1rem; border:1px solid #aebfb2; border-radius:8px; overflow:hidden; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td { box-sizing:border-box; min-width:0; padding:.75rem 1rem; border:0; border-top:1px solid #dfe7e1; white-space:normal !important; overflow-wrap:anywhere; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:first-child { min-width:0; border-top:0; background:#e8f0ea !important; color:#203d2e !important; font-size:1.08em; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(n+2)::before { display:block; margin-bottom:.2rem; color:#4b5c51; font-size:.78em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(2)::before { content:"Why this route"; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(3)::before { content:"Hut-to-hut required?"; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(4)::before { content:"Lavaredo by UTMB connection"; }
-  #if-it-does-not-have-to-be-av1-a-dolomites-trail-shortlist + p + .table-responsive td:nth-child(5)::before { content:"Route link status"; }
 }
 </style>
 
@@ -351,23 +333,92 @@ The price gap makes more sense after laying it out this way. Rogue is not simply
 
 Runcation guided spends more of the budget on the hut-to-hut mountain experience itself. The group wakes up on the route, runs a much longer week, and has baggage moved between huts, but lunch and the privacy of a hotel room mostly disappear. The self-guided version keeps the baggage service and route planning while removing the guides and some of the transport.
 
-## If it does not have to be AV1: a Dolomites trail shortlist
+## If it does not have to be AV1: five exact routes we could choose
 
-AllTrails is useful for seeing public route ideas and recent user reports, but a search page is not a route reference. The table links only the two exact public pages we have identified. Everything else stays explicitly unlinked until we verify a real route. None of these pages is an operator's official GPX.
+“Top Dolomites hikes” lists usually name a landmark, not a complete day. That is not enough for this decision. The five cards below turn famous scenery into specific routes with a start, finish, numbered paths, published distance or time, and a realistic hotel base.
 
-| Trail or area | Why it belongs on the list | Hut-to-hut required? | Lavaredo by UTMB connection | Route link status |
-|---|---|---|---|---|
-| **Alta Via 1** | The classic long-distance choice: a north-to-south journey through Fanes, Lagazuoi/Cinque Torri, Passo Giau, Pelmo, and Civetta country | Yes for a continuous trip; otherwise selected stages can be run as day outings | **Partial corridor overlap.** The Lavaredo 120K/80K/50K use Val Travenanzes, Rifugio Col Gallina, Passo Giau, and Croda da Lago. That does not prove identical mile-for-mile routing. | [Alta Via 1: Lago di Braies to Belluno](https://www.alltrails.com/trail/italy/south-tyrol/alta-via-1-dolomiti-lago-di-braies-belluno) |
-| **Tre Cime di Lavaredo loop** | The iconic three towers and probably the most recognizable single day in the Dolomites | No; return to a hotel | **Strong landmark overlap:** both the official Lavaredo 120K and 80K pass beneath Tre Cime | [Tre Cime di Lavaredo / Drei Zinnen](https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen) |
-| **Passo Giau and Cinque Torri** | Huge views, World War I history, and easy access from Cortina; both Rogue and Runcation feature this area | No; several day-route combinations are possible | **Yes at Passo Giau:** it is an official checkpoint on the 120K, 80K, and 50K. Cinque Torri is nearby, but I have not verified that every race uses the same Cinque Torri trail. | No exact operator-equivalent route verified |
-| **Croda da Lago loop** | A beautiful Cortina-based loop with forest, lake, rifugio, and high mountain scenery | No; return to Cortina | **Yes:** Rifugio Croda da Lago is an official checkpoint on the 120K, 80K, and 50K | No exact route link verified yet |
-| **Lago di Sorapis** | Turquoise alpine lake and dramatic cliffs; famous, busy, and better with an early start | No | No overlap verified from the published race checkpoints | No exact route link verified yet |
-| **Seceda / Odle and the Adolf Munkel Trail** | A different side of the Dolomites: sharp Odle spires and rolling green meadows, usually based from Val Gardena | No | No Lavaredo-course overlap; this is in the western Dolomites | No exact route link verified yet |
-| **Cima Rosetta / Pale di San Martino** | Rogue's steep opening route and a completely different, almost lunar Dolomites landscape | No; gondola-supported options exist | No Lavaredo-course overlap verified | No exact Rogue-equivalent route verified |
+These are **our five candidates**, not an objective ranking of the whole Dolomites. Four work from Cortina. Seceda requires a second base in Ortisei/Val Gardena. Where an exact official tourism route exists, I link that rather than an AllTrails search result. The one exact AllTrails page we have verified is included for Tre Cime as a map comparison; none of these links is Rogue's GPX.
 
-The UTMB event here is the **La Sportiva Lavaredo Ultra Trail by UTMB**, not the UTMB Mont-Blanc course in France. Its official pages publish maps and GPX files for the [120K](https://lavaredo.utmb.world/races/lavaredo120k), [80K](https://lavaredo.utmb.world/races/lavaredo80k), and [50K](https://lavaredo.utmb.world/races/lavaredo50k). The overlap labels above use the landmarks and checkpoints those pages currently publish. They do not claim that a Runcation or Rogue stage follows the race GPX exactly.
+<div class="dolomites-summary-grid">
+  <article class="dolomites-summary-card">
+    <h3>1. Tre Cime di Lavaredo loop</h3>
+    <p class="dolomites-summary-kicker">The non-negotiable icon</p>
+    <dl>
+      <dt>Base</dt><dd>Cortina</dd>
+      <dt>Start / finish</dt><dd>Rifugio Auronzo / Rifugio Auronzo</dd>
+      <dt>Path</dt><dd>101 to Forcella Lavaredo and Rifugio Locatelli; return past the Piani lakes and Langalm</dd>
+      <dt>Published size</dt><dd>About 9–10 km, 400 m gain, 3–4 hours</dd>
+      <dt>Transport</dt><dd>Seasonal direct bus from Cortina to Rifugio Auronzo; schedules and reservations must be rechecked for 2027</dd>
+      <dt>With Coy</dt><dd>Best all-group day: moderate, well marked, and full of rifugio stops</dd>
+      <dt>UTMB</dt><dd>Strong landmark overlap with the Lavaredo 120K and 80K</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><a href="https://auronzo.info/en/tre-cime-di-lavaredo-dolomites/">Official loop description</a> · <a href="https://www.alltrails.com/trail/italy/veneto/tre-cime-di-lavaredo-drei-zinnen">Exact AllTrails comparison</a></p>
+  </article>
 
-For our group, the most logical non-AV1 concept would be a comfortable hotel base in Cortina with private bathrooms, then day routes at Tre Cime, Passo Giau/Cinque Torri, and Croda da Lago. That would retain several of the landscapes used by Lavaredo by UTMB without making bathroom tolerance the price of admission.
+  <article class="dolomites-summary-card">
+    <h3>2. Lago di Sorapis</h3>
+    <p class="dolomites-summary-kicker">Turquoise lake, but not a casual run</p>
+    <dl>
+      <dt>Base</dt><dd>Cortina</dd>
+      <dt>Start / finish</dt><dd>Passo Tre Croci / Passo Tre Croci</dd>
+      <dt>Path</dt><dd>215 out to Rifugio Vandelli and Lago di Sorapis; return on 215</dd>
+      <dt>Published size</dt><dd>10.5 km, +434 m / −437 m, about 4 hours</dd>
+      <dt>Transport</dt><dd>Short bus or taxi from Cortina; use an early start because the route is famous and busy</dd>
+      <dt>With Coy</dt><dd>Conditional: metal ladders, cable-protected ledges, and exposed sections make this a hiking day rather than an easy social run</dd>
+      <dt>UTMB</dt><dd>No published race overlap verified</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><a href="https://cortina.dolomiti.org/en/escursioni/to-lago-sorapis-en/">Official route: path 215</a></p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>3. Passo Giau–Cinque Torri–Nuvolau loop</h3>
+    <p class="dolomites-summary-kicker">The strongest Rogue-versus-DIY test</p>
+    <dl>
+      <dt>Base</dt><dd>Cortina</dd>
+      <dt>Start / finish</dt><dd>Passo Giau / Passo Giau</dd>
+      <dt>Path</dt><dd>443 → 439 past Cinque Torri, Rifugio Scoiattoli and Averau to Nuvolau → 464 → 452</dd>
+      <dt>Published size</dt><dd>9.8 km, +612 m / −612 m, about 5 hours</dd>
+      <dt>Transport</dt><dd>Seasonal bus if the timetable works; otherwise a simple round-trip taxi because the route returns to Passo Giau</dd>
+      <dt>With Coy</dt><dd>Good for strong hikers, with three huts and several shorter turnaround options</dd>
+      <dt>UTMB</dt><dd>Passo Giau is an official 120K, 80K, and 50K checkpoint; that does not mean this whole loop matches the race GPX</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><a href="https://cortina.dolomiti.org/en/escursioni/to-rifugio-nuvolau-en/">Official route: Passo Giau to Nuvolau loop</a></p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>4. Lagazuoi–Forcella Travenanzes descent</h3>
+    <p class="dolomites-summary-kicker">Short, lift-assisted, and rich in history</p>
+    <dl>
+      <dt>Base</dt><dd>Cortina</dd>
+      <dt>Start / finish</dt><dd>Passo Falzarego cable car / Passo Falzarego</dd>
+      <dt>Path</dt><dd>Cable car to Piccolo Lagazuoi, then 401 to Forcella Lagazuoi and 402 via Forcella Travenanzes to the lower station</dd>
+      <dt>Published size</dt><dd>4.7 km, +69 m / −681 m, about 2 hours 15 minutes</dd>
+      <dt>Transport</dt><dd>Bus or taxi to Passo Falzarego; no vehicle repositioning because the descent finishes at the lower cable-car station</dd>
+      <dt>With Coy</dt><dd>Very companion-friendly: cable-car access, World War I museum/fortifications, rifugio lunch, and a short mountain route</dd>
+      <dt>UTMB</dt><dd>Val Travenanzes appears on the 120K/80K corridor, but exact overlap with this descent is not verified</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><a href="https://cortina.dolomiti.org/en/escursioni/along-the-front-line-lagazuoi-and-forcella-travenanzes-en/">Official route: paths 401 and 402</a></p>
+  </article>
+
+  <article class="dolomites-summary-card">
+    <h3>5. Resciesa–Brogles–Seceda traverse</h3>
+    <p class="dolomites-summary-kicker">The one route that earns a second hotel base</p>
+    <dl>
+      <dt>Base</dt><dd>Ortisei / Val Gardena</dd>
+      <dt>Start / finish</dt><dd>Ortisei / Ortisei, using different lifts</dd>
+      <dt>Path</dt><dd>Resciesa funicular → 35 to Brogles → 29 through Forcella de Mesdì → 2B to Seceda → cable car down</dd>
+      <dt>Published size</dt><dd>6–7 hours; the official page does not publish distance or total gain, so those remain unknown</dd>
+      <dt>Transport</dt><dd>Walk from an Ortisei hotel to the funicular; finish at the Seceda cable-car base in town</dd>
+      <dt>With Coy</dt><dd>Split-day friendly: runners take the full traverse while Coy rides the Seceda cable car and meets the group near the summit</dd>
+      <dt>UTMB</dt><dd>No Lavaredo-course overlap; this is the western Dolomites</dd>
+    </dl>
+    <p class="dolomites-summary-verdict"><a href="https://www.valgardena.it/en/summer-holidays-dolomites/trekking/the-7-most-beautiful-hikes/">Official route: “From Resciesa to Seceda”</a> · <a href="https://www.valgardena.it/en/summer-holidays-dolomites/trekking/seceda/ridge-line/">Official Seceda ridge notes</a></p>
+  </article>
+</div>
+
+The practical answer is now much clearer: **the first four need one Cortina hotel; all five need two hotels and one Cortina-to-Ortisei transfer.** If Seceda is not worth that move, we can remain in Cortina and substitute a properly verified Croda da Lago route later. Croda da Lago stays on the research list because of its lake, rifugio, and Lavaredo-course connection, but I am not pretending that the current short official walk or an AllTrails search result is the full classic loop we want.
+
+The UTMB event here is the **La Sportiva Lavaredo Ultra Trail by UTMB**, not the UTMB Mont-Blanc course in France. Its official pages publish maps and GPX files for the [120K](https://lavaredo.utmb.world/races/lavaredo120k), [80K](https://lavaredo.utmb.world/races/lavaredo80k), and [50K](https://lavaredo.utmb.world/races/lavaredo50k). The overlap labels above use published landmarks and checkpoints. They do not claim that a Rogue day or our proposed route follows the race GPX exactly.
 
 ## The car-free hybrid: what replaces Rogue's vans?
 
@@ -404,10 +455,15 @@ That creates three possible shapes:
 | Plan | Hotel moves | Trail coverage | Transportation verdict |
 |---|---:|---|---|
 | **Cortina only** | **0** | Tre Cime, Sorapis, Passo Giau, Cinque Torri, Croda da Lago, Lagazuoi/Travenanzes | Simplest car-free choice. Most trailheads are roughly 15–45 minutes away by seasonal bus or taxi. This already covers most of our eastern-Dolomites and Lavaredo by UTMB interests. |
+| **Cortina + Val Gardena** | **1** | The four exact Cortina candidates plus the full Resciesa–Seceda day | **Cleanest way to do the five-route shortlist.** One transfer to Ortisei adds the western Dolomites and gives Coy a cable-car meet-up option, but it skips Rogue's Cima Rosetta landscape. |
 | **Cortina + San Martino** | **1** | Everything above, plus Cima Rosetta and the Pale di San Martino | **My preferred hybrid if Rosetta is essential.** One private inter-base transfer buys a genuinely different landscape; no daily rental car is necessary. |
 | **Cortina + San Martino + Val Gardena** | **2** | Adds Seceda, Odle, Adolf Munkel, and Sassolungo | Beautiful, but probably too many moves for one week. Better for a longer trip or if Seceda is non-negotiable. |
 
-### A seven-night version that stays sane
+### Two seven-night versions that stay sane
+
+**The exact five-route version:** five nights in central Cortina for Tre Cime, Sorapis, Passo Giau/Nuvolau, and Lagazuoi/Travenanzes; then one transfer and two nights in Ortisei for the Resciesa–Seceda traverse. This uses two hotels and one move.
+
+**The Rogue-like geography version:**
 
 - **Airport coach or arranged transfer to San Martino:** no rental car collected.
 - **Two nights in San Martino di Castrozza:** arrival/recovery plus Cima Rosetta and the Pale plateau.
