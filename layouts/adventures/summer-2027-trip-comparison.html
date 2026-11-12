@@ -1,0 +1,204 @@
+{{ define "header" }}
+<link rel="stylesheet" href="{{ "css/summer-2027-trip-comparison.css?v=1" | relURL }}">
+<header class="tc-hero">
+  <div class="tc-shell tc-hero__inner">
+    <p class="tc-kicker">Bask in Nature · Group planning page</p>
+    <h1>Five ways we could<br><em>spend a week outside.</em></h1>
+    <p class="tc-lede">Three versions of Glacier, two versions of Europe, and one shared set of questions. This is a comparison, not a ranking.</p>
+    <div class="tc-hero__facts" aria-label="Comparison overview">
+      <span><strong>5</strong> options</span>
+      <span><strong>3–8</strong> estimated days away</span>
+      <span><strong>2027</strong> planning horizon</span>
+    </div>
+    <a class="tc-jump" href="#compare">Compare the five <span aria-hidden="true">↓</span></a>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<main class="tc-page">
+  <section class="tc-shell tc-intro">
+    <div>
+      <p class="tc-label">How to read this</p>
+      <h2>Same questions.<br>Honest gaps.</h2>
+    </div>
+    <div class="tc-intro__copy">
+      <p class="tc-dropcap">The five ideas did not begin with the same amount of research. The comparison below uses published figures where we have them, calculates only simple averages, and says <strong>TBD</strong> instead of filling gaps with false precision.</p>
+      <p>“Days away” includes travel days. Mileage and climbing averages use active trail days, not arrival or departure days. Costs do not cover the same things, so every number states what is included.</p>
+      <div class="tc-legend" aria-label="Data confidence legend">
+        <span><i class="tc-dot tc-dot--published"></i><b>Published</b> by an itinerary or operator</span>
+        <span><i class="tc-dot tc-dot--estimated"></i><b>Estimate</b> for planning</span>
+        <span><i class="tc-dot tc-dot--unknown"></i><b>TBD</b> before a vote becomes a booking</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tc-compare" id="compare" aria-labelledby="compare-title">
+    <div class="tc-shell">
+      <div class="tc-section-head">
+        <div><p class="tc-label">At a glance</p><h2 id="compare-title">The decision table.</h2></div>
+        <p>Scroll sideways on a phone. No option is highlighted, scored, or placed first as a recommendation.</p>
+      </div>
+      <div class="tc-table-wrap" tabindex="0" role="region" aria-label="Scrollable comparison table">
+        <table class="tc-table">
+          <thead>
+            <tr>
+              <th scope="col">Question</th>
+              <th scope="col"><a href="#chasing">Chasing Turquoise</a><small>Short Glacier</small></th>
+              <th scope="col"><a href="#extended">Glacier Extended</a><small>Combined plan</small></th>
+              <th scope="col"><a href="#marcela">Marcela’s Glacier</a><small>4–5 day outline</small></th>
+              <th scope="col"><a href="#dolomites">Dolomites</a><small>Runcation Express</small></th>
+              <th scope="col"><a href="#mont-blanc">Mont Blanc</a><small>60-mile highlights</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Total days away</th>
+              <td><strong>3 days</strong><span class="tc-status tc-status--published">Published plan</span></td>
+              <td><strong>4 days</strong><span class="tc-status tc-status--estimated">Proposed</span></td>
+              <td><strong>4–5 days</strong><span class="tc-status tc-status--published">Poster outline</span></td>
+              <td><strong>≈8 days</strong><small>5 trail days + buffer and flight days</small><span class="tc-status tc-status--estimated">Estimate</span></td>
+              <td><strong>≈8 days</strong><small>5 run days + buffer and flight days</small><span class="tc-status tc-status--estimated">Estimate</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Active trail days</th>
+              <td>1 long day</td>
+              <td>2 days</td>
+              <td>2–4 days<small>Depends on boat-tour and Day 5 choices</small></td>
+              <td>5 days</td>
+              <td>5 days</td>
+            </tr>
+            <tr>
+              <th scope="row">Trail distance</th>
+              <td><strong>23–24 mi total</strong><small>23–24 mi per active day</small></td>
+              <td><strong>≈26–27 mi total</strong><small>≈13–13.5 mi per active day</small></td>
+              <td><strong>TBD</strong><small>The poster names activities but publishes no route figures</small></td>
+              <td><strong>58.5–63.5 mi total</strong><small>11.7–12.7 mi per active day</small></td>
+              <td><strong>56–65 mi total</strong><small>11.2–13 mi per active day</small></td>
+            </tr>
+            <tr>
+              <th scope="row">Elevation gain</th>
+              <td><strong>TBD</strong><small>Not published on the current itinerary page</small></td>
+              <td><strong>TBD</strong><small>Final Hidden Lake route and source figures needed</small></td>
+              <td><strong>TBD</strong><small>Route variants are not fixed</small></td>
+              <td><strong>15,900–17,900 ft total</strong><small>3,180–3,580 ft per active day</small></td>
+              <td><strong>18,000–23,000 ft total</strong><small>3,600–4,600 ft per active day</small></td>
+            </tr>
+            <tr>
+              <th scope="row">Early cost signal</th>
+              <td><strong>$350–$550 / room / night</strong><small>2 nights; airfare, car, meals and tax extra</small></td>
+              <td><strong>$350–$550 / room / night</strong><small>3 nights; airfare, car, meals and tax extra</small></td>
+              <td><strong>TBD</strong><small>No price is included in the poster</small></td>
+              <td><strong>$2,195 package</strong><small>Based on 2 travelers, plus est. $1,200–$1,500 airfare and pre/post costs</small></td>
+              <td><strong>€1,200–€1,900 land only</strong><small>Airfare, insurance and extra nights excluded</small></td>
+            </tr>
+            <tr>
+              <th scope="row">Lodging shape</th>
+              <td>2 hotel nights<small>Many Glacier Hotel target</small></td>
+              <td>3 hotel nights<small>One Many Glacier base</small></td>
+              <td>Park lodges or nearby towns<small>Exact sequence and room count TBD</small></td>
+              <td>4 rifugio nights<small>Shared dorms on the standard trip; buffer hotels extra</small></td>
+              <td>1 refuge + 1 inn/gîte + 3 hotel nights<small>Pre-start night extra</small></td>
+            </tr>
+            <tr>
+              <th scope="row">Booking complexity</th>
+              <td><strong>Medium</strong><small>Hotel, flights, car and park access</small></td>
+              <td><strong>Medium</strong><small>Same bookings, one more day of access planning</small></td>
+              <td><strong>High</strong><small>Multiple park areas, lodging, car, passes and optional tours</small></td>
+              <td><strong>Medium–low</strong><small>Operator handles huts, GPX and bags; we handle flights and ground access</small></td>
+              <td><strong>High for now</strong><small>Becomes medium only if one operator accepts the custom route</small></td>
+            </tr>
+            <tr>
+              <th scope="row">Easy to shorten?</th>
+              <td><strong>Yes, between runs</strong><small>Each Saturday trail is an out-and-back</small></td>
+              <td><strong>Yes</strong><small>Second trail day is deliberately lighter</small></td>
+              <td><strong>Usually</strong><small>Sightseeing and boat alternatives create options</small></td>
+              <td><strong>Limited</strong><small>Hut-to-hut stages must reach the next bed</small></td>
+              <td><strong>Limited–moderate</strong><small>Some vehicle/lift assistance, but fixed beds and transfers matter</small></td>
+            </tr>
+            <tr>
+              <th scope="row">Travel burden</th>
+              <td>Domestic flight + ≈2 hr 35 min drive</td>
+              <td>Domestic flight + ≈2 hr 35 min drive</td>
+              <td>Domestic flight + rental-car loop</td>
+              <td>Overnight international flight + ground transfer</td>
+              <td>Overnight international flight + Geneva/Chamonix transfers</td>
+            </tr>
+            <tr>
+              <th scope="row">Biggest unresolved item</th>
+              <td>2027 total price and room availability</td>
+              <td>Confirm the added day and final route figures</td>
+              <td>Exact trails, hotel sequence and total budget</td>
+              <td>2027 dates, remaining beds and private-room availability</td>
+              <td>Operator acceptance, refuge beds, GPX and final quote</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tc-table-note"><strong>Cost caution:</strong> these are not five all-in quotes. Glacier shows a verified room-rate planning range, Dolomites shows a published package plus a separate flight estimate, and Mont Blanc shows a land-only planning allowance. Currency conversion is intentionally omitted because exchange rates move.</p>
+    </div>
+  </section>
+
+  <section class="tc-shell tc-details" aria-labelledby="details-title">
+    <div class="tc-section-head">
+      <div><p class="tc-label">Five trip shapes</p><h2 id="details-title">What each option means.</h2></div>
+      <p>These descriptions explain the format without telling the group which one to prefer.</p>
+    </div>
+
+    <article class="tc-option" id="chasing">
+      <div class="tc-option__number">01</div>
+      <div class="tc-option__title"><p>Montana · 3 days</p><h3>Chasing Turquoise</h3><span>Short Glacier</span></div>
+      <div class="tc-option__body"><p>Fly in Friday, run Cracker Lake and Grinnell Glacier on Saturday, and return Sunday. The entire trail commitment sits in one large 23–24 mile day from a single Many Glacier base.</p><ul><li><strong>Structure:</strong> 2 hotel nights, rental car, one active trail day.</li><li><strong>Planning reality:</strong> the route is developed; 2027 flights, car, room availability and full per-person total are not.</li></ul><a class="tc-button" href="{{ "/adventures/chasing-turquoise/" | relURL }}">Open the full Chasing Turquoise plan <span aria-hidden="true">↗</span></a></div>
+    </article>
+
+    <article class="tc-option" id="extended">
+      <div class="tc-option__number">02</div>
+      <div class="tc-option__title"><p>Montana · 4 days</p><h3>Glacier Extended</h3><span>Combined plan</span></div>
+      <div class="tc-option__body"><p>Keep Chasing Turquoise intact, then add the strongest compact piece of Marcela’s outline: Going-to-the-Sun Road, Logan Pass and Hidden Lake Overlook. That creates a second, lighter trail day without turning the trip into a multi-hotel park tour.</p><ol class="tc-mini-days"><li><b>Day 1</b> Arrive and drive to Many Glacier.</li><li><b>Day 2</b> Cracker Lake + Grinnell Glacier, 23–24 miles.</li><li><b>Day 3</b> Going-to-the-Sun Road + Hidden Lake Overlook, planning estimate ≈2.7–3 miles.</li><li><b>Day 4</b> Breakfast, drive to FCA and fly home.</li></ol><p class="tc-inline-note">This four-day combination is new on this page. The added route, road timing and elevation need current-source verification before booking.</p></div>
+    </article>
+
+    <article class="tc-option" id="marcela">
+      <div class="tc-option__number">03</div>
+      <div class="tc-option__title"><p>Montana · 4–5 days</p><h3>Marcela’s Glacier</h3><span>Original poster outline</span></div>
+      <div class="tc-option__body"><p>A broader National Park vacation that moves through several park areas and mixes hiking with sightseeing. The source is Marcela’s printed proposal; it is an outline, not a priced or measured itinerary.</p><ol class="tc-mini-days"><li><b>Day 1</b> Arrive in Kalispell, check in and explore Lake McDonald.</li><li><b>Day 2</b> Going-to-the-Sun Road, Logan Pass and Hidden Lake Overlook.</li><li><b>Day 3</b> Avalanche Lake hike or Lake McDonald boat tour.</li><li><b>Day 4</b> Many Glacier boat tour and hike toward Grinnell Glacier.</li><li><b>Day 5, optional</b> Two Medicine or St. Mary Falls, then head home.</li></ol><p class="tc-inline-note">The poster suggests Lake McDonald Lodge, Many Glacier Hotel, Glacier Park Lodge, Whitefish or Columbia Falls; it does not assign a hotel to each night or specify prices, exact trail variants, mileage or elevation.</p></div>
+    </article>
+
+    <article class="tc-option" id="dolomites">
+      <div class="tc-option__number">04</div>
+      <div class="tc-option__title"><p>Italy · ≈8 days away</p><h3>Dolomites</h3><span>Runcation self-guided Express</span></div>
+      <div class="tc-option__body"><p>Five point-to-point Alta Via 1 stages with four rifugio nights, daily bag movement, a detailed itinerary and operator GPX. The group moves at its own pace, but there is no guide making weather, navigation or exit decisions.</p><ul><li><strong>Published route:</strong> 58.5–63.5 miles and 15,900–17,900 feet of gain.</li><li><strong>Published package:</strong> $2,195 based on two travelers; flights, pre/post hotels and ground access are additional.</li><li><strong>2027 constraint:</strong> the exact date window and any private room or ensuite request still need confirmation.</li></ul><a class="tc-button" href="{{ "/posts/2026-11-07-dolomites-running-trip-options/" | relURL }}">Open the researched Dolomites options <span aria-hidden="true">↗</span></a></div>
+    </article>
+
+    <article class="tc-option" id="mont-blanc">
+      <div class="tc-option__number">05</div>
+      <div class="tc-option__title"><p>France · Italy · Switzerland · ≈8 days away</p><h3>Best of Mont Blanc</h3><span>60-mile highlights route</span></div>
+      <div class="tc-option__body"><p>A five-day, supported self-guided line from Les Contamines through Italy to La Fouly, followed by a Lac Blanc finale. It is the already-published 56–65 mile proposal, not the full ≈100-mile Tour du Mont Blanc.</p><ul><li><strong>Working route:</strong> 56–65 miles and 18,000–23,000 feet of gain.</li><li><strong>Lodging:</strong> one refuge, one inn/gîte and three hotel nights; a pre-start night is additional.</li><li><strong>Planning reality:</strong> no operator has accepted this exact custom shape and no beds or transfers are held.</li></ul><a class="tc-button" href="{{ "/adventures/best-of-mont-blanc/" | relURL }}">Open the full Mont Blanc proposal <span aria-hidden="true">↗</span></a></div>
+    </article>
+  </section>
+
+  <section class="tc-questions">
+    <div class="tc-shell">
+      <div class="tc-section-head tc-section-head--light"><div><p class="tc-label">Before choosing</p><h2>Four answers will narrow the field.</h2></div><p>A vote is more useful after everyone answers the same practical questions privately.</p></div>
+      <ol class="tc-question-grid">
+        <li><span>01</span><p><strong>Days away</strong>What is the maximum number of calendar days, including flights?</p></li>
+        <li><span>02</span><p><strong>Comfortable budget</strong>What total per-person range feels comfortable, before optional upgrades?</p></li>
+        <li><span>03</span><p><strong>Trip format</strong>Vacation with running, or a running journey with vacation around it?</p></li>
+        <li><span>04</span><p><strong>Room standard</strong>Are shared rooms and shared bathrooms acceptable for any night?</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="tc-shell tc-sources" aria-labelledby="sources-title">
+    <div><p class="tc-label">Sources &amp; limits</p><h2 id="sources-title">What was checked.</h2></div>
+    <div>
+      <p>Comparison prepared November 11, 2026 from the live Bask in Nature pages, Marcela’s uploaded 4–5 day Glacier poster, and the operator research already documented in the Dolomites and Mont Blanc pages.</p>
+      <ul>
+        <li><a href="{{ "/adventures/chasing-turquoise/" | relURL }}">Chasing Turquoise</a>: 3 days, 23–24 miles, Many Glacier Hotel target and $350–$550 room/night planning range.</li>
+        <li><a href="{{ "/posts/2026-11-07-dolomites-running-trip-options/" | relURL }}">Dolomites 2027 research</a>: Runcation route, package, lodging, baggage, airfare estimate and 2027 availability questions.</li>
+        <li><a href="{{ "/adventures/best-of-mont-blanc/" | relURL }}">Best of Mont Blanc</a>: five-stage route, elevation targets, land-only allowance, lodging and booking constraints.</li>
+      </ul>
+      <p class="tc-disclaimer"><strong>Planning document only.</strong> Nothing here is a reservation, quote, route file or safety plan. Prices, exchange rates, park access, roads, lifts, trails, weather and room inventory can change. Recheck all of them once the group chooses dates and a preferred trip shape.</p>
+    </div>
+  </section>
+</main>
+{{ end }}
