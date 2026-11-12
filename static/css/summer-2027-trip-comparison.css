@@ -60,6 +60,15 @@
 .tc-mini-days li { display:grid; grid-template-columns:72px 1fr; margin:0; padding:12px 0; border-bottom:1px solid var(--tc-line); }
 .tc-mini-days b { color:var(--tc-coral); font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
 .tc-inline-note { padding:16px 18px; background:var(--tc-cream); color:var(--tc-muted)!important; font-size:13px!important; }
+.tc-budget-breakdown { margin:26px 0 18px; padding:24px; border:1px solid var(--tc-line); background:#f8faf7; }
+.tc-budget-breakdown h4 { margin:0 0 8px; color:var(--tc-deep); font-family:'DM Serif Display',serif; font-size:26px; font-weight:400; }
+.tc-budget-breakdown>p { margin:0 0 18px; color:var(--tc-muted); font-size:13px; }
+.tc-budget-breakdown dl { display:grid; grid-template-columns:1fr 1fr; margin:0; border-top:1px solid var(--tc-line); }
+.tc-budget-breakdown dl div { display:flex; justify-content:space-between; gap:16px; padding:11px 0; border-bottom:1px solid var(--tc-line); }
+.tc-budget-breakdown dl div:nth-child(odd) { padding-right:18px; border-right:1px solid var(--tc-line); }
+.tc-budget-breakdown dl div:nth-child(even) { padding-left:18px; }
+.tc-budget-breakdown dt { color:var(--tc-muted); font-size:12px; font-weight:500; }
+.tc-budget-breakdown dd { margin:0; color:var(--tc-deep); font-size:12px; font-weight:700; text-align:right; }
 
 .tc-questions { padding:110px 0; background:var(--tc-deep); color:#fff; }
 .tc-section-head--light>p { color:#aac2ba; }
@@ -86,5 +95,6 @@
   .tc-page h2 { font-size:45px; }
   .tc-option { grid-template-columns:38px 1fr; gap:20px; padding:44px 0; }.tc-option__title h3 { font-size:34px; }
   .tc-question-grid { grid-template-columns:1fr; }.tc-question-grid li { min-height:0; border-right:0; border-bottom:1px solid #416058; }.tc-question-grid li:last-child { border-bottom:0; }.tc-question-grid p { margin-top:24px; }
+  .tc-budget-breakdown dl { grid-template-columns:1fr; }.tc-budget-breakdown dl div:nth-child(odd),.tc-budget-breakdown dl div:nth-child(even) { padding-left:0; padding-right:0; border-right:0; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
