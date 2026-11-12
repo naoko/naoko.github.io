@@ -2,6 +2,7 @@
 
 :root { --tc-ink:#16342e; --tc-deep:#0c2924; --tc-cream:#f5f0e7; --tc-paper:#fffdf8; --tc-mint:#dcebe5; --tc-line:#c7d2cc; --tc-coral:#b95e4a; --tc-gold:#b5883f; --tc-muted:#63736d; }
 .tc-page, .tc-hero { font-family:'DM Sans',sans-serif; color:var(--tc-ink); }
+.tc-page { background:var(--tc-paper)!important; }
 .tc-shell { width:min(1180px,calc(100% - 40px)); margin:0 auto; }
 .tc-hero { min-height:82vh; display:flex; align-items:flex-end; position:relative; overflow:hidden; background:linear-gradient(135deg,rgba(6,31,27,.88),rgba(11,51,45,.77)),url('/images/adventures/chasing-turquoise/many-glacier-hotel.jpg') center 44%/cover no-repeat; color:#fff; }
 .tc-hero::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.38)); pointer-events:none; }
