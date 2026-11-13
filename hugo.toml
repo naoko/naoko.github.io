@@ -20,6 +20,7 @@ buildDrafts = false
   name = "Naoko Reeves"
 
 [params]
+  custom_css = ["css/post-content.css"]
   header_image = "images/lake-louise.jpeg"
   SEOTitle = "the art of simplicity | Naoko Reeves"
   description = "Writing about software, food, life. I enjoy building software, care about being green, and run ultras on the side."
