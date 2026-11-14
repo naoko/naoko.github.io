@@ -1,0 +1,131 @@
+/* Post content overrides for the cleanwhite theme.
+   Loaded via params.custom_css in hugo.toml.
+
+   Two problems this fixes for tables written in a post:
+
+   1. Contrast. The theme's dark-mode rules only reach `.markdown-body table`,
+      which is the comment widget. A table in a post lands in `.post-container`
+      and gets no dark treatment, so it kept Bootstrap's light `.table`
+      background with near-invisible text on the dark page.
+
+   2. Overlap. Long cells were not wrapping, so columns ran into each other.
+
+   The theme's JS wraps post tables in `.table-responsive` and adds Bootstrap's
+   `.table` class at runtime, so selectors here target that structure and only
+   need to out-specify `.table`. */
+
+:root {
+  --post-table-border:   #d9dee4;
+  --post-table-bg:       #ffffff;
+  --post-table-head-bg:  #f1f4f8;
+  --post-table-stripe:   #fafbfc;
+  --post-table-text:     #2f3b47;
+  --post-table-strong:   #16202b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --post-table-border:   rgba(148, 197, 255, 0.28);
+    --post-table-bg:       rgba(8, 17, 35, 0.72);
+    --post-table-head-bg:  rgba(126, 190, 255, 0.13);
+    --post-table-stripe:   rgba(126, 190, 255, 0.05);
+    --post-table-text:     #cfdae9;
+    --post-table-strong:   #eff4ff;
+  }
+}
+
+[data-theme="light"] {
+  --post-table-border:   #d9dee4;
+  --post-table-bg:       #ffffff;
+  --post-table-head-bg:  #f1f4f8;
+  --post-table-stripe:   #fafbfc;
+  --post-table-text:     #2f3b47;
+  --post-table-strong:   #16202b;
+}
+
+[data-theme="dark"] {
+  --post-table-border:   rgba(148, 197, 255, 0.28);
+  --post-table-bg:       rgba(8, 17, 35, 0.72);
+  --post-table-head-bg:  rgba(126, 190, 255, 0.13);
+  --post-table-stripe:   rgba(126, 190, 255, 0.05);
+  --post-table-text:     #cfdae9;
+  --post-table-strong:   #eff4ff;
+}
+
+/* ---- The table ---- */
+
+.post-container table {
+  background: var(--post-table-bg);
+  width: 100%;
+  margin: 1.8em 0;
+  border: 1px solid var(--post-table-border);
+  border-radius: 4px;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.post-container table th,
+.post-container table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border: 0;
+  border-bottom: 1px solid var(--post-table-border);
+  border-right: 1px solid var(--post-table-border);
+  color: var(--post-table-text);
+  /* The overlap. Bootstrap's responsive-table rule sets white-space:nowrap on
+     cells under 767px at a higher specificity than this selector, so cell text
+     overflowed into the next column. !important is the same fix used for the
+     trip-comparison table. */
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: none;
+}
+
+.post-container table th:last-child,
+.post-container table td:last-child { border-right: 0; }
+
+.post-container table tbody tr:last-child td { border-bottom: 0; }
+
+.post-container table thead th {
+  background: var(--post-table-head-bg);
+  color: var(--post-table-strong);
+  font-weight: 700;
+}
+
+.post-container table tbody tr:nth-child(even) {
+  background: var(--post-table-stripe);
+}
+
+/* First column carries the row label in a comparison table. */
+.post-container table tbody td:first-child,
+.post-container table td strong,
+.post-container table th strong {
+  color: var(--post-table-strong);
+}
+
+/* The theme's JS wraps tables in this; let wide ones scroll at any width. */
+.post-container .table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767px) {
+  /* Keep columns readable and let the wrapper scroll sideways, rather than
+     squeezing four columns into a phone width. */
+  .post-container table { font-size: 14px; min-width: 560px; }
+  .post-container table th,
+  .post-container table td { padding: 10px 11px; }
+}
+
+/* ---- ASCII diagrams in ```text blocks ---- */
+/* Keep alignment: scroll rather than re-wrap. */
+
+.post-container pre > code[data-lang="text"],
+.post-container pre > code.language-text {
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
+}

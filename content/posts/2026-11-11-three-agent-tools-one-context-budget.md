@@ -16,6 +16,19 @@ They aren't. They sit on three different layers, and the thing worth knowing is 
 
 ## The three layers
 
+```text
+   humanlayer/skills — decides which work happens
+   it sits above the other two and never touches the budget
+   ──────────────────────────────────────────────────────────
+
+                     ┌───────────────────┐
+   TokenEconomizer   │                   │   Trail-Code
+     ──── removes ──▶│  context  window  │◀── adds ────
+                     └───────────────────┘
+
+   the open question: does the left prune the right's six MCP tools?
+```
+
 | | [TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | [Trail-Code](https://github.com/trailhq/Trail-Code) | [humanlayer/skills](https://github.com/humanlayer/skills) |
 | --- | --- | --- | --- |
 | **What it does to context** | Takes things out | Puts things in | Doesn't touch it |
