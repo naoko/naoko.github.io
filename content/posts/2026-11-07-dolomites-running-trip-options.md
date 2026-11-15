@@ -1,7 +1,7 @@
 ---
 title: "Dolomites 2027: Four Ways We Could Run It"
 date: 2026-11-07
-lastmod: 2026-11-11
+lastmod: 2026-11-15
 draft: false
 description: "Comparing Rogue's hotel-based day routes, two Runcation Alta Via 1 options, and a car-free hotel hybrid while we decide what kind of Dolomites trip we actually want."
 image: "/images/2026-11-07/tre-cime.jpg"
@@ -70,6 +70,8 @@ categories: ["running", "travel"]
 I started looking at the Dolomites because I wanted a beautiful running trip with friends, which sounds simple enough. Then I found two trips that use the same mountains in completely different ways. Rogue Expeditions strings together five highlight runs with hotels, drivers, long lunches, and one night in a rifugio. Runcation follows an Alta Via 1 variant from hut to hut, with more miles and five nights in shared mountain dorms.
 
 Then Runcation added a five-day self-guided express option, which made the decision more interesting. It is shorter, can potentially work in August, and costs much less, but there is no guide or on-trail assistance. We emailed Runcation about a custom itinerary and private ensuite rooms, and their answer narrowed the options considerably. That led to a fourth idea: skip the continuous AV1 line, use two comfortable hotel bases, and hire a guide only where one adds the most value. Nothing is booked, and this page is the decision in progress rather than a recommendation.
+
+Rogue has now sent a detailed 2027 brochure that also reveals a shorter **Dolomites Essentials** itinerary. It is not a fifth fully comparable choice yet: the brochure omits its price and dates and contradicts itself on whether the trip lasts five or six calendar days. I have included it below as a promising lead rather than pretending those details are settled.
 
 <small>Tre Cime di Lavaredo photo by [Wolfgang Moroder](https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg), resized from the original, licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).</small>
 
@@ -174,6 +176,8 @@ The overnight flight matters almost as much as the price. We should arrive in It
 
 Rogue is **not** an Alta Via 1 trip. It is five separate day outings in different parts of the Dolomites, joined by professional drivers. That distinction matters because several of the landmarks are publicly accessible from hotels; the hard part to reproduce is the exact route selection, vehicle repositioning, weather decisions, and the point-to-point days.
 
+Rogue's new [2027 Dolomites brochure](https://drive.google.com/file/d/1qCRcWj-JIONdwZdUB1DuTMafr9glAZxi/view) confirms many of the logistics below, but it still does not publish GPX tracks, property names, or the overnight rifugio. It also contains editing conflicts: the seven-day overview says **15,100 ft** of climbing, the FAQ says **12,000–14,000 ft**, and the daily figures add to approximately **12,800–14,200 ft**. Its Day 1 copy says Cortina even though the lodging FAQ says two nights in San Martino and Cima Rosetta is reached from San Martino. I am treating the route figures as planning ranges and the San Martino lodging sequence as the more geographically coherent version, pending written confirmation.
+
 Only the Tre Cime and full Alta Via 1 links below are exact public pages we could verify. They are still **not Rogue's official GPX**. For the other Rogue days, a search result is not good enough: Rogue does not publish its tracks, and in several cases its mileage proves that it is using a different variant.
 
 <div class="dolomites-summary-grid">
@@ -194,11 +198,11 @@ Only the Tre Cime and full Alta Via 1 links below are exact public pages we coul
     <p class="dolomites-summary-kicker">Passo Rolle → overnight rifugio</p>
     <dl>
       <dt>Route</dt><dd>9 mi / 1,600 ft, plus a 1.5-mi walk back to the vans</dd>
-      <dt>Access</dt><dd>Drive to Passo Rolle; Rogue publishes about 1 hr 45 min total driving that day</dd>
+      <dt>Access</dt><dd>Drive to Passo Rolle; the brochure describes a runnable valley loop finishing at an unnamed alpine hut, followed by lunch and a 1.5-mi walk to the vans</dd>
       <dt>Sleep</dt><dd>An unnamed mountaintop rifugio between San Martino and Cortina</dd>
-      <dt>Route status</dt><dd>No exact public match verified; “Happy Valley” is not the published name of a traceable route</dd>
+      <dt>Route status</dt><dd>Passo Rolle is now confirmed, but the hut, trail sequence, and exact loop remain unpublished</dd>
     </dl>
-    <p class="dolomites-summary-verdict"><strong>Match unknown.</strong> “Happy Valley” is Rogue's label, not a verifiable public trail name. We should ask for the actual start, finish, and overnight hut before comparing it with a DIY route.</p>
+    <p class="dolomites-summary-verdict"><strong>Partial match only.</strong> “Happy Valley” is Rogue's label, not a verifiable public trail name. We still need the actual trail sequence, lunch hut, and overnight rifugio before comparing it with a DIY route.</p>
   </article>
 
   <article class="dolomites-summary-card">
@@ -206,7 +210,7 @@ Only the Tre Cime and full Alta Via 1 links below are exact public pages we coul
     <p class="dolomites-summary-kicker">Rifugio area → Cortina</p>
     <dl>
       <dt>Route</dt><dd>8 mi / 3,300 ft; technical loop</dd>
-      <dt>Access</dt><dd>Runs from the mountain area, then about 50 minutes of driving to Cortina</dd>
+      <dt>Access</dt><dd>The brochure says the group runs directly from the overnight mountain area, finishes with lunch at another unnamed mountaintop rifugio, then transfers to Cortina</dd>
       <dt>Sleep</dt><dd>First of three nights at an unnamed boutique hotel in central Cortina</dd>
       <dt>Route status</dt><dd>No exact 8-mile / 3,300-ft Rogue loop verified</dd>
     </dl>
@@ -249,6 +253,16 @@ Only the Tre Cime and full Alta Via 1 links below are exact public pages we coul
     <p class="dolomites-summary-verdict"><strong>Guide and baggage value: structurally different.</strong> AV1 cannot be reproduced as hotel-based day trips without changing the experience itself.</p>
   </article>
 </div>
+
+### The brochure reveals a shorter Rogue option
+
+The brochure also introduces **Dolomites Essentials**, a shorter Rogue itinerary built from four of the same runs: Cima Rosetta, “Happy Valley,” Cinque Torri, and Tre Cime. It removes the 12-mile Passo Giau-to-Rifugio Venezia traverse, which is the day where Rogue's vehicle support is hardest to reproduce independently.
+
+<div class="dolomites-note">
+<strong>Promising, but not ready to compare:</strong> the overview calls Dolomites Essentials a <strong>five-day</strong> expedition with <strong>four runs</strong> and approximately <strong>12,000 ft / 3,660 m</strong> of climbing. The printed itinerary nevertheless includes Days 1–6. The brochure does not provide dates or a price. Until Rogue confirms the actual nights, price, dates, group support, and room arrangement, this is a lead rather than a fifth complete option.
+</div>
+
+This may be more relevant to us than the full trip. It keeps Cima Rosetta, the San Martino landscape, the rifugio experience, Cinque Torri, and Tre Cime while shortening the separation from Coy. On the other hand, it still includes the shared-rifugio night and omits the point-to-point day that best demonstrates the value of Rogue's drivers.
 
 ### What are we really paying Rogue for?
 
@@ -315,9 +329,10 @@ That explains my hesitation better than a price comparison does. A solo runner w
 | 2027 dates | **July 14–20** and **September 5–11**. No August departure currently published. | **July 10–16** and **July 17–23**. Runcation said the scheduled departures still have spots, but a new August/private departure cannot be added. | Normally bookable mid-June to mid-September. Exact 2027 availability, including August, must now be checked against our preferred dates and group size. |
 | Published price | **$5,795** | **$3,145 early bird / $3,350 regular** | **$2,195**, based on two travelers; custom itinerary quoted separately |
 | Total trail distance | About **40 miles** published; daily table totals **41–44 miles** | About **65.5–66.5 miles**, calculated from the currently published daily stats | About **58.5–63.5 miles**, depending on the Day 2 route variant |
-| Published climbing | About **12,000–14,000 ft** over five days | About **18,600 ft**, calculated from published daily ascent figures | About **15,900–17,900 ft**, depending on Day 2 |
-| Pace policy | **No required pace; all speeds welcome.** Hiking is expected on steep terrain. Shorter or vehicle-supported options exist when terrain allows, but not on every route. | Two guides manage the group so everyone moves together safely while giving stronger runners room to enjoy the terrain. Participants must still complete the daily distance and run runnable sections; walkers/hikers cannot be accommodated. | Any run-hike pace, but we must complete each stage, navigate by GPX, manage weather, and be self-sufficient. |
-| Difficulty and terrain | Rogue Level 3. Rocky, steep, sometimes exposed singletrack plus smoother runnable sections; mountain experience recommended. | Runcation Level 3. Technical mountain trail, roughly 10–17 miles and up to 6,000 ft gain per day. | Runcation Level 3, with the same self-sufficiency requirement and no guide making safety calls for us. |
+| Published climbing | **Internally inconsistent:** 15,100 ft on the brochure overview, 12,000–14,000 ft in its FAQ, and roughly 12,800–14,200 ft when the five daily figures are added | About **18,600 ft**, calculated from published daily ascent figures | About **15,900–17,900 ft**, depending on Day 2 |
+| Pace policy | No fixed speed requirement and substantial hiking is expected, but that does **not** make it beginner-friendly. The brochure says participants should already be comfortable with an 8–10-mile trail run. | Two guides manage the group so everyone moves together safely while giving stronger runners room to enjoy the terrain. Participants must still complete the daily distance and run runnable sections; walkers/hikers cannot be accommodated. | Any run-hike pace, but we must complete each stage, navigate by GPX, manage weather, and be self-sufficient. |
+| Difficulty and terrain | Rogue Level 3. Rocky, steep, sometimes exposed singletrack plus smoother runnable sections. The brochure explicitly says mountain experience is required and to expect about as much hiking as running. | Runcation Level 3. Technical mountain trail, roughly 10–17 miles and up to 6,000 ft gain per day. | Runcation Level 3, with the same self-sufficiency requirement and no guide making safety calls for us. |
+| Published group size | **8–14 runners** in Rogue's brochure | Not published on the itinerary page; two guides per scheduled group confirmed by Runcation | Our own booking party |
 | Accommodations | Two lodge nights in San Martino, one rifugio night in bunk rooms, three nights in a boutique Cortina hotel | First night in a four-star hotel, then five nights in shared rifugio dormitories | Four rifugio nights in shared dormitories on the standard express route |
 | Private ensuite | Likely the strongest option for hotel comfort, but the current page does **not** publish exact room categories or bathroom arrangements. The rifugio night is described as bunk rooms. | Not available on the standard trip: Runcation confirmed communal rifugio dorms. Its hut guide says dorms generally hold 4–12 people and use shared bathrooms. | Runcation will check whether any private rooms remain, but only after we provide preferred dates and group size. Availability, ensuite bathrooms, and any surcharge remain unknown. |
 | Guides | Rogue trip leaders, local Italian running guides, and logistics team | Two guides per scheduled group: local International Mountain Leaders plus U.S.-based trail-running guides | No guide and no 24-hour on-trail assistance |
@@ -561,7 +576,11 @@ I am still not picking a winner. The next decision is more basic: **Does the rou
 - Would everyone prefer the two-base San Martino + Cortina hybrid to a hut-to-hut trip?
 - Which August 2027 seasonal buses will serve Tre Cime, Cinque Torri/Falzarego, Passo Giau, and Passo Tre Croci?
 - What would one San Martino-to-Cortina transfer, two or three trailhead taxis, and one guided Cima Rosetta day cost for our actual group size?
-- What are Rogue's actual “Happy Valley” start and finish, its overnight rifugio, and the exact GPX variants for Cinque Torri and Tre Cime?
+- Which exact trails form Rogue's “Happy Valley” loop, which hut serves lunch, and which rifugio is the overnight?
+- What are Rogue's exact GPX variants for Cima Rosetta, Cinque Torri, Passo Giau–Monte Pelmo, and Tre Cime?
+- Is Rogue's Day 1 base San Martino, despite the brochure saying Cortina, and what are the names and room/bathroom arrangements of all three properties?
+- Which full-trip climbing figure should we rely on: the brochure overview's 15,100 ft, the FAQ's 12,000–14,000 ft, or the roughly 12,800–14,200 ft daily sum?
+- For **Dolomites Essentials**, is it five or six calendar days, what are the price and dates, and are its lodging and guide/driver arrangements the same as the full trip?
 - What exactly is included in Rogue's newly listed **$3,000 self-guided** option, and can a non-running companion share the hotels and transfers?
 - Will Rogue connect us with two or three recent Dolomites guests who can speak candidly about pacing, accommodations, weather changes, and the value of the guides?
 - On the scheduled guided trip, how do the two guides handle a large gap between the fastest and slowest runners during the longest stages?
@@ -577,6 +596,10 @@ The first email did its job. We no longer need to debate a custom guided 2027 tr
 </div>
 
 ## Sources and verification date
+
+**New brochure review — November 15, 2026:** Rogue's detailed 2027 brochure supplied the expanded route and logistics information above. Its internal conflicts remain flagged rather than silently reconciled.
+
+- [Rogue Expeditions: 2027 Dolomites brochure](https://drive.google.com/file/d/1qCRcWj-JIONdwZdUB1DuTMafr9glAZxi/view)
 
 The original operator comparison was checked **November 7, 2026**. Runcation's availability, private-group, accommodation, and two-guide details were updated from its direct email reply received **November 9, 2026**. Rogue's route logistics and the car-free transport options were rechecked **November 11, 2026**. Summer 2027 local bus schedules are not yet published.
 
